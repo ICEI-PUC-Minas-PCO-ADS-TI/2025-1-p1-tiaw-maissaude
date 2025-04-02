@@ -1,25 +1,25 @@
-# Nome do projeto
+# Ma+s Saúde
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
-`Xº semestre/ANO`
+`1° Semestre/2025`
 
 Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Raissa Aparecida de Souza Rocha
+* Guilherme Teixeira Ferreira
+* Paco Lemos Garibaldi
+* Gustavo Silva Santiago
+* João Marcelo Ribeiro da Silva
+* Juan Pablo Marcelino Rocha
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Amália Vasconcelos
 
 ## Instruções de utilização
 
