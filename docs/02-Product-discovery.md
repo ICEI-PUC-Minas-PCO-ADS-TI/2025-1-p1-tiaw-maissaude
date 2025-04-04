@@ -6,37 +6,27 @@
 
 ## Etapa de entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+> * **Matriz CSD**: 
+![image](https://github.com/user-attachments/assets/9679c6a3-0de3-48cb-8d5a-1e1f0a603dde)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta etapa, é necessário aplicar a metodologia de Design Thinking para compreender de forma mais profunda o problema a ser abordado. Durante esse processo, devem ser elaborados os seguintes elementos:
->
-> * **Matriz CSD**:  também conhecida como Matriz de Alinhamento, trata-se de uma ferramenta utilizada no Design Thinking para organizar informações, facilitando a tomada de decisões e a solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que permite identificar e entender o grupo de pessoas e entidades que devem ser analisados e consultados para obter uma visão mais ampla do problema;
-> * **Entrevistas qualitativas**: uma série de entrevistas qualitativas a fim de validar suposições e esclarecer dúvidas junto aos principais envolvidos;
-> * **Highlights de pesquisa**: um compilado das informações levantadas durante as entrevistas realizadas.
+> * **Mapa de stakeholders**:
+![image](https://github.com/user-attachments/assets/7709ec16-4f4e-45fd-8be4-9a698caf5c36)
 
-> **Links úteis**:
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+> * **Entrevistas qualitativas**:
+![image](https://github.com/user-attachments/assets/af095468-b478-4bb0-9ae9-89a5d349b481)
+![image](https://github.com/user-attachments/assets/51e3dc90-651e-467f-a248-666345271905)
+![image](https://github.com/user-attachments/assets/3a7d7f91-0fb9-435c-af50-eff1cd7ec7f3)
+![image](https://github.com/user-attachments/assets/a487944a-0b15-4fa6-b4af-1d1355d435b4)
+![image](https://github.com/user-attachments/assets/4e5f7d5a-c4e2-40d6-a5b3-34ec9eafa6c8)
+
+> * **Highlights de pesquisa**:
+![image](https://github.com/user-attachments/assets/af9b28df-73ef-40ef-8bec-62d6ff657dc1)
 
 ## Etapa de definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Deve-se relacionar as personas identificadas no projeto, juntamente com os respectivos mapas de empatia. É importante enumerar e descrever de maneira precisa e personalizada todos os principais envolvidos na solução pretendida.
-
-
-![Exemplo de persona](images/exemplo-persona.png)
-
-
-> **Links úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+![image](https://github.com/user-attachments/assets/14283f0a-beea-4b44-a2e3-b42246301c23)
+![image](https://github.com/user-attachments/assets/b45dc66b-2dd5-4624-afb4-957586921f48)
+![image](https://github.com/user-attachments/assets/44aa171c-edff-49da-87fc-95af11bac169)
+![image](https://github.com/user-attachments/assets/79985a0b-b6ad-450d-afc1-0d87df7b9666)
