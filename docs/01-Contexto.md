@@ -1,43 +1,28 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+ O projeto Ma+is Saúde tem como objetivo principal promover a melhoria da saúde e da qualidade de vida por meio da educação alimentar e do incentivo à adoção de hábitos saudáveis. Inserido em um cenário preocupante, marcado pelo aumento de doenças crônicas e distúrbios alimentares, o projeto surge como uma resposta à necessidade urgente de conscientizar e transformar os comportamentos alimentares da população.
+
+ A alimentação exerce um papel fundamental na saúde física e mental das pessoas. No entanto, muitos indivíduos enfrentam dificuldades para manter uma dieta equilibrada, seja por conta da rotina agitada, restrições alimentares ou condições específicas, como deficiência de vitaminas, obesidade e transtornos alimentares. Nesse contexto, o avanço da tecnologia se apresenta como uma importante aliada na promoção de hábitos alimentares mais saudáveis. Pensando nisso, foi desenvolvido o Ma+is Saúde: um site voltado para auxiliar os usuários na organização e monitoramento da sua alimentação, com funcionalidades adaptadas às necessidades individuais de cada pessoa.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
-
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+ Atualmente, a manutenção de uma alimentação saudável e equilibrada é um dos grandes desafios enfrentados pela população. Diversos fatores contribuem para essa dificuldade, como a rotina acelerada, a falta de conhecimento nutricional, a seletividade alimentar e questões emocionais, como ansiedade e depressão. Esses obstáculos levam muitas pessoas a negligenciarem sua alimentação, resultando em impactos negativos na saúde, como deficiências nutricionais, obesidade e o agravamento de doenças associadas ao estilo de vida. Diante desse cenário, torna-se essencial o desenvolvimento de soluções que auxiliem na promoção de hábitos alimentares mais saudáveis e acessíveis.
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+O principal objetivo do Ma+is Saúde é desenvolver um software que facilite a rotina alimentar dos usuários, oferecendo uma plataforma intuitiva e eficiente para o planejamento e acompanhamento diário da alimentação. O projeto busca proporcionar uma experiência personalizada, atendendo desde pessoas com deficiências nutricionais até atletas que desejam monitorar seu desempenho alimentar. Através de funcionalidades como sugestões de cardápios, lembretes de refeições, acompanhamento de nutrientes e relatórios personalizados, o Ma+is Saúde pretende ser uma ferramenta prática para transformar a relação das pessoas com a comida, tornando a alimentação saudável mais acessível e descomplicada.
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivos Específicos:
+* Promover a educação nutricional por meio de conteúdos interativos, facilitando o entendimento sobre a importância de uma alimentação equilibrada
+* Oferecer suporte a indivíduos com seletividade alimentar, ajudando na introdução de novos alimentos e promovendo uma dieta mais variada e nutritiva.
+* Integrar profissionais da saúde, escolas e famílias na conscientização sobre a importância da alimentação saudável, incentivando uma mudança de comportamento coletivo.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+ A implementação deste projeto se baseia no aumento significativo do número de pessoas que enfrentam dificuldades para manter uma alimentação saudável, refletindo diretamente na saúde a curto e longo prazo. Questões como falta de conhecimento nutricional, rotina agitada e desafios individuais, como seletividade alimentar e restrições dietéticas, tornam essencial a criação de ferramentas que auxiliem nesse processo. O Ma+is Saúde busca atuar de forma preventiva, informativa e motivacional, promovendo a conscientização sobre a importância de bons hábitos alimentares. Dessa forma, o projeto pretende contribuir para a formação de uma geração mais saudável, ativa e engajada na busca por qualidade de vida.
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação, mas sim oferecer uma visão detalhada do perfil de cada grupo de usuários. Isso inclui informações sobre seu nível de conhecimento prévio, familiaridade com tecnologia, e suas relações hierárquicas ou contextos de uso. Dessa forma, será possível entender melhor as necessidades e expectativas dos diferentes tipos de usuários, garantindo uma experiência mais eficiente e adaptada.
+ O projeto é voltado a um público amplo e diverso, com ações adaptadas às necessidades de cada grupo. São contempladas crianças, adolescentes e seus familiares, assim como adultos que desejam melhorar sua relação com a alimentação e o corpo. Pessoas com quadros de seletividade alimentar também são incluídas, recebendo abordagens específicas e acolhedoras que respeitam seu ritmo e particularidades.
 
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+ Além disso, o projeto abrange atletas, que buscam otimizar sua performance por meio de uma alimentação equilibrada e funcional; influenciadores digitais, que têm o poder de disseminar informações e comportamentos saudáveis de forma ampla e engajadora; e idosos, grupo que muitas vezes enfrenta desafios nutricionais específicos, como perda de apetite, limitações fisiológicas e a necessidade de uma dieta mais adaptada à sua fase da vida.
