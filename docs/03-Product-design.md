@@ -2,48 +2,26 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Neste momento, transformam-se os insights e validações obtidos em soluções tangíveis e utilizáveis. Esta fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia, e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que especificam a interface e a experiência do usuário.
-
-
 ## Histórias de usuários
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas  ⚠️ EXEMPLO ⚠️         | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
-
-> **Links úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (user stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 common user story mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| Atleta | Um sistema para poder indicar no meu consultório | Facilitar o monitoramento e a rotina alimentar de cada paciente |
+| Mãe | Alimentos e opções que reduzam seletividade alimentar | Facilitar a aceitação dos alimentos pela filha e melhorar a saúde geral |
+| Idosa | Ter uma dieta saudável para repor minhas vitaminas | Preciso ter mais energia e meu organismo se regularize para ser mais produtiva |
+| Depressivo e Gordo | Parar de comer alimentos que faça mal a minha saúde | Melhorar minha saúde física e mental sem me sentir sobrecarregado |
+| Estudante | Ter uma rotina com horários para as refeições | Minha rotina é corrida, e me esqueço de alimentar |
+| Vegano | Uma dieta que sugira refeições veganas equilibradas | Manter uma alimentação saudável e prática |
 
 
 ## Proposta de valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que auxilia na definição do tipo de produto ou serviço que melhor atende às personas previamente estabelecidas.
-
-
-> **Links úteis**:
-> - [O que é o canvas da proposta de valor e como usar?](https://www.youtube.com/watch?v=Iqb-8Q_eiiA)
+![image](https://github.com/user-attachments/assets/f59f3a3c-ab88-4967-b4dc-eba73f768321)
+![image](https://github.com/user-attachments/assets/4725aca3-999a-4764-9070-2b7507eff875)
+![image](https://github.com/user-attachments/assets/6e4f2b75-15f0-4be9-aa81-f843f7896ea4)
+![image](https://github.com/user-attachments/assets/8759120d-6f54-40bc-a5c2-24c38571a892)
 
 ## Requisitos
 
@@ -53,44 +31,33 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-
+| RF-001 | O site deverá solicitar informações báiscas do usuário no momento do login, como: nome, idade, email e telefone. | ALTA |
+| RF-002 | O usuário poderá informar quantas refeições deseja fazer por dia, para que o site possa sugerir um melhor balanceamento alimentar.  | MÉDIA |
+| RF-003 | O site apresentará sugestões de alimentação personalizadas, de acordo com as preferências informadas pelo usuário. | ALTA | 
+| RF-004 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas. | MÉDIA |
+| RF-005 | O usuário poderá informar seus dados físicos, como peso e altura, para uma análise alimentar mais adequada. | ALTA |
+| RF-006 | O site permitirá que o usuário escolha o tipo de ajuda que deseja receber (ex: cardápios prontos, dicas rápidas, produtos, etc.). | MÉDIA |
+| RF-007 | O usuário poderá marcar ou favoritar as melhores dicas encontradas no site. | MÉDIA |
+| RF-008 | O site poderá disponibilizar produtos relacionados à alimentação saudável para compra, auxiliando o usuário a seguir as recomendações. | MÉDIA |
+| RF-009 | Após um tempo de uso, o site enviará uma mensagem ou e-mail pedindo que o usuário avalie a plataforma. | MÉDIA |
+| RF-010 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
+ 
 ### Requisitos não funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em dispositivos móveis ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar as requisições do usuário em no máximo 3 segundos ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
+| RNF-001 | O site deverá estar disponível 24 horas por dia, garantindo acesso sempre que o usuário precisar. | ALTA   |
+| RNF-002 | O site poderá permitir que o usuário personalize o tema ou a cor da página, baseado em suas preferências ou no perfil informado. | BAIXA |
+| RNF-003 | Os dados dos usuários devem ser armazenados de forma segura, respeitando protocolos de segurança e privacidade. | ALTA |
+| RNF-004 | O site deverá ser compatível com múltiplas plataformas, funcionando adequadamente em Android, iOS, Windows e Mac. | ALTA |
 
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-O projeto está restrito aos itens apresentados na tabela a seguir.
-
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre ⚠️ EXEMPLO ⚠️ |
-|002| Não é permitido o desenvolvimento de um módulo de back-end  ⚠️ EXEMPLO ⚠️  |
+|001| Os dados dos usuários não poderão ser armazenados por um período superior a 2 anos. |
+|002| As indicações de produtos ou serviços feitas pelo site não devem ultrapassar o valor de R$300,00. |
+|003| Menores de 18 anos não podem acessar o site, |
+|004| Não é possível compartilhar o plano alimentar. |
+|005| Somente administradores poderão ter acesso ao sistema de segurança de dados. |
+|006| Inicialmente, o site estará disponível apenas em português, não havendo suporte para outros idiomas no primeiro lançamento. |
