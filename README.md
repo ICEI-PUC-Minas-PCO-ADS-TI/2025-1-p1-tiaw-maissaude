@@ -19,7 +19,7 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
 
 ## Professor
 
-* Amália Vasconcelos
+* Amália Soares Vieira de Vasconcelos
 
 ## Instruções de utilização
 
