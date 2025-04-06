@@ -1,21 +1,11 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
+- FRADE, R. E. T. Nutrição personalizada: como a individualização da dieta pode melhorar os resultados de saúde. Revista Nutrição Brasil, v. 20, n. 2, p. 122–129, 2021. Disponível em: https://ojs.atlanticaeditora.com.br. Acesso em: 6 abr. 2025.
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-⚠️ EXEMPLO ⚠️
-
-- BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
-
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
+- GERMANO, T. A. S.; SANTOS, L. A. S. Medicalização da alimentação e da nutrição. Physis: Revista de Saúde Coletiva, Rio de Janeiro, v. 25, n. 2, p. 345–365, 2015. Disponível em: https://www.scielo.br. Acesso em: 6 abr. 2025.
  
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+- ALIMENTE-SE. Alimente-se: app de dieta com plano alimentar personalizado. [S. l.]: Leal Apps, 2024. Disponível em: https://play.google.com/store/apps/details?id=com.lealapps.alimentese. Acesso em: 6 abr. 2025.
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
+- FITIA. Fitia: dieta personalizada para emagrecer ou ganhar massa. [S. l.]: Nutrition Technologies, 2024. Disponível em: https://play.google.com/store/apps/details?id=com.nutrition.technologies.Fitia. Acesso em: 6 abr. 2025.
 
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
-
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+- NUTRITIONIX. Nutritionix Track: aplicativo de contagem de calorias e diário alimentar. [S. l.]: Nutritionix, 2024. Disponível em: https://www.nutritionix.com/app. Acesso em: 6 abr. 2025.
