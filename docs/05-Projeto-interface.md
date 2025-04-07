@@ -16,13 +16,13 @@
 
 ##### LANDING PAGE
 
-A landing page apresenta informações sobre site, seus recursos e funcionalidades.
+A landing page apresenta informações sobre o site, seus recursos e funcionalidades.
 
 ![Landing Page](https://github.com/user-attachments/assets/73a61819-d453-4a4d-b854-03ee81df188e)
 
 ##### PAGINA DE CADASTRO E LOGIN
 
-Permite que o usario informe seus dados como email e senha para cadastro e login do site.
+Permite que o usuário informe seus dados como e-mail e senha para cadastro e login no site.
 
 ![Cadastro](https://github.com/user-attachments/assets/2ac4139b-c6d1-4939-b6f5-c8d584bb3a86)
 
@@ -30,25 +30,25 @@ Permite que o usario informe seus dados como email e senha para cadastro e login
 
 ##### HOME PAGE
 
-Atraves da home page o usuario podera se informar sobre sua rotina diaria de alimentação, seu consumo de água diario, calorias ingeridas no dia, além de refeições indicadas de acordo com a sua dieta personalizada.
+Através da home page, o usuário poderá se informar sobre sua rotina diária de alimentação, seu consumo de água diário, calorias ingeridas no dia, além de refeições indicadas de acordo com a sua dieta personalizada.
 
 ![Home Page](https://github.com/user-attachments/assets/82deb613-1564-4b92-ac8c-061a263befd1)
 
 ##### CONSUMO DE ÁGUA
 
-A pagina permite que o usuario informe sua idade e peso, a partir disso será indicado a quantidade de ágaua que ele deve beber.
+A página permite que o usuário informe sua idade e peso, a partir disso será indicada a quantidade de água que ele deve beber.
 
 ![Consumo de Água](https://github.com/user-attachments/assets/fdcb8ee8-772e-424b-a58b-5722e2f8d949)
 
 ##### CALCULADORA METABÓLICA BASAL
 
-A calculadora vai indicar a quantidade de calorias que o usuario deve consumir por dia de acordo com seu peso e altura
+A calculadora vai indicar a quantidade de calorias que o usuário deve consumir por dia de acordo com seu peso e altura.
 
 ![Calculadora MTB](https://github.com/user-attachments/assets/8c0e2e33-9e1a-467d-b214-dd543d6206a4)
 
 ##### REFEIÇÕES
 
-O site vai indicar refeições que o usuario pode fazer de acordo com o seu plano alimentar 
+O site vai indicar refeições que o usuário pode fazer de acordo com o seu plano alimentar.
 
 ![Refeições](https://github.com/user-attachments/assets/5f02ad90-7e98-4b7a-bb12-c0c574621af5)
 
