@@ -3,11 +3,29 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+O projeto Ma+s Saúde, tem como objetivo desenvolver uma plataforma digital focada em bem-estar, oferecendo ao usuário recursos para registrar suas refeições, controlar a ingestão de água, monitorar o peso e acompanhar sua evolução ao longo do tempo. Com uma interface intuitiva e funcionalidades personalizadas, a ferramenta busca facilitar o dia a dia de quem deseja adotar hábitos mais saudáveis de forma prática e eficiente.
 
-## Relação de ambientes de trabalho
+## Definição dos Objetivos do Site
+	•	Criar um espaço digital voltado ao incentivo de hábitos saudáveis e ao cuidado com a alimentação.
+	•	Proporcionar uma navegação simples e prática, permitindo que o usuário acompanhe sua rotina alimentar e metas de saúde com facilidade.
+	•	Oferecer informações e dicas personalizadas para ajudar na construção de uma relação mais consciente com a comida.
+	•	Tornar mais fácil o controle diário de refeições, ingestão de líquidos, variações de peso e evolução geral do bem-estar.
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+## Publico-Alvo
+O site é voltado para quem quer cuidar melhor da alimentação e da saúde, como:
+	•	Pessoas que querem emagrecer ou ganhar peso com equilíbrio;
+	•	Quem está buscando hábitos mais saudáveis no dia a dia;
+	•	Atletas ou quem faz atividade física e quer acompanhar o desempenho;
+	•	Profissionais com agenda cheia que precisam de praticidade;
+	•	Pessoas com dietas específicas (low carb, vegana, etc.).
+
+## Principais Funcionalidades
+	•	Registro das refeições: O usuário anota o que come, com informações de calorias e nutrientes.
+	•	Controle de água: Acompanhamento da quantidade de água ingerida com alertas ao longo do dia.
+	•	Peso e medidas: Gráficos simples que mostram a evolução e ajudam a manter o foco.
+	•	Sugestões de cardápios: Ideias de refeições saudáveis de acordo com os objetivos de cada um.
+	•	Lembretes inteligentes: Notificações para não esquecer de comer ou se hidratar.
+	•	Integração com outros apps: Conecta com balanças digitais, apps de treino e smartwatches.
 
 ## Controle de versão
 
@@ -31,61 +49,33 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 
 Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
 
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Planejamento do projeto
 
 ###  Divisão de papéis
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-> A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-
-- Scrum Master: nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: nome de um membro da equipe, representante dos interesses de todos os envolvidos (stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: nomes de todos os membros da equipe, pois todos os membros deverão implementar no mínimo duas telas/funcionalidades.
-- Equipe de Design: nomes dos membros da equipe que trabalharão com design.
-
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+- Scrum Master: Raissa Rocha
+- Product Owner: Guilherme Teixeira
+- Equipe de Desenvolvimento: Guilherme Teixeira, Raissa Aparecida, João Marcelo, Gustavo Silva, Paco Lemos, Juan Pablo
+- Equipe de Design: Guilherme Teixeira, Raissa Aparecida, Gustavo Silva.
 
 ### Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+![image](https://github.com/user-attachments/assets/784c7642-e3c8-40e9-a247-4f28a4503c72)
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
-
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
 
 ### Ferramentas
+(1)
+(2) Discord / WhatsApp (Pratico e rapido)
+(3) Miro / Figma / Canva 
+(4) Figma
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
-
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
+ 
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
+| Processo de Design Thinking         | Miro                               | https://miro.com/app/board/uXjVIGs3KEk=/?share_link_id=107600991921 |
 | Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
 | Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
+| Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=0-1&t=kdCbwWOUYfzM5IKZ-1 |
 | Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
  
