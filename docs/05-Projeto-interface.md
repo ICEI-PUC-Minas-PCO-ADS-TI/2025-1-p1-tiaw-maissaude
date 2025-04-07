@@ -9,51 +9,50 @@
 
  ## User flow
 
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
-
-**✳️✳️✳️ COLOQUE AQUI O USER FLOW ✳️✳️✳️**
-
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![image](https://github.com/user-attachments/assets/b5257a37-a2d1-435f-9aa5-62ee4f1fb9c2)
 
 
 ## Wireframes
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+##### LANDING PAGE
 
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
+A landing page apresenta informações sobre site, seus recursos e funcionalidades.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+![Landing Page](https://github.com/user-attachments/assets/73a61819-d453-4a4d-b854-03ee81df188e)
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+##### PAGINA DE CADASTRO E LOGIN
 
-Descrição para a tela XPTO
+Permite que o usario informe seus dados como email e senha para cadastro e login do site.
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+![Cadastro](https://github.com/user-attachments/assets/2ac4139b-c6d1-4939-b6f5-c8d584bb3a86)
 
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
+![Login](https://github.com/user-attachments/assets/2a4edab1-4191-44bc-8de3-ad41f978fc95)
+
+##### HOME PAGE
+
+Atraves da home page o usuario podera se informar sobre sua rotina diaria de alimentação, seu consumo de água diario, calorias ingeridas no dia, além de refeições indicadas de acordo com a sua dieta personalizada.
+
+![Home Page](https://github.com/user-attachments/assets/82deb613-1564-4b92-ac8c-061a263befd1)
+
+##### CONSUMO DE ÁGUA
+
+A pagina permite que o usuario informe sua idade e peso, a partir disso será indicado a quantidade de ágaua que ele deve beber.
+
+![Consumo de Água](https://github.com/user-attachments/assets/fdcb8ee8-772e-424b-a58b-5722e2f8d949)
+
+##### CALCULADORA METABÓLICA BASAL
+
+A calculadora vai indicar a quantidade de calorias que o usuario deve consumir por dia de acordo com seu peso e altura
+
+![Calculadora MTB](https://github.com/user-attachments/assets/8c0e2e33-9e1a-467d-b214-dd543d6206a4)
+
+##### REFEIÇÕES
+
+O site vai indicar refeições que o usuario pode fazer de acordo com o seu plano alimentar 
+
+![Refeições](https://github.com/user-attachments/assets/5f02ad90-7e98-4b7a-bb12-c0c574621af5)
 
 
 ### Protótipo Interativo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto das interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse utilizando o software finalizado. Utilize as mesmas ferramentas de criação de wireframes para a montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
-
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
-
-✅ [Protótipo interativo](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+✅ [Protótipo interativo]https://www.figma.com/proto/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=21-95&p=f&t=uErG8qONuFnjRRkD-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=21%3A95
