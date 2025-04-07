@@ -63,10 +63,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 
 ### Ferramentas
-(1)
-(2) Discord / WhatsApp (Pratico e rapido)
-(3) Miro / Figma / Canva 
-(4) Figma
+- (1)
+- (2) Discord / WhatsApp (Pratico e rapido)
+- (3) Miro / Figma / Canva 
+- (4) Figma
 
  
 | Ambiente                            | Plataforma                         | Link de acesso                       |
