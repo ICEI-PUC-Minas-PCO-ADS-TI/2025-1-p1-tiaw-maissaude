@@ -72,8 +72,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
 | Processo de Design Thinking         | Miro                               | https://miro.com/app/board/uXjVIGs3KEk=/?share_link_id=107600991921 |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude |
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=0-1&t=kdCbwWOUYfzM5IKZ-1 |
 | Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
