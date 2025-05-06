@@ -9,3 +9,5 @@
 - FITIA. Fitia: dieta personalizada para emagrecer ou ganhar massa. [S. l.]: Nutrition Technologies, 2024. Disponível em: https://play.google.com/store/apps/details?id=com.nutrition.technologies.Fitia. Acesso em: 6 abr. 2025.
 
 - NUTRITIONIX. Nutritionix Track: aplicativo de contagem de calorias e diário alimentar. [S. l.]: Nutritionix, 2024. Disponível em: https://www.nutritionix.com/app. Acesso em: 6 abr. 2025.
+
+- LIV UP. Liv Up: alimentação saudável, prática e gostosa. [S. l.]: Liv Up, 2025. Disponível em: https://www.livup.com.br. Acesso em: 6 maio 2025.
