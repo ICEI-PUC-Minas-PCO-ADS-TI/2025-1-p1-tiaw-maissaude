@@ -6,7 +6,21 @@
 
 `1° Semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O Ma+s Saúde é um site desenvolvido com o objetivo de auxiliar pessoas com rotinas corridas a manter uma alimentação mais equilibrada e saudável. Pensando na diversidade de públicos, o site atende desde crianças até idosos, oferecendo funcionalidades práticas e acessíveis.
+
+Um dos diferenciais do Ma+s Saúde é que ele é voltado especialmente para o uso de nutricionistas, que podem utilizar a plataforma como uma ferramenta de apoio no acompanhamento de seus pacientes. Cada profissional pode ter seu próprio acesso e repassar o site para seus pacientes, usando-o como meio para compartilhar informações, orientações e metas personalizadas.
+
+Entre os principais recursos estão:
+
+Catálogo de refeições indicadas por um nutricionista, voltadas para diferentes necessidades e faixas etárias.
+
+Calculadora de metabolismo basal, que ajuda o usuário a estimar a quantidade de calorias que seu corpo precisa diariamente.
+
+Calculadora de consumo de água, para incentivar a hidratação adequada.
+
+Lista de metas personalizadas, que permite ao usuário visualizar seus objetivos e acompanhar seu progresso.
+
+O Ma+s Saúde foi pensado para ser um aliado no dia a dia, promovendo mais qualidade de vida por meio da tecnologia, da boa alimentação e do acompanhamento profissional.
 
 ## Integrantes
 
