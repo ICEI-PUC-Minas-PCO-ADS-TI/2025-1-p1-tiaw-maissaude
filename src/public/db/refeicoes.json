@@ -2,7 +2,7 @@
     {
         "id": "1", 
         "nome": "Panqueca de Mirtilo",
-        "imagem": "imgs/panquecamirtilo.jpeg",
+        "imagem": "assets/images/panquecamirtilo.jpeg",
         "descricao": "Com 15g de proteína por porção, esta panqueca proteica é preparada sem adição de açúcares e sem o uso de farinha branca. A combinação de mirtilos naturais com chocolate branco de alta qualidade garante um sabor marcante, aliado a uma composição nutritiva. Uma escolha prática e equilibrada para quem valoriza refeições saborosas e funcionais.",
         "ingredientes": ["clara de ovo", "farelo de aveia", "gema de ovo", "maltitol", "chocolate branco sem açúcar", "mirtilo", "whey 80%", "leite em pó integral", "fermento químico: bicarbonato de sódio", "goma xantana"],
         "nutricional": [
@@ -20,7 +20,7 @@
     {
         "id": "2", 
         "nome": "Cookie com gotas de chocolate",
-        "imagem": "imgs/cookiechocolate.jpeg",
+        "imagem": "assets/images/cookiechocolate.jpeg",
         "descricao": "Este cookie de chocolate é feito com gotas de chocolate 70% cacau, oferecendo um sabor intenso e sofisticado. Adoçado com açúcar de coco, uma alternativa mais natural, ele traz um leve toque de caramelo que complementa a receita. Perfeito para qualquer hora do dia, é uma opção equilibrada para quem busca sabor e qualidade em cada mordida.",
         "ingredientes": ["farinha de trigo enriquecida com ferro e ácido fólico", "açúcar mascavo", "chocolate 70% cacau", "manteiga", "clara de ovo", "gema de ovo pasteurizada", "fermento em pó"],
         "nutricional": [
@@ -38,7 +38,7 @@
     {
         "id": "3",
         "nome": "Pão de queijo com chia",
-        "imagem": "imgs/paodequeijo.jpeg",
+        "imagem": "assets/images/paodequeijo.jpeg",
         "descricao": "Este pão de queijo combina a tradição da receita mineira com o valor nutricional das sementes orgânicas de chia e linhaça, sem abrir mão do sabor característico. Preparado com polvilho doce e azedo na medida certa, apresenta a textura ideal: crocante por fora e macio por dentro. O toque final fica por conta dos queijos meia cura e parmesão, que garantem um sabor autêntico e marcante.",
         "ingredientes": ["polvilho azedo", "polvilho doce", "queijo meia cura", "queijo parmesão", "clara de ovo", "gema de ovo", "leite em pó desnatado", "chia", "linhaça dourada", "sal"],
         "nutricional": [
@@ -56,7 +56,7 @@
     {
         "id": "4",
         "nome": "Crepioca de Frango",
-        "imagem": "imgs/crepiocafrango.jpeg",
+        "imagem": "assets/images/crepiocafrango.jpeg",
         "descricao": "Esta crepioca é uma ótima escolha para quem deseja aumentar a ingestão de proteínas ao longo do dia. Com 15g de proteína por porção, traz um recheio de frango temperado e suculento combinado ao queijo frescal, oferecendo uma refeição leve, nutritiva e saborosa. Versátil, pode ser consumida a qualquer momento — do pré-treino ao jantar.",
         "ingredientes": ["goma de tapioca", "peito de frango", "clara de ovo", "queijo mussarela", "gema de ovo", "queijo minas frescal", "whey 80%", "cebolinha orgânica", "páprica doce", "sal", "goma xantana", "cúrcuma"],
         "nutricional": [
@@ -74,7 +74,7 @@
     {
         "id": "5",
         "nome": "Frango com limão siciliano, arroz e brócolis",
-        "imagem": "imgs/almoco1.jpeg",
+        "imagem": "assets/images/almoco1.jpeg",
         "descricao": "Uma combinação irresistível de frango ao limão siciliano e hortelã, trazendo frescor e sabor a cada mordida. Acompanhado de arroz soltinho com castanhas crocantes e brócolis no vapor, criando uma refeição cheia de nutrientes e sabor, ideal para quem busca praticidade sem abrir mão da qualidade.",
         "ingredientes": ["peito de frango", "brócolis", "arroz", "azeite", "castanha de caju", "limão", "cebola", "vinagre", "alho", "sal", "cebolinha", "gengibre", "páprica picante", "orégano"],
         "nutricional": [
@@ -92,7 +92,7 @@
     {
         "id": "6",
         "nome": "Ravioli com molho de tomate",
-        "imagem": "imgs/ravioli.jpeg",
+        "imagem": "assets/images/ravioli.jpeg",
         "descricao": "Esta versão do ravioli traz uma massa leve preparada com espinafre, recheada com mussarela de búfala cremosa e saborosa. Para acompanhar, um molho de tomate caseiro, feito com ingredientes simples e naturais, que realça ainda mais o sabor do prato. Uma combinação equilibrada e nutritiva, perfeita para quem busca praticidade sem abrir mão de uma refeição gostosa e bem feita.",
         "ingredientes": ["farinha de trigo", "água", "ovo integral em pó", "espinafre em pó", "queijo mozzarella de búfula", "base de molho", "ricota fresca", "amido", "tomate", "alho", "azeite", "manjericão", "sal"],
         "nutricional": [
@@ -110,7 +110,7 @@
     {
         "id": "7",
         "nome": "Risoto caprese",
-        "imagem": "imgs/risoto.jpeg",
+        "imagem": "assets/images/risoto.jpeg",
         "descricao": "Inspirado no tradicional Caprese italiano, com tomate, queijo e manjericão fresco, mas com toda a cremosidade de um delicioso risoto. O queijo minas traz aquele saborzinho especial, sentido a cada mordida, enquanto o tomate grape assado é responsável por equilibrar a receita com sua leve acidez.",
         "ingredientes": ["tomate grape", "arroz arbóreo", "cebola", "polpa de tomate", "queijo minas padrão", "azeite", "queijo parmesão", "abobrinha orgânica", "alho-poró", "sal", "manteiga", "cenoura", "alho", "páprica doce", "manjericão", "tomilho", "alecrim", "pimenta do reino"],
         "nutricional": [
@@ -128,7 +128,7 @@
     {
         "id": "8",
         "nome": "Estrogonofe de frango",
-        "imagem": "imgs/estrogonoff.jpeg",
+        "imagem": "assets/images/estrogonoff.jpeg",
         "descricao": "Clássico e irresistível, este estrogonofe de frango é preparado com um molho cremoso e saboroso, enriquecido com cogumelos frescos que trazem um toque especial à receita. Acompanha arroz branco soltinho e batatas assadas no ponto certo — douradas por fora, macias por dentro. Uma combinação equilibrada, reconfortante e cheia de sabor, perfeita para qualquer momento do dia.",
         "ingredientes": ["batata inglesa", "peito de frango", "arroz branco", "cogumelo paris", "creme de leite", "extrato de tomate", "cebola", "azeite" , "ketchup", "alho", "sal", "mostarda amarela", "salsinha", "pimenta do reino"],
         "nutricional": [
@@ -146,7 +146,7 @@
     {
         "id": "9",
         "nome": "Torta de frango",
-        "imagem": "imgs/tortafrango.jpeg",
+        "imagem": "assets/images/tortafrango.jpeg",
         "descricao": "Esta torta de frango conta com uma massa leve e dourada, que envolve um recheio cremoso preparado com frango desfiado e um toque equilibrado de ervas e especiarias. A textura macia do recheio contrasta suavemente com a crocância da massa, proporcionando uma experiência saborosa e acolhedora. Versátil e prática, é uma excelente opção para qualquer hora do dia, unindo conveniência e qualidade em uma só refeição.",
         "ingredientes": ["farinha de trigo", "manteiga", "peito de frango", "creme branco", "cebola", "salsinha", "cebolinha", "milho", "ovo integral pasteurizado", "creme de leite", "sal", "noz moscada", "páprica doce", "pimenta do reino"],
         "nutricional": [
@@ -164,7 +164,7 @@
     {
         "id": "10",
         "nome": "Quiche caprese",
-        "imagem": "imgs/quiche.jpeg",
+        "imagem": "assets/images/quiche.jpeg",
         "descricao": "A clássica combinação de tomate, queijo e manjericão ganha uma nova versão nesta quiche caprese irresistível. Com recheio cremoso e sabor marcante, ela se destaca pela textura úmida e pelo equilíbrio dos ingredientes. A massa leve e amanteigada complementa perfeitamente, trazendo ainda mais sabor e delicadeza a cada fatia.",
         "ingredientes": ["farinha de trigo", "manteiga", "ovo integral pasteurizado", "creme de leite", "creme branco", "muçarela", "parmesão", "tomate cereja", "manjericão"],
         "nutricional": [
@@ -182,7 +182,7 @@
     {
         "id": "11",
         "nome": "Crepioca com queijo",
-        "imagem": "imgs/crepiocaqueijo.jpeg",
+        "imagem": "assets/images/crepiocaqueijo.jpeg",
         "descricao": "Esta crepioca ganhou um toque especial com parmesão incorporado à massa, intensificando o sabor e trazendo uma textura ainda mais agradável. O clássico gostinho que remete ao pão de queijo continua presente, tornando a receita ainda mais irresistível. Leve, prática e nutritiva, é uma opção versátil que se adapta bem ao café da manhã, lanches ou até mesmo a um jantar mais leve.",
         "ingredientes": ["goma de tapioca", "clara de ovo", "gema de ovo", "queijo parmesão", "queijo minas frescal", "orégano", "cebola em pó", "sal", "goma xantana"],
         "nutricional": [
@@ -200,7 +200,7 @@
     {
         "id": "12",
         "nome": "Mousse de chocolate",
-        "imagem": "imgs/moussechocolate.jpeg",
+        "imagem": "assets/images/moussechocolate.jpeg",
         "descricao": "Clássica e com textura suavemente aerada, nossa mousse traz o sabor marcante do chocolate 70% cacau, intensificado pelos pedacinhos crocantes no topo. Com maior concentração de cacau, é uma opção mais equilibrada para a sobremesa, ideal para adoçar o dia com leveza e sofisticação.",
         "ingredientes": ["clara de ovo pasteurizada", "açúcar demerara", "gema de ovo", "inulina", "chocolate 70% cacau", "chocolate 70%"],
         "nutricional": [
@@ -218,7 +218,7 @@
     {
         "id": "13",
         "nome": "Frango à Milanesa",
-        "imagem": "imgs/frangomilanesa.jpeg",
+        "imagem": "assets/images/frangomilanesa.jpeg",
         "descricao": "Uma combinação saborosa e reconfortante: frango à milanesa assado, sequinho e crocante, servido com arroz branco soltinho e um cremoso creme de milho, que traz um toque especial e cheio de carinho a essa refeição clássica.",
         "ingredientes": ["frango", "milho", "arroz branco", "farinha panko", "leite em pó desnatado", "azeite" , "clara de ovo pasteurizada", "cebola", "farinha de trigo", "sal", "alho", "leite em pó integral", "fécula de batata", "gema de ovo pasteurizada", "pimenta do reino"],
         "nutricional": [
@@ -236,7 +236,7 @@
     {
         "id": "14",
         "nome": "Escondidinho de carne com purê de batata",
-        "imagem": "imgs/escondidinho.jpeg",
+        "imagem": "assets/images/escondidinho.jpeg",
         "descricao": "Este escondidinho clássico é feito de forma caseira e acolhedora, com um purê de batatas leve e cremoso que envolve uma carne moída bem temperada, complementada por cubos de abobrinha que adicionam frescor e equilíbrio. Uma refeição reconfortante, nutritiva e perfeita para aquecer os dias mais frios, trazendo sabor e conforto em cada garfada.",
         "ingredientes": ["batata", "carne bovina", "abobrinha orgânica", "cebola", "queijo mussarela", "creme de leite", "extrato de tomate", "polpa de tomate" , "azeite" , "manteiga", "sal", "alho", "salsinha", "cebolinha", "louro em pó", "alecrim em pó", "pimenta do reino"],
         "nutricional": [
@@ -254,7 +254,7 @@
     {
         "id": "15",
         "nome": "Canja com peito de frango",
-        "imagem": "imgs/canja.jpeg",
+        "imagem": "assets/images/canja.jpeg",
         "descricao": "Canja é sinônimo de cuidado, e essa receita traz exatamente essa sensação. Leve, saborosa e nutritiva, é preparada com ingredientes naturais e cheios de benefícios para a saúde. O peito de frango, suculento e de qualidade, é a proteína principal, tornando o prato perfeito para aquecer os dias frios com o conforto de um verdadeiro carinho em forma de comida.",
         "ingredientes": ["peito de frango", "caldo de frango natural", "cenoura", "batata inglesa", "cebola orgânica", "arroz branco", "tomate orgânico", "salsão", "alho", "cebolinha orgânica", "azeite", "sal", "louro", "páprica doce", "cúrcuma", "pimenta do reino"],
         "nutricional": [
@@ -272,7 +272,7 @@
     {
         "id": "16",
         "nome": "Frango assado, couscous e legumes",
-        "imagem": "imgs/frangolegume.jpeg",
+        "imagem": "assets/images/frangolegume.jpeg",
         "descricao": "Frango assado, suculento e perfeitamente dourado, acompanhado de couscous leve e legumes frescos ao estilo mediterrâneo. Uma refeição equilibrada, cheia de sabor e frescor, que traz praticidade ao dia a dia sem abrir mão de um toque especial. Ideal para quem busca uma opção saborosa e nutritiva em qualquer momento do dia.",
         "ingredientes": ["peito de frango", "couscous marroquino", "berinjela orgânica", "abobrinha", "cebola, tomate", "cebola roxa", "azeite" , "salsinha", "alho", "sal", "cebolinha", "hortelã", "vinagre de arroz", "páprica doce", "pimenta do reino", "pimenta síria"],
         "nutricional": [
