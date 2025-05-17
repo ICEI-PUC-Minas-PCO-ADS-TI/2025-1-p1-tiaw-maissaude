@@ -53,6 +53,41 @@ body {
 }
 /* Fim Cabeçalho */
 
+.container {
+    margin: 20px;
+    background-color: #8CB06C;
+    padding: 20px 30px 20px;
+    border-radius:15px;
+    margin-top: 60px;
+}
+
+.container h1{
+    color: white;
+}
+
+.image-grid {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-placeholder {
+    text-align: center;
+}
+
+.image-placeholder img {
+    width: 300px; 
+    height: 170px; 
+    object-fit: cover; 
+    padding: 10px;
+}
+
+.image-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
 /* Inicio Footer */
 footer {
