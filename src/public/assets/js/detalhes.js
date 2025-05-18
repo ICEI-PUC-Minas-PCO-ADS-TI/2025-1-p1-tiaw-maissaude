@@ -1,12 +1,10 @@
-function getParameter(name) {
-    const urlParams = new URLSearchParams
-        (window.location.search);
+function getUrlParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
 }
 
 function carregarDetalhes() {
     const refeicaoId = getUrlParameter('id');
-
 
     fetch('db/refeicoes.json')
         .then(response => {
@@ -15,7 +13,10 @@ function carregarDetalhes() {
             }
             return response.json();
         })
+        .then(refeicoes => {
+            const refeicao = refeicoes.find(r => r.id === refeicaoId);
+            const container = document.getElementById('detalhes-container');
+        })
 }
 
-document.addEventListener
-('DOMContentLoaded', carregarDetalhes);
+document.addEventListener('DOMContentLoaded', carregarDetalhes);
