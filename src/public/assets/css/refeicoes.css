@@ -132,3 +132,38 @@ footer a:hover {
     text-decoration: underline;
 }
 /* Fim Footer*/
+
+/* Responsividade */
+@media (max-width: 600px) {   
+.imagem{
+    margin-top:25px;
+}
+
+    .ingredientes{
+        margin-bottom: 100px;
+    }
+    
+    footer li {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    footer ul {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    .conteudo{
+        margin-bottom: 80px;
+    }
+
+    .ingredientes{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .imagem{
+        margin-top: 25px;
+    }
+}
