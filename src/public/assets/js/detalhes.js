@@ -96,7 +96,16 @@ function carregarDetalhes() {
                         tbody.appendChild(tr);
                     });
 
-                    
+                    tabela.appendChild(tbody);
+                    tabelaDiv.appendChild(h3);
+                    tabelaDiv.appendChild(tabela);
+
+                    const nota = document.createElement('p');
+                    nota.classList.add('nota-vd');
+                    nota.textContent = "*Valores Diários de referência com base em uma dieta de 2.000 kcal. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD não estabelecido.";
+                    tabelaDiv.appendChild(nota);
+
+                    infoNutricionalDiv.appendChild(tabelaDiv);
                 }
 
                 wrapper.appendChild(infoNutricionalDiv);
