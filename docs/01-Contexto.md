@@ -1,28 +1,38 @@
 # Introdução
 
- O projeto Ma+is Saúde tem como objetivo principal promover a melhoria da saúde e da qualidade de vida por meio da educação alimentar e do incentivo à adoção de hábitos saudáveis. Inserido em um cenário preocupante, marcado pelo aumento de doenças crônicas e distúrbios alimentares, o projeto surge como uma resposta à necessidade urgente de conscientizar e transformar os comportamentos alimentares da população.
+ Com o avanço da tecnologia da informação e a popularização de dispositivos conectados à internet, a área da saúde tem vivenciado uma revolução digital, especialmente no que diz respeito ao acompanhamento de pacientes. Segundo a Organização Pan-Americana da Saúde (OPAS, 2022), ferramentas digitais têm desempenhado papel central na melhoria da comunicação entre profissionais e pacientes, proporcionando mais eficiência nos tratamentos. Na nutrição, essa transformação tem possibilitado o acompanhamento remoto de planos alimentares, avaliação de metas e ajustes personalizados com maior agilidade.
 
- A alimentação exerce um papel fundamental na saúde física e mental das pessoas. No entanto, muitos indivíduos enfrentam dificuldades para manter uma dieta equilibrada, seja por conta da rotina agitada, restrições alimentares ou condições específicas, como deficiência de vitaminas, obesidade e transtornos alimentares. Nesse contexto, o avanço da tecnologia se apresenta como uma importante aliada na promoção de hábitos alimentares mais saudáveis. Pensando nisso, foi desenvolvido o Ma+is Saúde: um site voltado para auxiliar os usuários na organização e monitoramento da sua alimentação, com funcionalidades adaptadas às necessidades individuais de cada pessoa.
+De acordo com o Conselho Federal de Nutricionistas (CFN, 2021), o uso de plataformas digitais para acompanhamento nutricional tem crescido cerca de 35% ao ano desde 2019, especialmente após a pandemia da COVID-19, que acelerou a digitalização dos atendimentos em saúde. Nesse contexto, o desenvolvimento de um site voltado para o monitoramento de planos alimentares surge como uma solução eficaz para promover o engajamento dos pacientes, facilitar a atuação dos profissionais e integrar informações em tempo real.
+
+O presente trabalho propõe a criação do site "Ma+s Saúde", voltado ao acompanhamento contínuo de metas nutricionais, receitas propostas e evolução do plano alimentar de cada paciente. O site será uma ferramenta acessível tanto para nutricionistas quanto para os pacientes, permitindo uma gestão mais eficiente, segura e personalizada da saúde alimentar.
+
 
 ## Problema
 
- Atualmente, a manutenção de uma alimentação saudável e equilibrada é um dos grandes desafios enfrentados pela população. Diversos fatores contribuem para essa dificuldade, como a rotina acelerada, a falta de conhecimento nutricional, a seletividade alimentar e questões emocionais, como ansiedade e depressão. Esses obstáculos levam muitas pessoas a negligenciarem sua alimentação, resultando em impactos negativos na saúde, como deficiências nutricionais, obesidade e o agravamento de doenças associadas ao estilo de vida. Diante desse cenário, torna-se essencial o desenvolvimento de soluções que auxiliem na promoção de hábitos alimentares mais saudáveis e acessíveis.
+A ausência de ferramentas tecnológicas específicas para o acompanhamento personalizado de planos alimentares compromete a continuidade e a eficácia do tratamento nutricional. Muitos consultórios ainda utilizam métodos tradicionais, como planilhas físicas ou anotações manuais, dificultando o controle das metas e o acesso rápido às informações necessárias tanto por parte do paciente quanto do profissional. Como solucionar essa lacuna, integrando tecnologia de forma prática e segura ao dia a dia do nutricionista?
+
 
 ## Objetivos
+Desenvolver um site denominado "Ma+s Saúde" para auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
 
-O principal objetivo do Ma+is Saúde é desenvolver um software que facilite a rotina alimentar dos usuários, oferecendo uma plataforma intuitiva e eficiente para o planejamento e acompanhamento diário da alimentação. O projeto busca proporcionar uma experiência personalizada, atendendo desde pessoas com deficiências nutricionais até atletas que desejam monitorar seu desempenho alimentar. Através de funcionalidades como sugestões de cardápios, lembretes de refeições, acompanhamento de nutrientes e relatórios personalizados, o Ma+is Saúde pretende ser uma ferramenta prática para transformar a relação das pessoas com a comida, tornando a alimentação saudável mais acessível e descomplicada.
 
-Objetivos Específicos:
-* Promover a educação nutricional por meio de conteúdos interativos, facilitando o entendimento sobre a importância de uma alimentação equilibrada
-* Oferecer suporte a indivíduos com seletividade alimentar, ajudando na introdução de novos alimentos e promovendo uma dieta mais variada e nutritiva.
-* Integrar profissionais da saúde, escolas e famílias na conscientização sobre a importância da alimentação saudável, incentivando uma mudança de comportamento coletivo.
+
+Objetivos Específicos
+ * Permitir a inserção de metas nutricionais personalizadas e acompanhamento em tempo real de seu cumprimento;
+
+ * Disponibilizar receitas sugeridas pelos nutricionistas, adaptadas às necessidades alimentares de cada paciente;
+
+*Garantir a segurança e confidencialidade dos dados dos usuários conforme a Lei Geral de Proteção de Dados (LGPD).
+
+
 
 ## Justificativa
 
- A implementação deste projeto se baseia no aumento significativo do número de pessoas que enfrentam dificuldades para manter uma alimentação saudável, refletindo diretamente na saúde a curto e longo prazo. Questões como falta de conhecimento nutricional, rotina agitada e desafios individuais, como seletividade alimentar e restrições dietéticas, tornam essencial a criação de ferramentas que auxiliem nesse processo. O Ma+is Saúde busca atuar de forma preventiva, informativa e motivacional, promovendo a conscientização sobre a importância de bons hábitos alimentares. Dessa forma, o projeto pretende contribuir para a formação de uma geração mais saudável, ativa e engajada na busca por qualidade de vida.
+ A criação do site "Ma+s Saúde" é justificada pela crescente demanda por soluções digitais que melhorem a comunicação e a eficiência do acompanhamento nutricional. A integração entre profissional e paciente por meio de uma plataforma digital permite um acompanhamento mais próximo, resultando em maior adesão ao plano alimentar e melhores resultados clínicos. Além disso, o site atende a uma necessidade atual de inovação dentro dos consultórios de nutrição, promovendo a digitalização dos serviços e oferecendo diferenciais competitivos aos profissionais da área.
+
 
 ## Público-alvo
 
- O projeto é voltado a um público amplo e diverso, com ações adaptadas às necessidades de cada grupo. São contempladas crianças, adolescentes e seus familiares, assim como adultos que desejam melhorar sua relação com a alimentação e o corpo. Pessoas com quadros de seletividade alimentar também são incluídas, recebendo abordagens específicas e acolhedoras que respeitam seu ritmo e particularidades.
+ O público-alvo do site "Ma+s Saúde" são nutricionistas e seus pacientes, especialmente aqueles que buscam maior praticidade, acompanhamento remoto e organização do plano alimentar. Também poderá ser útil para clínicas de nutrição, consultórios multidisciplinares e profissionais da saúde que atuam em parceria com nutricionistas.
 
  Além disso, o projeto abrange atletas, que buscam otimizar sua performance por meio de uma alimentação equilibrada e funcional; influenciadores digitais, que têm o poder de disseminar informações e comportamentos saudáveis de forma ampla e engajadora; e idosos, grupo que muitas vezes enfrenta desafios nutricionais específicos, como perda de apetite, limitações fisiológicas e a necessidade de uma dieta mais adaptada à sua fase da vida.
