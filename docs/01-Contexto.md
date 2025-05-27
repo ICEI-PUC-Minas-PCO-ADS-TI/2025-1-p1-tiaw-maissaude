@@ -22,7 +22,7 @@ Objetivos Específicos
 
  * Disponibilizar receitas sugeridas pelos nutricionistas, adaptadas às necessidades alimentares de cada paciente;
 
-*Garantir a segurança e confidencialidade dos dados dos usuários conforme a Lei Geral de Proteção de Dados (LGPD).
+ * Garantir a segurança e confidencialidade dos dados dos usuários conforme a Lei Geral de Proteção de Dados (LGPD).
 
 
 
