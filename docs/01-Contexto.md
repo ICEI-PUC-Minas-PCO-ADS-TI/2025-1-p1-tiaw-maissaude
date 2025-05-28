@@ -13,7 +13,7 @@ A ausência de ferramentas tecnológicas específicas para o acompanhamento pers
 
 
 ## Objetivos
-O projeto Ma+s Saúde para auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
+O projeto Ma+s Saúde viabiliza auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
 
 
 
