@@ -5,20 +5,6 @@
 
 O projeto Ma+s Saúde, tem como objetivo desenvolver uma plataforma digital focada em bem-estar, oferecendo ao usuário recursos para registrar suas refeições, controlar a ingestão de água, monitorar o peso e acompanhar sua evolução ao longo do tempo. Com uma interface intuitiva e funcionalidades personalizadas, a ferramenta busca facilitar o dia a dia de quem deseja adotar hábitos mais saudáveis de forma prática e eficiente.
 
-# Definição dos Objetivos do Site
-	•	Criar um espaço digital voltado ao incentivo de hábitos saudáveis e ao cuidado com a alimentação.
-	•	Proporcionar uma navegação simples e prática, permitindo que o usuário acompanhe sua rotina alimentar e metas de saúde com facilidade.
-	•	Oferecer informações e dicas personalizadas para ajudar na construção de uma relação mais consciente com a comida.
-	•	Tornar mais fácil o controle diário de refeições, ingestão de líquidos, variações de peso e evolução geral do bem-estar.
-
-# Principais Funcionalidades
-	•	Registro das refeições: O usuário anota o que come, com informações de calorias e nutrientes.
-	•	Controle de água: Acompanhamento da quantidade de água ingerida com alertas ao longo do dia.
-	•	Peso e medidas: Gráficos simples que mostram a evolução e ajudam a manter o foco.
-	•	Sugestões de cardápios: Ideias de refeições saudáveis de acordo com os objetivos de cada um.
-	•	Lembretes inteligentes: Notificações para não esquecer de comer ou se hidratar.
-	•	Integração com outros apps: Conecta com balanças digitais, apps de treino e smartwatches.
-
 ## Controle de versão
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
