@@ -11,13 +11,6 @@ O projeto Ma+s Saúde, tem como objetivo desenvolver uma plataforma digital foca
 	•	Oferecer informações e dicas personalizadas para ajudar na construção de uma relação mais consciente com a comida.
 	•	Tornar mais fácil o controle diário de refeições, ingestão de líquidos, variações de peso e evolução geral do bem-estar.
 
-# Publico-Alvo
-	•	Pessoas que querem emagrecer ou ganhar peso com equilíbrio;
-	•	Quem está buscando hábitos mais saudáveis no dia a dia;
-	•	Atletas ou quem faz atividade física e quer acompanhar o desempenho;
-	•	Profissionais com agenda cheia que precisam de praticidade;
-	•	Pessoas com dietas específicas (low carb, vegana, etc.).
-
 # Principais Funcionalidades
 	•	Registro das refeições: O usuário anota o que come, com informações de calorias e nutrientes.
 	•	Controle de água: Acompanhamento da quantidade de água ingerida com alertas ao longo do dia.
