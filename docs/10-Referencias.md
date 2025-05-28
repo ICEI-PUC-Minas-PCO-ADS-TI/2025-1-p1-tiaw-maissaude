@@ -10,4 +10,8 @@
 
 - NUTRITIONIX. Nutritionix Track: aplicativo de contagem de calorias e diário alimentar. [S. l.]: Nutritionix, 2024. Disponível em: https://www.nutritionix.com/app. Acesso em: 6 abr. 2025.
 
+BRASIL. Câmara Interministerial de Segurança Alimentar e Nutricional (CAISAN). II Plano Nacional de Segurança Alimentar e Nutricional – PLANSAN 2016–2019. Brasília: CAISAN, 2016. Disponível em: https://www.cfn.org.br/wp-content/uploads/2016/05/PLANSAN-2016.pdf. Acesso em: 6 abr. 2025.
+
+ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE (OPAS). Alimentação saudável. [S. l.]: OPAS, 2025. Disponível em: https://www.paho.org/pt/topicos/alimentacao-saudavel. Acesso em: 6 abr. 2025.
+
 - LIV UP. Liv Up: alimentação saudável, prática e gostosa. [S. l.]: Liv Up, 2025. Disponível em: https://www.livup.com.br. Acesso em: 6 maio 2025.
