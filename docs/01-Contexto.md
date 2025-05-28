@@ -4,7 +4,7 @@
 
 De acordo com o Conselho Federal de Nutricionistas (CFN, 2021), o uso de plataformas digitais para acompanhamento nutricional tem crescido cerca de 35% ao ano desde 2019, especialmente após a pandemia da COVID-19, que acelerou a digitalização dos atendimentos em saúde. Nesse contexto, o desenvolvimento de um site voltado para o monitoramento de planos alimentares surge como uma solução eficaz para promover o engajamento dos pacientes, facilitar a atuação dos profissionais e integrar informações em tempo real.
 
-O presente trabalho propõe a criação do site "Ma+s Saúde", voltado ao acompanhamento contínuo de metas nutricionais, receitas propostas e evolução do plano alimentar de cada paciente. O site será uma ferramenta acessível tanto para nutricionistas quanto para os pacientes, permitindo uma gestão mais eficiente, segura e personalizada da saúde alimentar.
+O presente trabalho propõe a criação do site Ma+s Saúde , voltado ao acompanhamento contínuo de metas nutricionais, receitas propostas e evolução do plano alimentar de cada paciente. O site será uma ferramenta acessível tanto para nutricionistas quanto para os pacientes, permitindo uma gestão mais eficiente, segura e personalizada da saúde alimentar.
 
 
 ## Problema
@@ -13,11 +13,11 @@ A ausência de ferramentas tecnológicas específicas para o acompanhamento pers
 
 
 ## Objetivos
-Desenvolver um site denominado "Ma+s Saúde" para auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
+O projeto Ma+s Saúde para auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
 
 
 
-Objetivos Específicos
+Objetivos Específicos :
  * Permitir a inserção de metas nutricionais personalizadas e acompanhamento em tempo real de seu cumprimento;
 
  * Disponibilizar receitas sugeridas pelos nutricionistas, adaptadas às necessidades alimentares de cada paciente;
@@ -28,11 +28,11 @@ Objetivos Específicos
 
 ## Justificativa
 
- A criação do site "Ma+s Saúde" é justificada pela crescente demanda por soluções digitais que melhorem a comunicação e a eficiência do acompanhamento nutricional. A integração entre profissional e paciente por meio de uma plataforma digital permite um acompanhamento mais próximo, resultando em maior adesão ao plano alimentar e melhores resultados clínicos. Além disso, o site atende a uma necessidade atual de inovação dentro dos consultórios de nutrição, promovendo a digitalização dos serviços e oferecendo diferenciais competitivos aos profissionais da área.
+ A criação do Ma+s Saúde é justificada pela crescente demanda por soluções digitais que melhorem a comunicação e a eficiência do acompanhamento nutricional. A integração entre profissional e paciente por meio de uma plataforma digital permite um acompanhamento mais próximo, resultando em maior adesão ao plano alimentar e melhores resultados clínicos. Além disso, o site atende a uma necessidade atual de inovação dentro dos consultórios de nutrição, promovendo a digitalização dos serviços e oferecendo diferenciais competitivos aos profissionais da área.
 
 
 ## Público-alvo
 
- O público-alvo do site "Ma+s Saúde" são nutricionistas e seus pacientes, especialmente aqueles que buscam maior praticidade, acompanhamento remoto e organização do plano alimentar. Também poderá ser útil para clínicas de nutrição, consultórios multidisciplinares e profissionais da saúde que atuam em parceria com nutricionistas.
+ O público-alvo do site Ma+s Saúde são nutricionistas e seus pacientes, especialmente aqueles que buscam maior praticidade, acompanhamento remoto e organização do plano alimentar. Também poderá ser útil para clínicas de nutrição, consultórios multidisciplinares e profissionais da saúde que atuam em parceria com nutricionistas.
 
  Além disso, o projeto abrange atletas, que buscam otimizar sua performance por meio de uma alimentação equilibrada e funcional; influenciadores digitais, que têm o poder de disseminar informações e comportamentos saudáveis de forma ampla e engajadora; e idosos, grupo que muitas vezes enfrenta desafios nutricionais específicos, como perda de apetite, limitações fisiológicas e a necessidade de uma dieta mais adaptada à sua fase da vida.
