@@ -6,28 +6,52 @@ const lista = document.getElementById("listaMetas");
 const progressBar = document.getElementById("progressBar");
 
 let metas = [];
+const apiURL = "http://localhost:3000/metas";
 
-function salvarMetas() {
-    sessionStorage.setItem("metas", JSON.stringify(metas));
+async function carregarMetas() {
+    try {
+        const res = await fetch(apiURL);
+        metas = await res.json();
+        renderizarMetas();
+    } catch (error) {
+        console.error("Erro ao carregar metas:", error);
+    }
 }
 
-function carregarMetas() {
-    const dadosSalvos = sessionStorage.getItem("metas");
-
-    if (dadosSalvos) {
-        metas = JSON.parse(dadosSalvos);
+async function adicionarMeta(meta) {
+    try {
+        const res = await fetch(apiURL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(meta)
+        });
+        const novaMeta = await res.json();
+        metas.push(novaMeta);
         renderizarMetas();
-    } else {
-        fetch("db/metas.json")
-            .then(response => response.json())
-            .then(data => {
-                metas = data;
-                salvarMetas();
-                renderizarMetas();
-            })
-            .catch(error => {
-                console.error("Erro ao carregar metas:", error);
-            });
+    } catch (error) {
+        console.error("Erro ao adicionar meta:", error);
+    }
+}
+
+async function atualizarMeta(meta) {
+    try {
+        await fetch(`${apiURL}/${meta.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(meta)
+        });
+    } catch (error) {
+        console.error("Erro ao atualizar meta:", error);
+    }
+}
+
+async function excluirMeta(id) {
+    try {
+        await fetch(`${apiURL}/${id}`, { method: "DELETE" });
+        metas = metas.filter(meta => meta.id !== id);
+        renderizarMetas();
+    } catch (error) {
+        console.error("Erro ao excluir meta:", error);
     }
 }
 
@@ -41,7 +65,7 @@ function atualizarBarraProgresso() {
 function renderizarMetas() {
     lista.innerHTML = "";
 
-    metas.forEach((meta, index) => {
+    metas.forEach(meta => {
         const li = document.createElement("li");
 
         const spanTexto = document.createElement("span");
@@ -55,11 +79,11 @@ function renderizarMetas() {
             inputEditar.value = meta.texto;
             inputEditar.classList.add("input-edicao");
 
-            inputEditar.addEventListener("blur", () => {
+            inputEditar.addEventListener("blur", async () => {
                 const novoTexto = inputEditar.value.trim();
-                if (novoTexto !== "") {
+                if (novoTexto !== "" && novoTexto !== meta.texto) {
                     meta.texto = novoTexto;
-                    salvarMetas();
+                    await atualizarMeta(meta);
                 }
                 renderizarMetas();
             });
@@ -78,22 +102,20 @@ function renderizarMetas() {
         btnConcluir.innerHTML = meta.concluida ? "✖" : "✅";
         btnConcluir.title = meta.concluida ? "Desmarcar" : "Concluir";
         btnConcluir.style.marginRight = "10px";
-        btnConcluir.addEventListener("click", () => {
+        btnConcluir.addEventListener("click", async () => {
             meta.concluida = !meta.concluida;
-            salvarMetas();
+            await atualizarMeta(meta);
             renderizarMetas();
         });
 
         const btnExcluir = document.createElement("button");
         btnExcluir.textContent = "🗑️";
         btnExcluir.title = "Excluir meta";
-        btnExcluir.addEventListener("click", () => {
-            metas.splice(index, 1);
-            salvarMetas();
-            renderizarMetas();
+        btnExcluir.addEventListener("click", async () => {
+            await excluirMeta(meta.id);
         });
 
-        // Container das tags (categoria e prazo)
+        // Tags
         const tagsContainer = document.createElement("div");
         tagsContainer.style.marginTop = "5px";
 
@@ -122,7 +144,7 @@ function renderizarMetas() {
     atualizarBarraProgresso();
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const texto = input.value.trim();
     const categoria = categoriaSelect.value;
@@ -133,14 +155,19 @@ form.addEventListener("submit", (e) => {
         return;
     }
 
-    metas.push({ texto, categoria, prazo, concluida: false });
+    const novaMeta = {
+        texto,
+        categoria,
+        prazo,
+        concluida: false
+    };
+
     input.value = "";
     categoriaSelect.value = "";
     dataPrazoInput.value = "";
     input.classList.remove("input-erro");
 
-    salvarMetas();
-    renderizarMetas();
+    await adicionarMeta(novaMeta);
 });
 
 carregarMetas();

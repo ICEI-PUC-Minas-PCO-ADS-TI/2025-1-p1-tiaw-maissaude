@@ -1,0 +1,11 @@
+{
+  "metas": [
+    {
+      "id": "b16a",
+      "texto": "Correr 100KM",
+      "categoria": "Exercício",
+      "prazo": "2025-06-30",
+      "concluida": false
+    }
+  ]
+}
