@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxa Metabólica Basal (TMB)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Taxa Metabólica Basal</h1>
+        <form id="bmrForm" autocomplete="off">
+            <div class="input-group">
+                <label for="gender">Sexo:</label>
+                <select id="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="age">Idade (anos):</label>
+                <input type="number" id="age" min="15" max="120" value="30" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" min="30" max="200" value="70" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="height">Altura (cm):</label>
+                <input type="number" id="height" min="100" max="250" value="170" step="0.1" required>
+            </div>
+            <button type="submit">Calcular Calorias Basais</button>
+        </form>
+        <div class="result" id="result">
+            <h2>Sua Taxa Metabólica Basal</h2>
+            <div class="calories" id="calories">0</div>
+            <div class="explanation">
+                Esta é a quantidade de calorias que seu corpo queima diariamente em repouso completo.
+            </div>
+        </div>
+        <div class="activity-levels" id="activityLevels">
+            <div class="activity-item">
+                <span class="activity-label">Sedentário (pouco ou nenhum exercício):</span>
+                <span class="activity-value" id="sedentary">0 kcal</span>
+            </div>
+            <div class="activity-item">
+                <span class="activity-label">Levemente ativo (exercício leve 1-3 dias/semana):</span>
+                <span class="activity-value" id="light">0 kcal</span>
+            </div>
+            <div class="activity-item">
+                <span class="activity-label">Moderadamente ativo (exercício moderado 3-5 dias/semana):</span>
+                <span class="activity-value" id="moderate">0 kcal</span>
+            </div>
+            <div class="activity-item">
+                <span class="activity-label">Muito ativo (exercício intenso 6-7 dias/semana):</span>
+                <span class="activity-value" id="active">0 kcal</span>
+            </div>
+            <div class="activity-item">
+                <span class="activity-label">Extremamente ativo (exercício muito intenso + trabalho físico):</span>
+                <span class="activity-value" id="veryActive">0 kcal</span>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="bmrChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
