@@ -120,6 +120,63 @@ body {
 }
 /* Fim das entradas do formulario */
 
+/* Lista de Metas */
+#listaMetas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#listaMetas li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+#listaMetas li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+#listaMetas li button {
+    background: none;
+    border: none;
+    color: #dc143c;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+span.concluida {
+    text-decoration: line-through;
+    color: #778899;
+}
+
+.editar-input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border: 1px solid #40a640;
+    border-radius: 4px;
+}
+
+#listaMetas li {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#listaMetas li:hover {
+  background-color: #f0f8ff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+/* Fim da Lista de Metas */
+
 /* Footer */
 .footer {
     background-color: #8CB06C;
