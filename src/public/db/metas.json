@@ -1,0 +1,14 @@
+[
+  {
+    "texto": "Correr 5KM",
+    "categoria": "Exercício",
+    "prazo": "2025-05-27",
+    "concluida": false
+  },
+  {
+    "texto": "Beber 2L de água",
+    "categoria": "Saúde",
+    "prazo": "2025-05-28",
+    "concluida": false
+  }
+]
