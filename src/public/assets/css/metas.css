@@ -54,9 +54,10 @@ body {
 .nav a:hover {
     color: #CFF1A2;
 }
+
 /* Cabeçalho */
 
-.container{
+.container {
     flex: 1;
     max-width: 600px;
     width: 100%;
@@ -66,6 +67,58 @@ body {
     gap: 1rem;
     padding: 0 2rem;
 }
+
+.container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Entradas do Formulario */
+.entrada form {
+    display: flex;
+    gap: 1rem;
+}
+
+.entrada form > * {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.entrada input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #40a640;
+    outline: none;
+    background-color: transparent;
+}
+
+.entrada select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #40a640;
+    background-color: transparent;
+    color: #333;
+}
+
+.entrada button {
+    background-color: #40a640;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.entrada button:hover {
+    background-color: #369136;
+}
+
+.input-erro {
+    border-bottom: 1px solid #dc143c !important;
+    background-color: #ffe5e5 !important;
+}
+/* Fim das entradas do formulario */
 
 /* Footer */
 .footer {
