@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout de Pagamento</title>
+    <style>
+        :root {
+            --primary: #2d5f25;
+            --primary-dark: #2d5f25;
+            --secondary: #2d5f25;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --border-radius: 10px;
+            --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .payment-methods {
+            margin-bottom: 30px;
+        }
+        
+        .payment-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .payment-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        .payment-options {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .payment-option {
+            flex: 1;
+            position: relative;
+        }
+        
+        .payment-option input {
+            position: absolute;
+            opacity: 0;
+        }
+        
+        .payment-option label {
+            display: block;
+            padding: 20px 15px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .payment-option label:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .payment-option input:checked + label {
+            border-color: var(--primary);
+            background-color: rgba(67, 97, 238, 0.05);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.1);
+        }
+        
+        .payment-option .icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .payment-details {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+            margin-top: 20px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card-form {
+            background: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 14px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #f8fafc;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+            background-color: white;
+        }
+        
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .row .form-group {
+            flex: 1;
+        }
+        
+        .card-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .card-icon {
+            width: 45px;
+            height: 30px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+        }
+        
+        .pix-details {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .pix-qr {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 20px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            border: 1px dashed #ccc;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .pix-code {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .pix-instructions {
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .pix-instructions li {
+            margin-bottom: 12px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+        
+        .pix-instructions li::before {
+            content: '✓';
+            color: var(--primary);
+            font-size: 16px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .payment-options {
+                flex-direction: column;
+            }
+            
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Finalize seu Pagamento</h1>
+            <p>Preencha seus dados para concluir a compra</p>
+        </div>
+        
+        <div class="content">
+            <div class="payment-methods">
+                <h2 class="payment-title">Método de Pagamento</h2>
+                
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="credit-radio" name="payment" value="credit" checked onclick="showPaymentDetails('credit')">
+                        <label for="credit-radio">
+                            <span class="icon">💳</span>
+                            <span>Cartão de Crédito</span>
+                        </label>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <input type="radio" id="pix-radio" name="payment" value="pix" onclick="showPaymentDetails('pix')">
+                        <label for="pix-radio">
+                            <span class="icon">🧾</span>
+                            <span>PIX</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Detalhes do Cartão -->
+                <div id="credit-details" class="payment-details">
+                    <div class="card-form">
+                        <div class="form-group">
+                            <label for="card-name">Nome no cartão</label>
+                            <input type="text" id="card-name" class="form-control" placeholder="Como impresso no cartão" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-number">Número do cartão</label>
+                            <input type="text" id="card-number" class="form-control" placeholder="0000 0000 0000 0000" required>
+                            <div class="card-icons">
+                                <div class="card-icon">VISA</div>
+                                <div class="card-icon">MC</div>
+                                <div class="card-icon">ELO</div>
+                                <div class="card-icon">HI</div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="card-expiry">Validade</label>
+                                <input type="text" id="card-expiry" class="form-control" placeholder="MM/AA" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="card-cvv">Código de segurança</label>
+                                <input type="text" id="card-cvv" class="form-control" placeholder="CVV" required>
+                            </div>
+                        </div>
+                        
+                      
+                        
+                        <div class="form-group">
+                            <label for="card-cpf">CPF do titular</label>
+                            <input type="text" id="card-cpf" class="form-control" placeholder="000.000.000-00" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- detalhes do PIX -->
+                <div id="pix-details" class="payment-details">
+                    <div class="pix-details">
+                        <h3>Pagamento via PIX</h3>
+                        <p>Escaneie o QR Code ou copie o código para pagamento</p>
+                        
+                        <div class="pix-qr">
+                            <!-- PIX qr code-->
+                            <span>QR CODE PIX</span>
+                        </div>
+                        
+                        <div class="pix-code" id="pix-code-text">
+                            00020126580014BR.GOV.BCB.PIX0136123e4567-e12b-12d1-a456-4266554400005204000053039865405100.005802BR5913MERCADO PIX6009SAO PAULO62070503***6304A1B2
+                        </div>
+                        
+                        <button onclick="copyPixCode()" class="btn" style="background: var(--secondary); margin-top: 0;">
+                            Copiar Código PIX
+                        </button>
+                        
+                        <div class="pix-instructions">
+                            <h4>Como pagar:</h4>
+                            <ul>
+                                <li>Abra o app do seu banco</li>
+                                <li>Selecione a opção PIX</li>
+                                <li>Escaneie o QR Code ou cole o código</li>
+                                <li>Confirme o pagamento</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pix-confirm" required>
+                            <label for="pix-confirm">Confirmo que efetuei o pagamento via PIX</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn" onclick="processPayment()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar os campos do método de pagamento selecionado
+        function showPaymentDetails(method) {
+            document.getElementById('credit-details').style.display = 'none';
+            document.getElementById('pix-details').style.display = 'none';
+            
+            if(method === 'credit') {
+                document.getElementById('credit-details').style.display = 'block';
+            } else if(method === 'pix') {
+                document.getElementById('pix-details').style.display = 'block';
+            }
+        }
+
+        // Copiar código PIX
+        function copyPixCode() {
+            const pixCode = document.getElementById('pix-code-text').innerText;
+            navigator.clipboard.writeText(pixCode)
+                .then(() => alert('Código PIX copiado! Cole no seu aplicativo bancário.'))
+                .catch(err => console.error('Erro ao copiar:', err));
+        }
+
+        // Processar pagamento
+        function processPayment() {
+            const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+            
+            //  objeto JSON com os dados do pagamento
+            const paymentData = {
+                date: new Date().toISOString(),
+                paymentMethod: paymentMethod,
+                amount: 99.90,
+                currency: "BRL",
+                status: "pending",
+                customer: {
+                    name: "Cliente Exemplo", // Substitua por dados reais
+                    email: "cliente@exemplo.com"
+                }
+            };
+
+            if(paymentMethod === 'credit') {
+                paymentData.card = {
+                    name: document.getElementById('card-name').value,
+                    lastFour: document.getElementById('card-number').value.slice(-4),
+                    installments: document.getElementById('card-installments').value
+                };
+            } else if(paymentMethod === 'pix') {
+                paymentData.pix = {
+                    code: document.getElementById('pix-code-text').innerText,
+                    confirmed: document.getElementById('pix-confirm').checked
+                };
+            }
+
+            // Exibir o JSON no console (simulando envio)
+            console.log("Dados do pagamento:", JSON.stringify(paymentData, null, 2));
+            
+            // Feedback para o usuário
+            alert(paymentMethod === 'credit' 
+                ? "Pagamento com cartão processado com sucesso!" 
+                : "Confirme o pagamento PIX no seu banco.");
+        }
+
+        // Mostrar campos do cartão por padrão
+        window.onload = function() {
+            showPaymentDetails('credit');
+        };
+    </script>
+</body>
+</html>
