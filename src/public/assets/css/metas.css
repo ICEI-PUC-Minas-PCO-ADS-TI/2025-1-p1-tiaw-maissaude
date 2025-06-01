@@ -118,7 +118,54 @@ body {
     border-bottom: 1px solid #dc143c !important;
     background-color: #ffe5e5 !important;
 }
+
+.prazo-meta {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: 5px;
+}
 /* Fim das entradas do formulario */
+
+/* TAGS */
+/* Categorias TAG */
+.tag-categoria {
+    display: inline-block;
+    font-size: 0.70rem;
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 15px;
+    color: #fff;
+    background-color: #666;
+    max-width: fit-content;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+/* Cores por categoria */
+.tag-categoria.saúde {
+    background-color: #4CAF50;
+}
+
+.tag-categoria.exercício {
+    background-color: #2196F3;
+}
+
+.tag-categoria.alimentação {
+    background-color: #961515;
+}
+
+.tag-data {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  margin-left: 6px;
+  color: #444;
+  margin-right: 12px;
+}
+/* Fim das TAGS */
 
 /* Lista de Metas */
 #listaMetas {
@@ -177,6 +224,23 @@ span.concluida {
 }
 /* Fim da Lista de Metas */
 
+/* Barra de Progresso */
+.progress {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #40a640;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+/* Fim Barra de Progresso */
+
 /* Footer */
 .footer {
     background-color: #8CB06C;
@@ -205,3 +269,4 @@ span.concluida {
 .footer a:hover {
     text-decoration: underline;
 }
+/* Fim Footer */
