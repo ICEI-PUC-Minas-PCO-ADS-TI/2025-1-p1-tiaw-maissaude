@@ -54,7 +54,6 @@ body {
 .nav a:hover {
     color: #CFF1A2;
 }
-
 /* Cabeçalho */
 
 .container {
@@ -73,7 +72,7 @@ body {
     font-size: 1.8rem;
 }
 
-/* Entradas do Formulario */
+/* Formulario */
 .entrada form {
     display: flex;
     gap: 1rem;
@@ -119,53 +118,30 @@ body {
     background-color: #ffe5e5 !important;
 }
 
-.prazo-meta {
-    font-size: 0.9em;
-    color: #888;
-    margin-left: 5px;
-}
-/* Fim das entradas do formulario */
-
-/* TAGS */
-/* Categorias TAG */
-.tag-categoria {
-    display: inline-block;
-    font-size: 0.70rem;
-    font-weight: 600;
-    padding: 4px 6px;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-right: 15px;
-    color: #fff;
-    background-color: #666;
-    max-width: fit-content;
-    white-space: nowrap;
-    line-height: 1;
+.filtro-categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+    align-items: flex-start;
 }
 
-/* Cores por categoria */
-.tag-categoria.saúde {
-    background-color: #4CAF50;
+.filtro-categoria label {
+    font-size: 0.85rem;
+    color: #333;
+    margin-left: 2px;
 }
 
-.tag-categoria.exercício {
-    background-color: #2196F3;
+.filtro-categoria select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #40a640;
+    background-color: transparent;
+    color: #333;
+    width: 100%;
 }
 
-.tag-categoria.alimentação {
-    background-color: #961515;
-}
-
-.tag-data {
-  background-color: #eee;
-  border-radius: 4px;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  margin-left: 6px;
-  color: #444;
-  margin-right: 12px;
-}
-/* Fim das TAGS */
 
 /* Lista de Metas */
 #listaMetas {
@@ -218,11 +194,49 @@ span.concluida {
 }
 
 #listaMetas li:hover {
-  background-color: #f0f8ff; 
+  background-color: #f0f8ff; /* cor clara suave */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
-/* Fim da Lista de Metas */
+
+/* Categorias TAG */
+.tag-categoria {
+    display: inline-block;
+    font-size: 0.70rem;
+    font-weight: 600;
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-right: 15px;
+    color: #fff;
+    background-color: #666;
+    max-width: fit-content;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+/* Cores por categoria */
+.tag-categoria.saúde {
+    background-color: #4CAF50;
+}
+
+.tag-categoria.exercício {
+    background-color: #2196F3;
+}
+
+.tag-categoria.alimentação {
+    background-color: #961515;
+}
+
+.tag-data {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  margin-left: 6px;
+  color: #444;
+  margin-right: 12px;
+}
 
 /* Barra de Progresso */
 .progress {
@@ -239,7 +253,22 @@ span.concluida {
     width: 0%;
     transition: width 0.3s ease-in-out;
 }
-/* Fim Barra de Progresso */
+
+/* Grafico*/
+.grafico-container {
+  width: 350px;      
+  margin: 40px auto;  
+  text-align: center; 
+}
+
+#graficoMetas {
+  width: 100% !important;   
+  height: auto !important;  
+  max-height: 300px;        
+  display: block;          
+  margin: 0 auto;           
+}
+/* Fim do Grafico */
 
 /* Footer */
 .footer {
@@ -269,4 +298,3 @@ span.concluida {
 .footer a:hover {
     text-decoration: underline;
 }
-/* Fim Footer */
