@@ -1,38 +1,47 @@
 # Introdução
 
- Com o avanço da tecnologia da informação e a popularização de dispositivos conectados à internet, a área da saúde tem vivenciado uma revolução digital, especialmente no que diz respeito ao acompanhamento de pacientes. Segundo a Organização Pan-Americana da Saúde (OPAS, 2022), ferramentas digitais têm desempenhado papel central na melhoria da comunicação entre profissionais e pacientes, proporcionando mais eficiência nos tratamentos. Na nutrição, essa transformação tem possibilitado o acompanhamento remoto de planos alimentares, avaliação de metas e ajustes personalizados com maior agilidade.
+Com o avanço da tecnologia da informação e a popularização dos dispositivos conectados à internet, a área da saúde passa por uma verdadeira revolução digital, especialmente no acompanhamento de pacientes. Segundo a Organização Pan-Americana da Saúde (OPAS, 2022), as ferramentas digitais têm ampliado a comunicação entre profissionais e pacientes, tornando os tratamentos mais eficientes. Na nutrição, essa transformação permite o acompanhamento remoto de planos alimentares, avaliações de metas e ajustes personalizados de forma ágil.
 
-De acordo com o Conselho Federal de Nutricionistas (CFN, 2021), o uso de plataformas digitais para acompanhamento nutricional tem crescido cerca de 35% ao ano desde 2019, especialmente após a pandemia da COVID-19, que acelerou a digitalização dos atendimentos em saúde. Nesse contexto, o desenvolvimento de um site voltado para o monitoramento de planos alimentares surge como uma solução eficaz para promover o engajamento dos pacientes, facilitar a atuação dos profissionais e integrar informações em tempo real.
+O Conselho Federal de Nutricionistas (CFN, 2021) destaca que o uso de plataformas digitais para acompanhamento nutricional cresce cerca de 35% ao ano desde 2019, impulsionado especialmente pela pandemia da COVID-19, que acelerou a digitalização dos atendimentos em saúde. Nesse cenário, o desenvolvimento do site Ma+s Saúde se apresenta como uma solução eficaz para engajar pacientes, facilitar o trabalho dos profissionais e integrar informações em tempo real.
 
-O presente trabalho propõe a criação do site Ma+s Saúde , voltado ao acompanhamento contínuo de metas nutricionais, receitas propostas e evolução do plano alimentar de cada paciente. O site será uma ferramenta acessível tanto para nutricionistas quanto para os pacientes, permitindo uma gestão mais eficiente, segura e personalizada da saúde alimentar.
+Este projeto propõe uma plataforma acessível para nutricionistas e pacientes, focada no acompanhamento contínuo de metas nutricionais, receitas personalizadas e evolução dos planos alimentares, garantindo uma gestão mais segura, eficiente e personalizada da saúde alimentar.
 
 
 ## Problema
 
-A ausência de ferramentas tecnológicas específicas para o acompanhamento personalizado de planos alimentares compromete a continuidade e a eficácia do tratamento nutricional. Muitos consultórios ainda utilizam métodos tradicionais, como planilhas físicas ou anotações manuais, dificultando o controle das metas e o acesso rápido às informações necessárias tanto por parte do paciente quanto do profissional. Como solucionar essa lacuna, integrando tecnologia de forma prática e segura ao dia a dia do nutricionista?
+A busca por uma vida mais saudável envolve múltiplos fatores: alimentação equilibrada, criação de metas pessoais e acompanhamento contínuo. No entanto, muitas pessoas enfrentam dificuldades em manter esse equilíbrio sozinhas, seja por falta de conhecimento, orientação profissional ou ferramentas acessíveis que facilitem esse processo no dia a dia.
+
+Além disso, nutricionistas e outros profissionais da saúde muitas vezes têm dificuldade em manter um acompanhamento próximo e personalizado com seus pacientes fora do consultório. A troca de informações pode ser limitada, desorganizada ou confusa, prejudicando a evolução do tratamento.
+
+O projeto Mais Saúde surge para preencher essa lacuna: trata-se de uma plataforma que conecta o profissional da saúde (como o nutricionista) ao seu paciente de forma prática e digital. Por meio do sistema, o nutricionista pode cadastrar refeições específicas de acordo com o perfil de cada cliente, além de acompanhar seu progresso por meio de metas personalizadas definidas dentro da própria plataforma.
+
+O foco da aplicação é tornar o acompanhamento mais humano, eficiente e contínuo — facilitando tanto o trabalho do profissional quanto o compromisso do paciente com sua própria saúde. O projeto está sendo desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas, com o objetivo de simular um cenário real de uso em clínicas, consultórios ou projetos de orientação nutricional.
 
 
 ## Objetivos
-O projeto Ma+s Saúde viabiliza auxiliar no monitoramento de planos alimentares dentro de consultórios de nutrição, promovendo maior acompanhamento das metas estabelecidas, acesso a receitas personalizadas e integração entre nutricionista e paciente.
+Desenvolver uma plataforma digital que auxilie profissionais da saúde, especialmente nutricionistas, no acompanhamento personalizado de seus pacientes, promovendo hábitos saudáveis por meio da organização de refeições e metas individuais.
 
 
 
 Objetivos Específicos :
- * Permitir a inserção de metas nutricionais personalizadas e acompanhamento em tempo real de seu cumprimento;
+ * Criar uma interface simples e acessível para que o nutricionista cadastre refeições personalizadas para cada paciente;
 
- * Disponibilizar receitas sugeridas pelos nutricionistas, adaptadas às necessidades alimentares de cada paciente;
+ * Implementar um sistema de metas, onde o usuário possa registrar e acompanhar seus objetivos relacionados à saúde;
 
- * Garantir a segurança e confidencialidade dos dados dos usuários conforme a Lei Geral de Proteção de Dados (LGPD).
+ * Facilitar o acompanhamento remoto por parte do profissional, promovendo um contato mais próximo e eficaz com o paciente;
 
+ * Proporcionar ao usuário uma experiência intuitiva que estimule o cuidado contínuo com sua saúde física e mental.
 
 
 ## Justificativa
 
- A criação do Ma+s Saúde é justificada pela crescente demanda por soluções digitais que melhorem a comunicação e a eficiência do acompanhamento nutricional. A integração entre profissional e paciente por meio de uma plataforma digital permite um acompanhamento mais próximo, resultando em maior adesão ao plano alimentar e melhores resultados clínicos. Além disso, o site atende a uma necessidade atual de inovação dentro dos consultórios de nutrição, promovendo a digitalização dos serviços e oferecendo diferenciais competitivos aos profissionais da área.
+O projeto Mais Saúde foi motivado pela necessidade de facilitar o acompanhamento nutricional de forma prática e acessível. Muitas pessoas têm dificuldade em manter hábitos saudáveis, enquanto profissionais como nutricionistas precisam de ferramentas digitais que ajudem nesse processo fora do consultório.
+
+A proposta da plataforma é oferecer um meio simples e funcional de conexão entre profissional e paciente, promovendo o cuidado contínuo com a saúde de forma personalizada.
 
 
 ## Público-alvo
 
- O público-alvo do site Ma+s Saúde são nutricionistas e seus pacientes, especialmente aqueles que buscam maior praticidade, acompanhamento remoto e organização do plano alimentar. Também poderá ser útil para clínicas de nutrição, consultórios multidisciplinares e profissionais da saúde que atuam em parceria com nutricionistas.
+O público-alvo do Ma+s Saúde inclui principalmente nutricionistas e seus pacientes, especialmente aqueles que buscam praticidade, acompanhamento remoto e uma melhor organização do plano alimentar. A plataforma também pode ser útil para clínicas de nutrição, consultórios multidisciplinares e outros profissionais da saúde que trabalham em parceria com nutricionistas.
 
  Além disso, o projeto abrange atletas, que buscam otimizar sua performance por meio de uma alimentação equilibrada e funcional; influenciadores digitais, que têm o poder de disseminar informações e comportamentos saudáveis de forma ampla e engajadora; e idosos, grupo que muitas vezes enfrenta desafios nutricionais específicos, como perda de apetite, limitações fisiológicas e a necessidade de uma dieta mais adaptada à sua fase da vida.
