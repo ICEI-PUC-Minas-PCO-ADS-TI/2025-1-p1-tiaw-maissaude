@@ -34,7 +34,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - Scrum Master: Raissa Rocha
 - Product Owner: Guilherme Teixeira
 - Equipe de Desenvolvimento: Guilherme Teixeira, Raissa Aparecida, João Marcelo, Gustavo Silva, Paco Lemos, Juan Pablo
-- Equipe de Design: Guilherme Teixeira, Raissa Aparecida, Gustavo Silva.
+- Equipe de Design: Guilherme Teixeira, Gustavo Silva.
 
 ### Processo
 
@@ -42,8 +42,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 
 ### Ferramentas
-- (1)
-- (2) Discord / WhatsApp (Pratico e rapido)
+- (1) Visual Studio Code
+- (2) Discord / WhatsApp 
 - (3) Miro / Figma / Canva 
 - (4) Figma
 
