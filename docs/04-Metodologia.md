@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-O projeto Ma+s Saúde, tem como objetivo desenvolver uma plataforma digital focada em bem-estar, oferecendo ao usuário recursos para registrar suas refeições, controlar a ingestão de água, monitorar o peso e acompanhar sua evolução ao longo do tempo. Com uma interface intuitiva e funcionalidades personalizadas, a ferramenta busca facilitar o dia a dia de quem deseja adotar hábitos mais saudáveis de forma prática e eficiente.
+Para desenvolver o projeto Ma+s Saúde, o grupo usou uma metodologia colaborativa com práticas ágeis, que facilitam a comunicação e a adaptação durante o trabalho. A equipe trabalha com editores de código como VS Code, usa o GitHub para controlar o código e a documentação, e se comunica pelo Discord e WhatsApp para reuniões e alinhamentos. O código é gerenciado com Git, criando branches para cada funcionalidade, fazendo revisões por pull requests e mantendo o projeto organizado. O trabalho é planejado semanalmente, com metas definidas e reuniões para avaliar o progresso. Ferramentas como Trello ou GitHub Projects ajudam a organizar as tarefas, dividir responsabilidades e acompanhar tudo. Essa forma de trabalhar garante um desenvolvimento organizado, colaborativo e focado em entregar resultados sempre.
 
 ## Controle de versão
 
