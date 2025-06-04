@@ -4,8 +4,10 @@ const categoriaSelect = document.getElementById("categoria");
 const dataPrazoInput = document.getElementById("dataPrazo");
 const lista = document.getElementById("listaMetas");
 const progressBar = document.getElementById("progressBar");
+const filtroCategoriaSelect = document.getElementById("filtroCategoria");
 
 let metas = [];
+
 const apiURL = "http://localhost:3000/metas";
 
 async function carregarMetas() {
@@ -13,6 +15,7 @@ async function carregarMetas() {
         const res = await fetch(apiURL);
         metas = await res.json();
         renderizarMetas();
+        gerarGraficoDeMetas(filtroCategoriaSelect.value); // Atualiza gráfico ao carregar
     } catch (error) {
         console.error("Erro ao carregar metas:", error);
     }
@@ -28,6 +31,7 @@ async function adicionarMeta(meta) {
         const novaMeta = await res.json();
         metas.push(novaMeta);
         renderizarMetas();
+        gerarGraficoDeMetas(filtroCategoriaSelect.value);
     } catch (error) {
         console.error("Erro ao adicionar meta:", error);
     }
@@ -40,6 +44,7 @@ async function atualizarMeta(meta) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(meta)
         });
+        gerarGraficoDeMetas(filtroCategoriaSelect.value);
     } catch (error) {
         console.error("Erro ao atualizar meta:", error);
     }
@@ -50,6 +55,7 @@ async function excluirMeta(id) {
         await fetch(`${apiURL}/${id}`, { method: "DELETE" });
         metas = metas.filter(meta => meta.id !== id);
         renderizarMetas();
+        gerarGraficoDeMetas(filtroCategoriaSelect.value);
     } catch (error) {
         console.error("Erro ao excluir meta:", error);
     }
@@ -65,7 +71,12 @@ function atualizarBarraProgresso() {
 function renderizarMetas() {
     lista.innerHTML = "";
 
-    metas.forEach(meta => {
+    const categoriaFiltro = filtroCategoriaSelect.value;
+    const metasFiltradas = categoriaFiltro === "todas"
+        ? metas
+        : metas.filter(meta => meta.categoria === categoriaFiltro);
+
+    metasFiltradas.forEach(meta => {
         const li = document.createElement("li");
 
         const spanTexto = document.createElement("span");
@@ -115,7 +126,6 @@ function renderizarMetas() {
             await excluirMeta(meta.id);
         });
 
-        // Tags
         const tagsContainer = document.createElement("div");
         tagsContainer.style.marginTop = "5px";
 
@@ -168,6 +178,11 @@ form.addEventListener("submit", async (e) => {
     input.classList.remove("input-erro");
 
     await adicionarMeta(novaMeta);
+});
+
+filtroCategoriaSelect.addEventListener("change", () => {
+    renderizarMetas();
+    gerarGraficoDeMetas(filtroCategoriaSelect.value);
 });
 
 carregarMetas();
