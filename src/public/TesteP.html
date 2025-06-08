@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Perfil</title>
+    <style>
+        body {
+            background-color: #0e3b2c;
+            color: #fff;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+        }
+        a {
+            
+            margin-top: 20px;
+            width: 40px;
+            padding: 9px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro de Perfil</h1>
+
+    <label>Nome: <input type="text" id="nome"></label>
+    <label>Idade: <input type="number" id="idade"></label>
+    <label>Peso (kg): <input type="number" id="peso"></label>
+    <label>Altura (m): <input type="number" step="0.01" id="altura"></label>
+    <label>Sexo:
+        <select id="sexo">
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+    </label>
+    <label>Nível de Atividade:
+        <select id="atividade">
+            <option>Leve</option>
+            <option>Moderado</option>
+            <option>Intenso</option>
+        </select>
+    </label>
+    <label>Meta:
+        <select id="meta">
+            <option>Perder Peso</option>
+            <option>Ganhar Massa Muscular</option>
+            <option>Manter Peso</option>
+        </select>
+    </label>
+    <label>Calorias Alvo: <input type="number" id="calorias"></label>
+    <label>Proteínas (g): <input type="number" id="proteinas"></label>
+    <label>Carboidratos (g): <input type="number" id="carboidratos"></label>
+    <label>Gorduras (g): <input type="number" id="gorduras"></label>
+    
+    <button onclick="salvarPerfil()">Salvar e Ver Perfil</button>
+    <a href="indexP.html" > Voltar </a>
+    
+
+    <script>
+        //ESTRUTURA DA PAGINA DE CADASTRO TESTE
+        function salvarPerfil() {
+            const perfil = {
+                nome: document.getElementById('nome').value,
+                idade: document.getElementById('idade').value,
+                peso: document.getElementById('peso').value,
+                altura: document.getElementById('altura').value,
+                sexo: document.getElementById('sexo').value,
+                atividade: document.getElementById('atividade').value,
+                meta: document.getElementById('meta').value,
+                calorias: document.getElementById('calorias').value,
+                proteinas: document.getElementById('proteinas').value,
+                carboidratos: document.getElementById('carboidratos').value,
+                gorduras: document.getElementById('gorduras').value
+            };
+
+            localStorage.setItem('perfilUsuario', JSON.stringify(perfil));
+            window.location.href = "indexP.html"; // redireciona para a tela de perfil
+        }
+    </script>
+</body>
+
+</html>
