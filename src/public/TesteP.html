@@ -31,17 +31,17 @@
             color: white;
             border: none;
         }
+
         a {
-            
+
             margin-top: 20px;
             width: 40px;
             padding: 9px 20px;
             background-color: #4caf50;
             color: white;
             border: none;
-        
-        }
 
+        }
     </style>
 </head>
 
@@ -76,30 +76,48 @@
     <label>Proteínas (g): <input type="number" id="proteinas"></label>
     <label>Carboidratos (g): <input type="number" id="carboidratos"></label>
     <label>Gorduras (g): <input type="number" id="gorduras"></label>
-    
+
     <button onclick="salvarPerfil()">Salvar e Ver Perfil</button>
-    <a href="indexP.html" > Voltar </a>
-    
+    <a href="indexP.html"> Voltar </a>
+
 
     <script>
         //ESTRUTURA DA PAGINA DE CADASTRO TESTE
-        function salvarPerfil() {
+        async function salvarPerfil() {
             const perfil = {
                 nome: document.getElementById('nome').value,
-                idade: document.getElementById('idade').value,
-                peso: document.getElementById('peso').value,
-                altura: document.getElementById('altura').value,
+                idade: parseInt(document.getElementById('idade').value),
+                peso: parseFloat(document.getElementById('peso').value),
+                altura: parseFloat(document.getElementById('altura').value),
                 sexo: document.getElementById('sexo').value,
                 atividade: document.getElementById('atividade').value,
                 meta: document.getElementById('meta').value,
-                calorias: document.getElementById('calorias').value,
-                proteinas: document.getElementById('proteinas').value,
-                carboidratos: document.getElementById('carboidratos').value,
-                gorduras: document.getElementById('gorduras').value
+                calorias: parseInt(document.getElementById('calorias').value),
+                proteinas: parseInt(document.getElementById('proteinas').value),
+                carboidratos: parseInt(document.getElementById('carboidratos').value),
+                gorduras: parseInt(document.getElementById('gorduras').value)
             };
 
-            localStorage.setItem('perfilUsuario', JSON.stringify(perfil));
-            window.location.href = "indexP.html"; // redireciona para a tela de perfil
+            try {
+                const response = await fetch("http://localhost:3000/perfil", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(perfil)
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    localStorage.setItem('perfilId', data.id); // salva ID do perfil no localStorage
+                    window.location.href = "indexP.html";
+                } else {
+                    alert("Erro ao salvar perfil.");
+                }
+            } catch (error) {
+                console.error("Erro:", error);
+                alert("Erro ao conectar com o servidor.");
+            }
         }
     </script>
 </body>
