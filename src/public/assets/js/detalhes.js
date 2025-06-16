@@ -6,7 +6,7 @@ function getUrlParameter(name) {
 function carregarDetalhes() {
     const refeicaoId = getUrlParameter('id');
 
-    fetch('db/refeicoes.json')
+    fetch("http://localhost:3000/refeicoes")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao carregar os dados');
