@@ -7,21 +7,21 @@
 `1° Semestre/2025`
 
 
-O Ma+s Saúde é um site desenvolvido com o objetivo de auxiliar pessoas com rotinas corridas a manterem uma alimentação mais equilibrada e saudável. Considerando a diversidade de públicos, a plataforma atende desde crianças até idosos, oferecendo funcionalidades práticas e acessíveis.
+O  projeto *Ma+s Saúde* é um site desenvolvido com o objetivo de auxiliar pessoas com rotinas corridas a manterem uma alimentação mais equilibrada e saudável. Considerando a diversidade de públicos, a plataforma atende desde crianças até idosos, oferecendo funcionalidades práticas e acessíveis.
 
 Um dos principais diferenciais do Ma+s Saúde é seu foco no suporte a nutricionistas, que podem utilizar o site como ferramenta de apoio no acompanhamento de seus pacientes. Cada profissional possui acesso individualizado, podendo indicar a plataforma aos pacientes como meio de compartilhar informações, orientações e metas personalizadas.
 
 Entre os principais recursos oferecidos pela plataforma, destacam-se:
 
- - Catálogo de refeições, elaborado por nutricionistas, com opções voltadas para diferentes necessidades nutricionais e faixas etárias;
+ - *Catálogo de refeições*, elaborado por nutricionistas, com opções voltadas para diferentes necessidades nutricionais e faixas etárias;
 
-- Calculadora de metabolismo basal, que auxilia na estimativa da quantidade de calorias necessárias ao organismo diariamente;
+- *Calculadora de metabolismo basal*, que auxilia na estimativa da quantidade de calorias necessárias ao organismo diariamente;
 
-- Calculadora de consumo de água, ferramenta que incentiva a hidratação adequada ao longo do dia;
+- *Calculadora de consumo de água*, ferramenta que incentiva a hidratação adequada ao longo do dia;
 
- - Lista de metas personalizadas, que permite ao usuário visualizar seus objetivos e acompanhar seu progresso de forma prática.
+ - *Lista de metas personalizadas*, que permite ao usuário visualizar seus objetivos e acompanhar seu progresso de forma prática.
 
-O Ma+s Saúde foi idealizado como um aliado no cotidiano, promovendo maior qualidade de vida por meio da tecnologia, da alimentação saudável e do acompanhamento profissional qualificado.
+O *Ma+s Saúde* foi idealizado como um aliado no cotidiano, promovendo maior qualidade de vida por meio da tecnologia, da alimentação saudável e do acompanhamento profissional qualificado.
 
 ## Integrantes
 
