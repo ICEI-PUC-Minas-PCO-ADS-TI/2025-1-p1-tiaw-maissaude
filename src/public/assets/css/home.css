@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #D1F5B6;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Inicio Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8CB06C;
+  padding: 15px 30px;
+  color: white;
+  border-bottom: 4px solid #8CB06C;
+  height: 70px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 280px;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #CFF1A2;
+}
+
+#icone-usuario {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.usuario-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu-usuario {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.menu-usuario p {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+.menu-usuario button {
+  background-color: #2D5F25;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-usuario button:hover {
+  background-color: #2D5F25;
+}
+/* Fim Header */
+
+/*Inicio informações*/
+.semana-controle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #8CB06C;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.semana-controle button {
+  background-color: #2D5F25;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.semana-controle button:hover {
+  background-color: #1E3E18;
+}
+
+.semana-controle button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.semana-controle h3 {
+  color: #2D5F25;
+  margin: 0;
+}
+
+/* Dia atual destacado */
+.dia-atual {
+  background-color: #2D5F25 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Ajustes para o calendário */
+.calendario-semanal {
+  padding: 15px;
+  margin-bottom: 20px;
+  display: grid;
+}
+
+.numeros-dias span {
+  border-radius: 60%;
+  width: 30px;
+  height: 30px;
+  background-color: #8CB06C;
+  color: black;
+  text-align: center;
+  padding: 6px 0;
+  min-width: 0;
+}
+
+.dias-semana span {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  min-width: 0;
+
+}
+
+.dias-semana,
+.numeros-dias {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.calorias-box {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.liquid-box {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.container-tabelas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: fit-content;
+
+}
+
+.calorias-box {
+  background-color: #8CB06C;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calorias-conteudo {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #8CB06C;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.calorias-info {
+  background-color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.calorias-info strong {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.metas {
+  display: flex;
+}
+
+/*Card*/
+.refeicoes-card {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 100%;
+  height: fit-content;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #a3cd8a;
+}
+
+#meal-schedule {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #5553;
+  padding-bottom: 10px;
+}
+
+.meal img {
+  width: 24px;
+  margin-right: 10px;
+}
+/*Card*/
+
+.time {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Container de Líquidos */
+.liquid-box {
+  background-color: #8CB06C;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container-liquidos {
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  padding-right: 40px;
+  display: grid;
+}
+
+.liquid-box h3 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.liquid-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.liquid-item {
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  min-width: 120px;
+  background-color: white;
+}
+
+.liquid-label {
+  display: block;
+  color: #2D5F25;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.liquid-value {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.add-button {
+  background-color: #2D5F25;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.add-button:hover {
+  background-color: #1E3E18;
+  transform: scale(1.1);
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #2D5F25;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.add-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background-color: #8CB06C;
+  color: #2D5F25;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #2D5F25;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.reset-button {
+  background-color: #8CB06C;
+  color: #2D5F25;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #2D5F25;
+  color: white;
+}
+/* Fim informaçoes */
+
+/*Refeições Destaques*/
+.refeicoes-destaque {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  background-color: #8CB06C;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.refeicoes-destaque h1 {
+  color: white;
+}
+
+.refeicoes-destaque .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-grid {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-placeholder img {
+  width: 240px;
+  height: 170px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.image-placeholder {
+  text-align: center;
+}
+
+.image-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.image-link img {
+  transition: transform 0.3s ease;
+}
+
+.image-link img:hover {
+  transform: scale(1.10);
+}
+/*Refeições destaques*/
+
+/* Inicio Footer */
+footer {
+  padding: 10px 0;
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: #8CB06C;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Fim Footer*/
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .conteudo {
+    margin-bottom: 80px;
+  }
+
+  .ingredientes {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .imagem {
+    margin-top: 25px;
+  }
+}
+
