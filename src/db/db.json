@@ -15,11 +15,73 @@
       "email": "user@abc.com"
     },
     {
+      "id": 3,
       "login": "rommel",
       "senha": "123",
       "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "email": "rommel@gmail.com"
+    }
+  ],
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Maria Silva",
+      "email": "maria@exemplo.com",
+      "mensagem": "Gostaria de saber mais sobre o projeto."
+    },
+    {
+      "id": 2,
+      "nome": "João Souza",
+      "email": "joao@exemplo.com",
+      "mensagem": "Parabéns pelo site!"
+    }
+  ],
+  "mensagens": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "texto": "Olá, gostaria de saber como calcular minha TMB.",
+      "data": "2025-06-20T10:15:00Z"
+    },
+    {
+      "id": 2,
+      "usuarioId": 1,
+      "texto": "Você pode usar a calculadora na página inicial.",
+      "data": "2025-06-20T10:16:00Z"
+    }
+  ],
+  "modulo-1": [
+    {
+      "id": 1,
+      "titulo": "Exemplo de registro do módulo 1",
+      "descricao": "Conteúdo de exemplo para o módulo 1."
+    }
+  ],
+  "modulo-2": [
+    {
+      "id": 1,
+      "titulo": "Exemplo de registro do módulo 2",
+      "descricao": "Conteúdo de exemplo para o módulo 2."
+    }
+  ],
+  "sugestoes": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "texto": "Adicionar modo escuro ao site.",
+      "data": "2025-06-21T14:00:00Z"
+    }
+  ],
+  "tmb_registros": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "sexo": "male",
+      "idade": 30,
+      "peso": 70,
+      "altura": 170,
+      "tmb": 1700,
+      "data": "2025-06-22T09:00:00Z"
     }
   ]
 }

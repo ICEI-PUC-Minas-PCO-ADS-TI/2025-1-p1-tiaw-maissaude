@@ -19,5 +19,3 @@ A seguir, estão as especificações técnicas que devem ser seguidas na criaç�
 > - taxa de FPS limitada a 30 quadros por segundo
 > - resolução HD (720p) ou Full HD (1080p)
 > - formato mp4.
-
-

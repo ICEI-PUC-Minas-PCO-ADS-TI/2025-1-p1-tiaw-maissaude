@@ -1,93 +1,88 @@
-# Código-fonte
+# Ma+s Saúde
 
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
-Esta é a pasta destinada à manutenção do programa que será desenvolvido no contexto desta disciplina.
+`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
-Se necessário, deve-se descrever neste arquivo os aspectos relevantes da estrutura de diretórios criada para a organização do código.
+`1° Semestre/2025`
 
-Uma sugestão para a estrutura de diretórios do projeto é a seguinte:
+O Ma+s Saúde é um site desenvolvido com o objetivo de auxiliar pessoas com rotinas corridas a manter uma alimentação mais equilibrada e saudável. Pensando na diversidade de públicos, o site atende desde crianças até idosos, oferecendo funcionalidades práticas e acessíveis.
 
-```plaintext
-src/  (esta pasta aqui)
-│
-├── db/
-│   └── db.json (estruturas de dados)
-│
-├── public/ (seu site - front-end)
-│   ├── assets/
-│   │   ├── css/
-│   │   │   ├── styles.css
-│   │   │   └── (outros arquivos .css)
-│   │   │
-│   │   ├── js/
-│   │   │   ├── app.js
-│   │   │   └── (outros arquivos .js)
-│   │   │
-│   │   ├── images/
-│   │   │   ├── logo.png
-│   │   │   └── (outras imagens)
-│   │   │
-│   │   └── fonts/
-│   │       ├── font1.ttf
-│   │       └── (outras fontes)
-│   │
-│   ├── modulos/
-│   │   ├── modulo-1/
-│   │   │   └── (arquivos do módulo)
-│   │   │
-│   │   └── modulo-2/
-│   │       └── (arquivos do módulo)
-│   │
-│   ├── index.html (página inicial front-end)
-│   ├── about.html
-│   ├── contact.html
-│   └── (outras páginas)
-│
-│── index.js (app back-end)
-│── package.json (configuração back-end)
-└── README.md (este arquivo aqui)
-```
+Um dos diferenciais do Ma+s Saúde é que ele é voltado especialmente para o uso de nutricionistas, que podem utilizar a plataforma como uma ferramenta de apoio no acompanhamento de seus pacientes. Cada profissional pode ter seu próprio acesso e repassar o site para seus pacientes, usando-o como meio para compartilhar informações, orientações e metas personalizadas.
 
-## Parte front-end
+Entre os principais recursos estão:
 
-Para a montagem do site, devem ser editados os arquivos existentes e criados novos arquivos na pasta `public`, que abriga todos os componentes da interface do front-end, visíveis ao usuário no navegador.
+Catálogo de refeições indicadas por um nutricionista, voltadas para diferentes necessidades e faixas etárias.
 
-Na pasta `public`, sugere-se a seguinte organização dos arquivos do site:
+Calculadora de metabolismo basal, que ajuda o usuário a estimar a quantidade de calorias que seu corpo precisa diariamente.
 
-* Pasta `assets`: destinada aos arquivos de formatação (CSS), scripts (JS), imagens utilizadas no site (JPG, PNG, GIF, SVG etc.), fontes (TTF) e outros arquivos gerais utilizados por todo o site.
-* Pasta `modulos`: onde devem ser armazenados os arquivos relacionados à implementação das funcionalidades do site. Recomenda-se criar uma subpasta para cada novo módulo ou funcionalidade, o que também pode facilitar a divisão do trabalho entre os membros do grupo.
-* Arquivo `index.html`: arquivo que representa a "home page" do site.
+Calculadora de consumo de água, para incentivar a hidratação adequada.
 
-## Parte back-end
+Lista de metas personalizadas, que permite ao usuário visualizar seus objetivos e acompanhar seu progresso.
 
-Para este projeto, será utilizado o ambiente de execução **[Node.js](https://nodejs.org/)** para montar um back-end simplificado, porém eficaz, que utiliza o módulo **[JSON Server](https://github.com/typicode/json-server#readme)**. Não se preocupe, não é necessário ter conhecimento em programação para o ambiente Node.js, nem é preciso alterar esses arquivos para que seu site funcione adequadamente.
+O Ma+s Saúde foi pensado para ser um aliado no dia a dia, promovendo mais qualidade de vida por meio da tecnologia, da boa alimentação e do acompanhamento profissional.
 
-Na estrutura de arquivos encontram-se, além disso, outra pasta e alguns arquivos, os quais são:
+## Integrantes
 
-* Pasta `db`: local onde é armazenado o arquivo contendo as estruturas de dados utilizadas pela aplicação. O conteúdo dessa pasta é composto exclusivamente pelo arquivo `db.json`.
-* Arquivo `index.js`: arquivo responsável por inicializar o servidor web e a aplicação de back-end no ambiente Node.js, fornecendo uma API RESTful a partir do arquivo `db.json`. Recomenda-se evitar alterações nesse arquivo.
-* Arquivo `package.js`: arquivo que contém as configurações da aplicação de back-end.
+* Raissa Aparecida de Souza Rocha
+* Guilherme Teixeira Ferreira
+* Paco Lemos Garibaldi
+* Gustavo Silva Santiago
+* João Marcelo Ribeiro da Silva
+* Juan Pablo Marcelino Rocha
 
-## Setup e execução do ambiente
+## Professor
 
-Para executar a aplicação de back-end e permitir o acesso ao seu site, é necessário instalar o Node.js em seu computador. Para isso, siga as instruções disponíveis no site do [**Node.js**](https://nodejs.org/), realizando o download da versão LTS (a versão mais estável do ambiente).
+* Amália Soares Vieira de Vasconcelos
 
-Assim que o Node.js estiver instalado em seu computador, deve-se abrir o terminal na pasta do seu projeto e executar o seguinte comando:
+## Instruções de utilização
 
-```
-$> npm install
-```
+Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-Isso permitirá que o NPM instale todos os pacotes necessários para a execução do back-end. O NPM é o aplicativo responsável por gerenciar as dependências de um projeto e instalar os pacotes do Node.js.
+Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
 
-Em seguida, com os pacotes já instalados, basta executar o seguinte comando:
+Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
 
-```
-$> npm start
-```
+O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
 
-Isso fará com que o Node.js execute a aplicação de back-end, iniciando o servidor web e a API RESTful fornecida pelo JSON Server a partir do arquivo `db.json`.
+# Documentação
 
-## Dúvidas e suporte
+<ol>
+<li><a href="docs/01-Contexto.md"> Documentação de contexto</a></li>
+<li><a href="docs/02-Product-discovery.md"> Product discovery</a></li>
+<li><a href="docs/03-Product-design.md"> Product design</a></li>
+<li><a href="docs/04-Metodologia.md"> Metodologia</a></li>
+<li><a href="docs/05-Projeto-interface.md"> Projeto de interface</a></li>
+<li><a href="docs/06-Template-padrao.md"> Template padrão da aplicação</a></li>
+<li><a href="docs/07-Arquitetura-solucao.md"> Arquitetura da solução</a></li>
+<li><a href="docs/08-Plano-testes-software.md"> Plano de testes de software</a></li>
+<li><a href="docs/09-Registro-testes-software.md"> Registro de testes de software</a></li>
+<li><a href="docs/10-Referencias.md"> Referências</a></li>
+</ol>
 
-Caso tenha dúvidas, recomenda-se procurar a monitoria, que estará disponível para auxiliá-lo(a) a compreender todo o ambiente e a apoiá-lo(a) na implementação do seu projeto.
+# Código
+
+* <a href="src/README.md">Código</a>
+
+# Apresentação
+
+* <a href="presentation/README.md">Apresentação do projeto</a>
+
+## Dicas 
+
+> **IMPORTANTE: APAGUE ESTA SEÇÃO DE DICAS ANTES DE ENTREGAR SEU TRABALHO**
+
+No desenvolvimento deste trabalho, o grupo deverá utilizar este repositório como local para entrega de todos os artefatos a serem produzidos. Em especial, o grupo deverá providenciar a alteração dos seguintes arquivos:
+
+* **Capa do projeto** (Este arquivo aqui): informação básica sobre o projeto, alunos do grupo e professores responsáveis;
+* **Arquivo CITATION.cff**: utilizado para referenciar o projeto;
+* **Pasta docs**: documentação completa do projeto;
+* **Pasta presentation**: apresentação do projeto;
+* **Pasta src**: todos os arquivos resultantes da programação do software;
+* **Pasta templates**: templates de arquivos úteis ao longo desta disciplina. Essa pasta deve ser removida antes da entrega da versão final do trabalho.
+
+Toda a documentação do projeto é realizado por meio do Markdown, uma linguagem de formatação adotada pelo GitHub e por diversas outras plataformas. Aprenda Markdown e use-o para documentar o projeto.
+
+> **Links úteis**:
+> - [Sintaxe básica de gravação e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+> - [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)

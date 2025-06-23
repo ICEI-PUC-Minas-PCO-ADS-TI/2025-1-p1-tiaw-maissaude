@@ -1,78 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <img src="./assets/images/banner_ti.png" alt="" />
-      </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-        <div class="dados-usuario">
-          <span id="userInfo"></span>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxa Metabólica Basal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #8CB06C 0%, #b6e2d3 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+            padding: 38px 32px 32px 32px;
+            width: 100%;
+            max-width: 480px;
+            margin: 40px 0 24px 0;
+            position: relative;
+            animation: fadeIn 0.7s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .calculator h1 {
+            color: #2D5F25;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .calculator .desc {
+            color: #4e5d6c;
+            text-align: center;
+            font-size: 1.05em;
+            margin-bottom: 22px;
+        }
+
+        .input-group label {
+            color: #34495e;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1e0d7;
+            border-radius: 8px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            background: #f8fafb;
+            transition: border-color 0.2s;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            border-color: #8CB06C;
+            outline: none;
+        }
+
+        .btn-calc {
+            background: linear-gradient(90deg, #2D5F25 60%, #8CB06C 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px #0001;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-calc:hover {
+            background: linear-gradient(90deg, #1e4218 60%, #8CB06C 100%);
+            box-shadow: 0 4px 16px #0002;
+        }
+
+        .result {
+            margin-top: 10px;
+            padding: 18px 10px 10px 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            box-shadow: 0 2px 8px #0001;
+        }
+
+        .result h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .calories {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 10px 0 6px 0;
+        }
+
+        .explanation {
+            color: #7f8c8d;
+            font-size: 0.98em;
+            line-height: 1.5;
+        }
+
+        .activity-levels {
+            margin-top: 18px;
+            display: none;
+        }
+
+        .activity-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1em;
+        }
+
+        .activity-label {
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        .activity-value {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 250px;
+            width: 100%;
+            margin-top: 24px;
+            display: none;
+        }
+
+        .btn-copy {
+            margin: 10px auto 0 auto;
+            display: none;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-copy:hover {
+            background: #c0392b;
+        }
+
+        .footer {
+            text-align: center;
+            color: #4e5d6c;
+            font-size: 0.98em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .calculator {
+                padding: 18px 4vw;
+            }
+
+            .main-container {
+                padding: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="calculator">
+            <h1><i class="bi bi-calculator"></i> Calculadora Basal</h1>
+            <div class="desc">Descubra quantas calorias seu corpo precisa em repouso e em diferentes níveis de atividade física.
+            </div>
+            <div class="input-group">
+                <label for="gender">Sexo:</label>
+                <select id="gender">
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="age">Idade (anos):</label>
+                <input type="number" id="age" min="15" max="120" value="30">
+            </div>
+            <div class="input-group">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" min="30" max="200" value="70">
+            </div>
+            <div class="input-group">
+                <label for="height">Altura (cm):</label>
+                <input type="number" id="height" min="100" max="250" value="170">
+            </div>
+            <button class="btn-calc" onclick="calculateBMR()"><i class="bi bi-graph-up-arrow"></i> Calcular Calorias
+                Basais</button>
+            <button class="btn-copy" id="copyResult"><i class="bi bi-clipboard"></i> Copiar resultado</button>
+            <div class="result" id="result">
+                <h2>Sua Taxa Metabólica Basal</h2>
+                <div class="calories" id="calories">0</div>
+                <div class="explanation">
+                    Esta é a quantidade de calorias que seu corpo queima diariamente em repouso completo.
+                </div>
+            </div>
+            <div class="activity-levels" id="activityLevels">
+                <div class="activity-item">
+                    <span class="activity-label">Sedentário (pouco ou nenhum exercício):</span>
+                    <span class="activity-value" id="sedentary">0 kcal</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-label">Levemente ativo (exercício leve 1-3 dias/semana):</span>
+                    <span class="activity-value" id="light">0 kcal</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-label">Moderadamente ativo (exercício moderado 3-5 dias/semana):</span>
+                    <span class="activity-value" id="moderate">0 kcal</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-label">Muito ativo (exercício intenso 6-7 dias/semana):</span>
+                    <span class="activity-value" id="active">0 kcal</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-label">Extremamente ativo (exercício muito intenso + trabalho físico):</span>
+                    <span class="activity-value" id="veryActive">0 kcal</span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="bmrChart"></canvas>
+            </div>
         </div>
-      </div>
-    </header>
-    <main>
-        <h3>Boas vindas</h3>
-        <p>Sejam bem-vindos à home-page do projeto de TI 1 - Trabalho
-        Interdisciplinar</p>
-        <p>Esse conteúdo que você está lendo foi criado para exemplificar como
-        criar o seu site integrado com o ambiente de login e o back end que
-        utiliza o JSON Server.</p>
-        <p>Ao criar o seu site, você deve adaptar esse código para sua neessidade ou começar do zero, excluindo todo esse conteúdo.
-        </p>
+        <div class="footer">
+            <span>Desenvolvido por Ma+ Saúde &copy; 2025</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let bmrChart = null;
 
-        <h3>Arquivos do site (Front End)</h3>
-        <p>Para montar seu site, edite os arquivos existentes e crie novos arquivos na pasta <code>public</code> que mantem todos os arquivos da parte de Front End do site, a interface que é vista pelo usuário no navegador.</p>
+        function calculateBMR() {
+            const gender = document.getElementById('gender').value;
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            let bmr;
 
-        <p>Nesta pasta <code>public</code>, sugerimos que você organize os arquivos do seu site da seguinte maneira:</p>
-        <ul>
-            <li><strong>Pasta <code>assets</code></strong>: os arquivos de formatação (CSS), os scripts (JS), as imagens utilizadas no site (JPG, PNG, GIF, SVG, etc), fontes (TTF) e outros arquivos gerais utilizados por todo o site.</li>
-            <li><strong>Pasta <code>modulos</code></strong>: os arquivos utilizados na implementação das funcionalidades do site. Separe uma sub-pasta para cada novo módulo ou funcionalidade. Pode também ser utilizado para dividir o trabalho de cada membro do grupo.</li>
-            <li><strong>Arquivo <code>index.html</code></strong>: arquivo que representa a "home page" do site.</li>
-        </ul>
+            if (!age || !weight || !height || age < 15 || age > 120 || weight < 30 || weight > 200 || height < 100 || height > 250) {
+                showError('Preencha todos os campos corretamente.');
+                return;
+            }
 
-        <h3>Módulo de Login</h3>
-        <p>O módulo de login de usuário traz uma funcionalidade completa de registro de usuários e validação de login e senha.</p>
-        <h4>Integração do site com módulo de Login</h4>
-        <p>Para utilizar o módulo de login, basta incluir o script na sua página colocando a seguinte tag no HEAD</p>
-        <pre>&lt;script src="./assets/js/login.js"&gt&lt;script&gt;</pre>
-        <p>Ao incluir o script de login na sua página, caso o usuário ainda não tenha efetuado login, ao acessar a home-page do site, o navegador será direcionado para o formulário de <strong>Identificação de Usuário</strong>. Se o usuário informar corretamente o login e a senha, o navegador será direcionado para a Home-Page.</p>
-        <h4>Sessão do usuário logado</h4>
-        <p>Assim que o usuário se identifica e acessa a parte privada do site, o módulo de login cria uma chave do sessionStorage do navegador com o título <strong>usuarioCorrente</strong> e cujo conteúdo é um objeto com os atributos: id, nome, login, senha e email. </p>
-        <h4>Base de dados de usuários</h4>
-        <p>Inicialmente o módulo de login é configurado com dois usuários: </p>
-        <ul>
-            <li>admin - Senha: 123</li>
-            <li>user - Senha: 123</li>
-        </ul>
+            if (gender === 'male') {
+                bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+            } else {
+                bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+            }
 
-        <h3>Servidor Web e API baseada no JSON Server (Back end)</h3>
-        <p>O ambiente de trabalho disponibilizado para suportar o Trabalho Interdisciplinar 1 é baseado no Node.js. A aplicação de back end utiliza o módulo JSON Server para criar um Servidor Web que prove duas estruturas separadas:
-        <ul>
-            <li><strong>Arquivos estáticos (Pasta <code>public</code>)</strong>: da acesso aos arquivos utilizados no front end (HTML, CSS e JavaScript).</li>
-            <li><strong>API RESTful (pasta <code>db</code>)</strong>: uma interface para acesso aos dados definidos no arquivo db.json.</li>
-        </ul></p>
+            bmr = Math.round(bmr);
+            const sedentary = Math.round(bmr * 1.2);
+            const light = Math.round(bmr * 1.375);
+            const moderate = Math.round(bmr * 1.55);
+            const active = Math.round(bmr * 1.725);
+            const veryActive = Math.round(bmr * 1.9);
 
-        <h4>Arquitetura do site</h4>
-        <p>A imagem que se segue apresenta a arquitetura desse ambiente, mostrando as duas refletindo as pastas desse ambiente.</p>
-        <p><img class="img-fluid d-block w-75 m-auto" src="./assets/images/servidor.png" alt=""></p>
+            document.getElementById('calories').textContent = bmr + ' kcal/dia';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('sedentary').textContent = sedentary + ' kcal';
+            document.getElementById('light').textContent = light + ' kcal';
+            document.getElementById('moderate').textContent = moderate + ' kcal';
+            document.getElementById('active').textContent = active + ' kcal';
+            document.getElementById('veryActive').textContent = veryActive + ' kcal';
+            document.getElementById('activityLevels').style.display = 'block';
+            updateChart(bmr, sedentary, light, moderate, active, veryActive);
+            document.getElementById('copyResult').style.display = 'inline-block';
+        }
 
-        <h4>Arquivo db.json</h4>
-        <p>O arquivo JSON utilizado para definição das estruturas dos dados providos pela aplicação é localizado na pasta db e tem um formato como o mostrado no exemplo da figura a seguir. Esse arquivo define uma estrutura hipotética de contatos que descreve itens com os seguintes atributos: <code>id</code>, <code>nome</code> e <code>cidade</code>. para o JSON Server, é fundamental que toda estrutura tenha um atributo de identificador de nome <code>id</code>.</p>
-        <p><img class="img-fluid d-block w-50 m-auto" src="./assets/images/arquivo_json.png" alt=""></p>
-    </main>
-  </body>
+        function updateChart(bmr, sedentary, light, moderate, active, veryActive) {
+            const ctx = document.getElementById('bmrChart').getContext('2d');
+
+            if (bmrChart) {
+                bmrChart.destroy();
+            }
+
+            bmrChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Basal', 'Sedentário', 'Leve', 'Moderado', 'Ativo', 'Muito Ativo'],
+                    datasets: [{
+                        label: 'Calorias por dia',
+                        data: [bmr, sedentary, light, moderate, active, veryActive],
+                        backgroundColor: [
+                            'rgba(231, 76, 60, 0.7)',
+                            'rgba(52, 152, 219, 0.7)',
+                            'rgba(155, 89, 182, 0.7)',
+                            'rgba(26, 188, 156, 0.7)',
+                            'rgba(241, 196, 15, 0.7)',
+                            'rgba(45, 95, 37, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(52, 152, 219, 1)',
+                            'rgba(155, 89, 182, 1)',
+                            'rgba(26, 188, 156, 1)',
+                            'rgba(241, 196, 15, 1)',
+                            'rgba(45, 95, 37, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Calorias (kcal/dia)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Gasto Calórico por Nível de Atividade',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.parsed.y + ' kcal/dia';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            document.querySelector('.chart-container').style.display = 'block';
+        }
+
+        function showError(msg) {
+            let error = document.getElementById('errorMsg');
+            if (!error) {
+                error = document.createElement('div');
+                error.id = 'errorMsg';
+                error.className = 'alert alert-danger mt-2';
+                document.querySelector('.calculator').insertBefore(error, document.querySelector('.calculator').children[1]);
+            }
+            error.textContent = msg;
+            setTimeout(() => {
+                error.remove();
+            }, 3000);
+        }
+
+        document.getElementById('copyResult').addEventListener('click', function () {
+            const cal = document.getElementById('calories').innerText;
+            navigator.clipboard.writeText('Minha TMB: ' + cal).then(() => {
+                this.innerHTML = '<i class="bi bi-clipboard-check"></i> Copiado!';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="bi bi-clipboard"></i> Copiar resultado';
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+
 </html>
