@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/siteconfig/favicon_transparent_32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <title>Página Inicial</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="logo">
+      <a href="home.html">
+        <img src="assets/images/siteconfig/default_transparent_1000x1000.png" alt="Logo Ma+s Saúde">
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="refeicoes.html">Refeições</a></li>
+        <li><a href="metas.html">Metas</a></li>
+        <li><a href="metaagua.html">Consumo de Água</a></li>
+        <li><a href="metabolismo.html">Calculadora TMB</a></li>
+        <li>
+          <div class="usuario-container">
+            <img src="assets/images/siteconfig/user.png" alt="Usuario" id="icone-usuario">
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="semana-controle">
+      <button id="semana-anterior">&lt; Semana Anterior</button>
+      <h3 id="titulo-semana">Maio 2025 - Semana 1</h3>
+      <button id="proxima-semana">Próxima Semana &gt;</button>
+    </div>
+
+    <div class="calendario-semanal">
+      <div class="dias-semana">
+        <span>Segunda</span>
+        <span>Terça</span>
+        <span>Quarta</span>
+        <span>Quinta</span>
+        <span>Sexta</span>
+        <span>Sábado</span>
+        <span>Domingo</span>
+      </div>
+
+      <div class="numeros-dias" id="dias-mes">
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+      <div class="liquid-box">
+        <h3>Água</h3>
+        <div class="liquid-info">
+          <div class="liquid-item">
+            <span class="liquid-label">Consumo total</span>
+            <span class="liquid-value" id="consumo-total">0 ml</span>
+          </div>
+          <div><button class="add-button" id="add-agua">+</button></div>
+          <div class="liquid-item">
+            <span class="liquid-label">Meta de consumo</span>
+            <span class="liquid-value" id="meta-consumo">-- ml</span>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="add-options hidden" id="add-options">
+          <button id="zerar-consumo" class="reset-button">Zerar Consumo</button>
+        </div>
+      </div>
+
+      <div class="calorias-box">
+        <h3>Calorias</h3>
+        <div class="liquid-info">
+          <div class="liquid-item">
+            <span class="liquid-label">Consumo total</span>
+            <span class="liquid-value" id="consumo-total">0 ml</span>
+          </div>
+          <div><button class="add-button" id="add-agua">+</button></div>
+          <div class="liquid-item">
+            <span class="liquid-label">Meta de consumo</span>
+            <span class="liquid-value">2240 ml</span>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="add-options hidden" id="add-options"></div>
+      </div>
+
+      <div class="refeicoes-card">
+        <div class="card" id="meal-schedule"></div>
+      </div>
+
+      <div class="refeicoes-destaque" id="cafe-da-manha">
+        <h1>Café da Manhã</h1>
+        <div class="image-grid"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <ul>
+      <li>&copy; 2025 MA+S SAÚDE</li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="sobrenos.html">Sobre Nós</a></li>
+    </ul>
+  </footer>
+
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>
