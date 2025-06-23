@@ -146,7 +146,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const metaElemento = document.getElementById('meta-consumo');
 
   let consumoAtual = 0;
-  let metaConsumo = parseInt(localStorage.getItem('metaAguaDiaria')) || 2240;
+
+  // 🔹 Recupera o email do usuário logado para buscar a meta correta
+  const usuarioLogado = localStorage.getItem('usuarioLogado');
+  let metaConsumo = 2240; // valor padrão caso não encontre meta personalizada
+
+  if (usuarioLogado) {
+    const metaSalva = localStorage.getItem(`${usuarioLogado}_metaAguaDiaria`);
+    if (metaSalva) {
+      metaConsumo = parseInt(metaSalva);
+    }
+  }
 
   metaElemento.textContent = `${metaConsumo} ml`;
 
@@ -195,12 +205,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const zerarButton = document.getElementById('zerar-consumo');
-  zerarButton.addEventListener('click', () => {
-    consumoAtual = 0;
-    consumoTotal.textContent = '0 ml';
-    localStorage.setItem('consumoAgua', 0);
-    atualizarProgresso();
-  });
+  if (zerarButton) {
+    zerarButton.addEventListener('click', () => {
+      consumoAtual = 0;
+      consumoTotal.textContent = '0 ml';
+      localStorage.setItem('consumoAgua', 0);
+      atualizarProgresso();
+    });
+  }
 
   // Carrega opções de água
   fetch("http://localhost:3000/waterOptions")
@@ -216,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarProgresso();
   }
 
-  // --- Script 4: controle de Calorias via JSON ---
+  // --- Script 5: controle de Calorias via JSON ---
   const addCaloriasBtn = document.getElementById('add-calorias');
   const addOptionsCalorias = document.getElementById('add-options-calorias');
   const consumoCalorias = document.getElementById('consumo-calorias');
@@ -224,7 +236,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const metaCalorias = document.getElementById('meta-calorias');
 
   let caloriasAtuais = 0;
-  let metaCaloriasValor = parseInt(localStorage.getItem('metaCaloriasDiaria')) || 2000;
+
+  // Recupera email do usuário logado para buscar meta personalizada e consumo
+  let metaCaloriasValor = 2000; // valor padrão
+
+  if (usuarioLogado) {
+    const metaSalva = localStorage.getItem(`${usuarioLogado}_metaCaloriasDiaria`);
+    if (metaSalva) {
+      metaCaloriasValor = parseInt(metaSalva);
+    }
+  }
 
   metaCalorias.textContent = `${metaCaloriasValor} kcal`;
 
@@ -245,7 +266,11 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener('click', () => {
         caloriasAtuais += option.amount;
         consumoCalorias.textContent = caloriasAtuais + ' kcal';
-        localStorage.setItem('consumoCalorias', caloriasAtuais);
+        if (usuarioLogado) {
+          localStorage.setItem(`${usuarioLogado}_consumoCalorias`, caloriasAtuais);
+        } else {
+          localStorage.setItem('consumoCalorias', caloriasAtuais);
+        }
         atualizarProgressoCalorias();
         addOptionsCalorias.classList.add('hidden');
       });
@@ -259,7 +284,11 @@ document.addEventListener("DOMContentLoaded", () => {
     zerarBtn.addEventListener('click', () => {
       caloriasAtuais = 0;
       consumoCalorias.textContent = '0 kcal';
-      localStorage.setItem('consumoCalorias', 0);
+      if (usuarioLogado) {
+        localStorage.setItem(`${usuarioLogado}_consumoCalorias`, 0);
+      } else {
+        localStorage.setItem('consumoCalorias', 0);
+      }
       atualizarProgressoCalorias();
       addOptionsCalorias.classList.add('hidden');
     });
@@ -269,12 +298,21 @@ document.addEventListener("DOMContentLoaded", () => {
     addOptionsCalorias.classList.toggle('hidden');
   });
 
+  // Carrega opções de calorias
   fetch("http://localhost:3000/kcalOptions")
     .then(response => response.json())
     .then(options => criarBotoesCalorias(options))
     .catch(error => console.error("Erro ao carregar opções de calorias:", error));
 
-  const savedCalorias = localStorage.getItem('consumoCalorias');
+  // Restaura consumo salvo, personalizado por usuário
+  let savedCalorias = 0;
+  if (usuarioLogado) {
+    savedCalorias = localStorage.getItem(`${usuarioLogado}_consumoCalorias`);
+  }
+  if (!savedCalorias) {
+    savedCalorias = localStorage.getItem('consumoCalorias');
+  }
+
   if (savedCalorias) {
     caloriasAtuais = parseInt(savedCalorias);
     consumoCalorias.textContent = caloriasAtuais + ' kcal';

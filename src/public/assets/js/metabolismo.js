@@ -68,7 +68,14 @@ document.getElementById("bmrForm").addEventListener("submit", function (event) {
     }
 
     renderChart(bmr, activityFactors);
-    localStorage.setItem("metaCaloriasDiaria", Math.round(selectedCalories));
+
+    // 🔹 Recupera o usuário logado e salva a meta com chave personalizada
+    const usuarioLogado = localStorage.getItem("usuarioLogado");
+    if (usuarioLogado) {
+        localStorage.setItem(`${usuarioLogado}_metaCaloriasDiaria`, Math.round(selectedCalories));
+    } else {
+        console.warn("Nenhum usuário logado encontrado para salvar a meta.");
+    }
 });
 
 // Gráfico com Chart.js

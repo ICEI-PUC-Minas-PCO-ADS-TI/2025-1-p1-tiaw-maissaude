@@ -24,6 +24,12 @@
       "email": "raquel@gmail.com",
       "senha": "123456",
       "id": 5
+    },
+    {
+      "usuario": "gustavo",
+      "email": "gustavo@gmail.com",
+      "senha": "123456",
+      "id": 6
     }
   ],
   "metas": [
@@ -88,7 +94,7 @@
       "label": "500 ml"
     }
   ],
-    "kcalOptions": [
+  "kcalOptions": [
     {
       "amount": 200,
       "label": "200 kcal"

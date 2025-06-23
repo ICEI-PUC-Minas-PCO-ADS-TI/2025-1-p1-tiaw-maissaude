@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (usuarios.length === 1) {
                     const Usuario = usuarios[0];
+
                     sessionStorage.setItem("Usuario", JSON.stringify(Usuario));
+
+                    localStorage.setItem("usuarioLogado", Usuario.email);
+
                     window.location.href = "home.html";
                 } else {
                     document.getElementById("erro-login").textContent = "E-mail ou senha inválidos.";
@@ -35,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
         menuUsuario.className = "menu-usuario";
         menuUsuario.style.display = "none"; 
         menuUsuario.innerHTML = `
-      <p>Olá, ${usuarioLogado.usuario}</p>
-      <button id="btn-sair">Sair</button>
-    `;
+            <p>Olá, ${usuarioLogado.usuario}</p>
+            <button id="btn-sair">Sair</button>
+        `;
         usuarioContainer.appendChild(menuUsuario);
 
         if (iconeUsuario) {
@@ -58,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (btnSair) {
             btnSair.addEventListener("click", () => {
                 sessionStorage.removeItem("Usuario");
+                localStorage.removeItem("usuarioLogado"); 
                 window.location.href = "login.html";
             });
         }

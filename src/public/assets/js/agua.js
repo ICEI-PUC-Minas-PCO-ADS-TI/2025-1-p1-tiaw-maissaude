@@ -17,11 +17,19 @@ function calcularAgua() {
     }
 
     const aguaBase = peso * 35;
-    const aguaTotal = (aguaBase * atividade * clima) / 1000; 
+    const aguaTotal = (aguaBase * atividade * clima) / 1000;
 
-    // 🔹 Salva o valor em ml no localStorage
+    // 🔸 Recupera o e-mail do usuário logado
+    const usuarioLogado = localStorage.getItem('usuarioLogado');
+
+    if (!usuarioLogado) {
+        alert("Erro: Nenhum usuário logado encontrado.");
+        return;
+    }
+
+    // 🔹 Salva a meta personalizada no localStorage com base no e-mail
     const aguaEmMl = Math.round(aguaTotal * 1000);
-    localStorage.setItem('metaAguaDiaria', aguaEmMl);
+    localStorage.setItem(`${usuarioLogado}_metaAguaDiaria`, aguaEmMl);
 
     const resultadoDiv = document.getElementById("resultado");
     const chartContainer = document.querySelector(".chart-container");
