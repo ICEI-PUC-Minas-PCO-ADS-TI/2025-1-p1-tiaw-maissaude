@@ -153,15 +153,27 @@ select {
 }
 
 button {
-  background-color: #2d5f25;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 16px;
-  width: 100%;
+    background-color: #2d5f25;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.result {
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    display: none;
 }
 
 /* Inicio Footer */

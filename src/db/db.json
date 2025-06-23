@@ -88,6 +88,20 @@
       "label": "500 ml"
     }
   ],
+    "kcalOptions": [
+    {
+      "amount": 200,
+      "label": "200 kcal"
+    },
+    {
+      "amount": 500,
+      "label": "300 kcal"
+    },
+    {
+      "amount": 700,
+      "label": "500 kcal"
+    }
+  ],
   "featureData": [
     {
       "img": "assets/images/landingpage/nutricao1.png",

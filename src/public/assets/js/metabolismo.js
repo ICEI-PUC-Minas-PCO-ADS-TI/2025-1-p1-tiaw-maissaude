@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.container').classList.add('colapsado');
+});
+
 document.getElementById("bmrForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -6,17 +10,20 @@ document.getElementById("bmrForm").addEventListener("submit", function (event) {
     const age = parseInt(document.getElementById("age").value);
     const weight = parseFloat(document.getElementById("weight").value);
     const height = parseFloat(document.getElementById("height").value);
+    const selectedActivity = document.getElementById("activityLevel").value;
 
-    // Cálculo da TMB (fórmula de Harris-Benedict)
+    if (isNaN(age) || isNaN(weight) || isNaN(height)) {
+        alert("Preencha todos os campos corretamente!");
+        return;
+    }
+
+    // Cálculo da TMB
     let bmr = 0;
     if (gender === "male") {
         bmr = 88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age);
-    } else if (gender === "female") {
+    } else {
         bmr = 447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age);
     }
-
-    // Exibe a TMB arredondada
-    document.getElementById("calories").textContent = `${bmr.toFixed(0)} kcal`;
 
     // Fatores de atividade
     const activityFactors = {
@@ -27,17 +34,43 @@ document.getElementById("bmrForm").addEventListener("submit", function (event) {
         veryActive: 1.9
     };
 
-    // Cálculo e exibição das calorias por nível de atividade
+    const selectedCalories = bmr * activityFactors[selectedActivity];
+
+    // Mostra resultado com estilo
+    const resultadoDiv = document.getElementById("result");
+    const chartContainer = document.querySelector(".chart-container");
+    const container = document.querySelector(".container");
+
+    resultadoDiv.innerHTML = `
+        <h2>Resultado</h2>
+        <p>Com base no nível de atividade "<strong>${selectedActivity}</strong>":</p>
+        <p style="font-size: 24px; color: #28a745; font-weight: bold;">
+            ${selectedCalories.toFixed(0)} kcal/dia
+        </p>
+    `;
+
+    resultadoDiv.style.display = "block";
+    chartContainer.style.display = "block";
+
+    void resultadoDiv.offsetWidth;
+
+    resultadoDiv.classList.add("mostrar");
+    chartContainer.classList.add("mostrar");
+    container.classList.remove("colapsado");
+
+    // Exibe também os valores por nível de atividade (caso deseje manter abaixo)
     for (const [level, factor] of Object.entries(activityFactors)) {
         const totalCalories = bmr * factor;
-        document.getElementById(level).textContent = `${totalCalories.toFixed(0)} kcal`;
+        const levelElement = document.getElementById(level);
+        if (levelElement) {
+            levelElement.textContent = `${totalCalories.toFixed(0)} kcal`;
+        }
     }
 
-    // Gráfico com Chart.js
     renderChart(bmr, activityFactors);
 });
 
-// Gera o gráfico
+// Gráfico com Chart.js
 let bmrChart = null;
 
 function renderChart(bmr, activityFactors) {
