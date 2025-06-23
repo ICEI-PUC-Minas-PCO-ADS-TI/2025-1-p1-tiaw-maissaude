@@ -32,13 +32,13 @@
       "texto": "Correr 100KM",
       "categoria": "Exercício",
       "prazo": "2025-06-30",
-      "concluida": true
+      "concluida": false
     },
     {
       "texto": "Beber 3L de Água",
       "categoria": "Alimentação",
       "prazo": "2025-06-23",
-      "concluida": true,
+      "concluida": false,
       "id": "QudA6o1"
     }
   ],
