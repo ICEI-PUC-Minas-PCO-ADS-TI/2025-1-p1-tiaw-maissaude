@@ -116,11 +116,52 @@ main {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .calculator {
     background-color: #8CB06C;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
+    color: white;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+  background-color: #2d5f25;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
 }
 
 /* Inicio Footer */
