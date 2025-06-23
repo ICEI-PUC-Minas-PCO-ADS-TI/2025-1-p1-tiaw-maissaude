@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarProgresso();
   }
 
+  // --- Script 4: controle de Calorias via JSON ---
   const addCaloriasBtn = document.getElementById('add-calorias');
   const addOptionsCalorias = document.getElementById('add-options-calorias');
   const consumoCalorias = document.getElementById('consumo-calorias');

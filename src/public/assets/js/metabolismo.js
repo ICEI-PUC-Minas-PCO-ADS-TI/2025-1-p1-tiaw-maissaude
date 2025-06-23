@@ -68,6 +68,7 @@ document.getElementById("bmrForm").addEventListener("submit", function (event) {
     }
 
     renderChart(bmr, activityFactors);
+    localStorage.setItem("metaCaloriasDiaria", Math.round(selectedCalories));
 });
 
 // Gráfico com Chart.js
