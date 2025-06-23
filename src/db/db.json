@@ -2,24 +2,1140 @@
   "usuarios": [
     {
       "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "usuario": "adm",
+      "email": "adm@gmail.com",
+      "senha": "123456",
+      "admin": true
     },
     {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "usuario": "guilherme",
+      "email": "guiftf2007@gmail.com",
+      "senha": "123456",
+      "id": 2
     },
     {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
+      "usuario": "amalia",
+      "email": "amalia@gmail.com",
+      "senha": "123456",
+      "id": 4
+    },
+    {
+      "usuario": "raquel",
+      "email": "raquel@gmail.com",
+      "senha": "123456",
+      "id": 5
+    }
+  ],
+  "metas": [
+    {
+      "id": "b16a",
+      "texto": "Correr 100KM",
+      "categoria": "Exercício",
+      "prazo": "2025-06-30",
+      "concluida": true
+    },
+    {
+      "texto": "Beber 3L de Água",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-23",
+      "concluida": true,
+      "id": "QudA6o1"
+    }
+  ],
+  "mealSchedule": [
+    {
+      "hora": "08:00",
+      "refeicao": "Café da manhã",
+      "icone": "☕"
+    },
+    {
+      "hora": "11:00",
+      "refeicao": "Lanche da manhã",
+      "icone": "🍞"
+    },
+    {
+      "hora": "13:00",
+      "refeicao": "Almoço",
+      "icone": "🍗"
+    },
+    {
+      "hora": "16:00",
+      "refeicao": "Lanche da tarde",
+      "icone": "🍞"
+    },
+    {
+      "hora": "19:00",
+      "refeicao": "Jantar",
+      "icone": "🍽️"
+    },
+    {
+      "hora": "21:00",
+      "refeicao": "Lanche da noite",
+      "icone": "🥪"
+    }
+  ],
+  "waterOptions": [
+    {
+      "amount": 200,
+      "label": "200 ml"
+    },
+    {
+      "amount": 300,
+      "label": "300 ml"
+    },
+    {
+      "amount": 500,
+      "label": "500 ml"
+    }
+  ],
+  "featureData": [
+    {
+      "img": "assets/images/landingpage/nutricao1.png",
+      "title": "Acompanhamento inteligente",
+      "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
+    },
+    {
+      "img": "assets/img/imagemFeatures4.webp",
+      "title": "Monitore sua saúde facilmente",
+      "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
+    },
+    {
+      "img": "assets/img/nutricao2.jpg",
+      "title": "Mais cores no prato,<br>mais saúde na vida.",
+      "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
+    },
+    {
+      "img": "assets/img/imagemFeatures5.jpg",
+      "title": "Descubra novos sabores naturais",
+      "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
+    },
+    {
+      "img": "assets/img/nutricao3.jpg",
+      "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
+      "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
+    },
+    {
+      "img": "assets/img/ImagemFeatures6.jpg",
+      "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
+      "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+    }
+  ],
+  "refeicoes": [
+    {
+      "id": "1",
+      "nome": "Panqueca de Mirtilo",
+      "imagem": "assets/images/refeicoes/panquecamirtilo.jpeg",
+      "descricao": "Com 15g de proteína por porção, esta panqueca proteica é preparada sem adição de açúcares e sem o uso de farinha branca. A combinação de mirtilos naturais com chocolate branco de alta qualidade garante um sabor marcante, aliado a uma composição nutritiva. Uma escolha prática e equilibrada para quem valoriza refeições saborosas e funcionais.",
+      "ingredientes": [
+        "clara de ovo",
+        "farelo de aveia",
+        "gema de ovo",
+        "maltitol",
+        "chocolate branco sem açúcar",
+        "mirtilo",
+        "whey 80%",
+        "leite em pó integral",
+        "fermento químico: bicarbonato de sódio",
+        "goma xantana"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "310 kcal",
+          "vd": "16%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "37 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "15 g",
+          "vd": "20%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "11 g",
+          "vd": "20%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "5,6 g",
+          "vd": "25%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "3,2 g",
+          "vd": "13%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "93 mg",
+          "vd": "4%"
+        }
+      ],
+      "categoria": "cafe-da-manha"
+    },
+    {
+      "id": "2",
+      "nome": "Cookie com gotas de chocolate",
+      "imagem": "assets/images/refeicoes/cookiechocolate.jpeg",
+      "descricao": "Este cookie de chocolate é feito com gotas de chocolate 70% cacau, oferecendo um sabor intenso e sofisticado. Adoçado com açúcar de coco, uma alternativa mais natural, ele traz um leve toque de caramelo que complementa a receita. Perfeito para qualquer hora do dia, é uma opção equilibrada para quem busca sabor e qualidade em cada mordida.",
+      "ingredientes": [
+        "farinha de trigo enriquecida com ferro e ácido fólico",
+        "açúcar mascavo",
+        "chocolate 70% cacau",
+        "manteiga",
+        "clara de ovo",
+        "gema de ovo pasteurizada",
+        "fermento em pó"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "170 kcal",
+          "vd": "9%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "27 g",
+          "vd": "9%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "2,7 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "5,7 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "3,2 g",
+          "vd": "15%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**%"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1,1 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "111 mg",
+          "vd": "5%"
+        }
+      ],
+      "categoria": "cafe-da-manha"
+    },
+    {
+      "id": "3",
+      "nome": "Pão de queijo com chia",
+      "imagem": "assets/images/refeicoes/paodequeijo.jpeg",
+      "descricao": "Este pão de queijo combina a tradição da receita mineira com o valor nutricional das sementes orgânicas de chia e linhaça, sem abrir mão do sabor característico. Preparado com polvilho doce e azedo na medida certa, apresenta a textura ideal: crocante por fora e macio por dentro. O toque final fica por conta dos queijos meia cura e parmesão, que garantem um sabor autêntico e marcante.",
+      "ingredientes": [
+        "polvilho azedo",
+        "polvilho doce",
+        "queijo meia cura",
+        "queijo parmesão",
+        "clara de ovo",
+        "gema de ovo",
+        "leite em pó desnatado",
+        "chia",
+        "linhaça dourada",
+        "sal"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "193 kcal",
+          "vd": "10%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "26 g",
+          "vd": "9%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "7.8 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "6.2 g",
+          "vd": "11%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "2.9 g",
+          "vd": "13%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "216 mg",
+          "vd": "9%"
+        }
+      ],
+      "categoria": "cafe-da-manha"
+    },
+    {
+      "id": "4",
+      "nome": "Crepioca de Frango",
+      "imagem": "assets/images/refeicoes/crepiocafrango.jpeg",
+      "descricao": "Esta crepioca é uma ótima escolha para quem deseja aumentar a ingestão de proteínas ao longo do dia. Com 15g de proteína por porção, traz um recheio de frango temperado e suculento combinado ao queijo frescal, oferecendo uma refeição leve, nutritiva e saborosa. Versátil, pode ser consumida a qualquer momento — do pré-treino ao jantar.",
+      "ingredientes": [
+        "goma de tapioca",
+        "peito de frango",
+        "clara de ovo",
+        "queijo mussarela",
+        "gema de ovo",
+        "queijo minas frescal",
+        "whey 80%",
+        "cebolinha orgânica",
+        "páprica doce",
+        "sal",
+        "goma xantana",
+        "cúrcuma"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "191 kcal",
+          "vd": "10%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "15 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "15 g",
+          "vd": "20%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "7.9 g",
+          "vd": "14%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "4.3 g",
+          "vd": "20%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "391 mg",
+          "vd": "16%"
+        }
+      ],
+      "categoria": "cafe-da-manha"
+    },
+    {
+      "id": "5",
+      "nome": "Frango com limão siciliano, arroz e brócolis",
+      "imagem": "assets/images/refeicoes/almoco1.jpeg",
+      "descricao": "Uma combinação irresistível de frango ao limão siciliano e hortelã, trazendo frescor e sabor a cada mordida. Acompanhado de arroz soltinho com castanhas crocantes e brócolis no vapor, criando uma refeição cheia de nutrientes e sabor, ideal para quem busca praticidade sem abrir mão da qualidade.",
+      "ingredientes": [
+        "peito de frango",
+        "brócolis",
+        "arroz",
+        "azeite",
+        "castanha de caju",
+        "limão",
+        "cebola",
+        "vinagre",
+        "alho",
+        "sal",
+        "cebolinha",
+        "gengibre",
+        "páprica picante",
+        "orégano"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "148 kcal",
+          "vd": "7%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "12 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "12 g",
+          "vd": "16%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "5.9 g",
+          "vd": "11%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1.2 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.3 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "301 mg",
+          "vd": "13%"
+        }
+      ],
+      "categoria": "almoco"
+    },
+    {
+      "id": "6",
+      "nome": "Ravioli com molho de tomate",
+      "imagem": "assets/images/refeicoes/ravioli.jpeg",
+      "descricao": "Esta versão do ravioli traz uma massa leve preparada com espinafre, recheada com mussarela de búfala cremosa e saborosa. Para acompanhar, um molho de tomate caseiro, feito com ingredientes simples e naturais, que realça ainda mais o sabor do prato. Uma combinação equilibrada e nutritiva, perfeita para quem busca praticidade sem abrir mão de uma refeição gostosa e bem feita.",
+      "ingredientes": [
+        "farinha de trigo",
+        "água",
+        "ovo integral em pó",
+        "espinafre em pó",
+        "queijo mozzarella de búfula",
+        "base de molho",
+        "ricota fresca",
+        "amido",
+        "tomate",
+        "alho",
+        "azeite",
+        "manjericão",
+        "sal"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "162 kcal",
+          "vd": "8%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "21 g",
+          "vd": "7%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "7.2 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "5.5 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.5 g",
+          "vd": "6%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "147 mg",
+          "vd": "6%"
+        }
+      ],
+      "categoria": "almoco"
+    },
+    {
+      "id": "7",
+      "nome": "Risoto caprese",
+      "imagem": "assets/images/refeicoes/risoto.jpeg",
+      "descricao": "Inspirado no tradicional Caprese italiano, com tomate, queijo e manjericão fresco, mas com toda a cremosidade de um delicioso risoto. O queijo minas traz aquele saborzinho especial, sentido a cada mordida, enquanto o tomate grape assado é responsável por equilibrar a receita com sua leve acidez.",
+      "ingredientes": [
+        "tomate grape",
+        "arroz arbóreo",
+        "cebola",
+        "polpa de tomate",
+        "queijo minas padrão",
+        "azeite",
+        "queijo parmesão",
+        "abobrinha orgânica",
+        "alho-poró",
+        "sal",
+        "manteiga",
+        "cenoura",
+        "alho",
+        "páprica doce",
+        "manjericão",
+        "tomilho",
+        "alecrim",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "162 kcal",
+          "vd": "8%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "22 g",
+          "vd": "7%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "4.7 g",
+          "vd": "6%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "6.3 g",
+          "vd": "11%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "2.6 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.3 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "445 mg",
+          "vd": "19%"
+        }
+      ],
+      "categoria": "almoco"
+    },
+    {
+      "id": "8",
+      "nome": "Estrogonofe de frango",
+      "imagem": "assets/images/refeicoes/estrogonoff.jpeg",
+      "descricao": "Clássico e irresistível, este estrogonofe de frango é preparado com um molho cremoso e saboroso, enriquecido com cogumelos frescos que trazem um toque especial à receita. Acompanha arroz branco soltinho e batatas assadas no ponto certo — douradas por fora, macias por dentro. Uma combinação equilibrada, reconfortante e cheia de sabor, perfeita para qualquer momento do dia.",
+      "ingredientes": [
+        "batata inglesa",
+        "peito de frango",
+        "arroz branco",
+        "cogumelo paris",
+        "creme de leite",
+        "extrato de tomate",
+        "cebola",
+        "azeite",
+        "ketchup",
+        "alho",
+        "sal",
+        "mostarda amarela",
+        "salsinha",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "125 kcal",
+          "vd": "6%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "15 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "7.3 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "3.9 g",
+          "vd": "7%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1.5 g",
+          "vd": "7%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "335 mg",
+          "vd": "14%"
+        }
+      ],
+      "categoria": "almoco"
+    },
+    {
+      "id": "9",
+      "nome": "Torta de frango",
+      "imagem": "assets/images/refeicoes/tortafrango.jpeg",
+      "descricao": "Esta torta de frango conta com uma massa leve e dourada, que envolve um recheio cremoso preparado com frango desfiado e um toque equilibrado de ervas e especiarias. A textura macia do recheio contrasta suavemente com a crocância da massa, proporcionando uma experiência saborosa e acolhedora. Versátil e prática, é uma excelente opção para qualquer hora do dia, unindo conveniência e qualidade em uma só refeição.",
+      "ingredientes": [
+        "farinha de trigo",
+        "manteiga",
+        "peito de frango",
+        "creme branco",
+        "cebola",
+        "salsinha",
+        "cebolinha",
+        "milho",
+        "ovo integral pasteurizado",
+        "creme de leite",
+        "sal",
+        "noz moscada",
+        "páprica doce",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "504 kcal",
+          "vd": "25%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "45 g",
+          "vd": "15%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "16 g",
+          "vd": "21%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "29 g",
+          "vd": "53%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "20 g",
+          "vd": "91%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.9 g",
+          "vd": "8%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "626 mg",
+          "vd": "26%"
+        }
+      ],
+      "categoria": "cafe-da-tarde"
+    },
+    {
+      "id": "10",
+      "nome": "Quiche caprese",
+      "imagem": "assets/images/refeicoes/quiche.jpeg",
+      "descricao": "A clássica combinação de tomate, queijo e manjericão ganha uma nova versão nesta quiche caprese irresistível. Com recheio cremoso e sabor marcante, ela se destaca pela textura úmida e pelo equilíbrio dos ingredientes. A massa leve e amanteigada complementa perfeitamente, trazendo ainda mais sabor e delicadeza a cada fatia.",
+      "ingredientes": [
+        "farinha de trigo",
+        "manteiga",
+        "ovo integral pasteurizado",
+        "creme de leite",
+        "creme branco",
+        "muçarela",
+        "parmesão",
+        "tomate cereja",
+        "manjericão"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "537 kcal",
+          "vd": "27%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "36 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "15 g",
+          "vd": "20%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "37 g",
+          "vd": "67%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "20 g",
+          "vd": "91%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.1 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "325 mg",
+          "vd": "14%"
+        }
+      ],
+      "categoria": "cafe-da-tarde"
+    },
+    {
+      "id": "11",
+      "nome": "Crepioca com queijo",
+      "imagem": "assets/images/refeicoes/crepiocaqueijo.jpeg",
+      "descricao": "Esta crepioca ganhou um toque especial com parmesão incorporado à massa, intensificando o sabor e trazendo uma textura ainda mais agradável. O clássico gostinho que remete ao pão de queijo continua presente, tornando a receita ainda mais irresistível. Leve, prática e nutritiva, é uma opção versátil que se adapta bem ao café da manhã, lanches ou até mesmo a um jantar mais leve.",
+      "ingredientes": [
+        "goma de tapioca",
+        "clara de ovo",
+        "gema de ovo",
+        "queijo parmesão",
+        "queijo minas frescal",
+        "orégano",
+        "cebola em pó",
+        "sal",
+        "goma xantana"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "193 kcal",
+          "vd": "10%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "24 g",
+          "vd": "8%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "9 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "6.6 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "3 g",
+          "vd": "14%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "284 mg",
+          "vd": "12%"
+        }
+      ],
+      "categoria": "cafe-da-tarde"
+    },
+    {
+      "id": "12",
+      "nome": "Mousse de chocolate",
+      "imagem": "assets/images/refeicoes/moussechocolate.jpeg",
+      "descricao": "Clássica e com textura suavemente aerada, nossa mousse traz o sabor marcante do chocolate 70% cacau, intensificado pelos pedacinhos crocantes no topo. Com maior concentração de cacau, é uma opção mais equilibrada para a sobremesa, ideal para adoçar o dia com leveza e sofisticação.",
+      "ingredientes": [
+        "clara de ovo pasteurizada",
+        "açúcar demerara",
+        "gema de ovo",
+        "inulina",
+        "chocolate 70% cacau",
+        "chocolate 70%"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "121 kcal",
+          "vd": "6%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "18 g",
+          "vd": "6%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "3.3 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "3.8 g",
+          "vd": "7%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1.8 g",
+          "vd": "8%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "4.8 g",
+          "vd": "19%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "43 mg",
+          "vd": "2%"
+        }
+      ],
+      "categoria": "cafe-da-tarde"
+    },
+    {
+      "id": "13",
+      "nome": "Frango à Milanesa",
+      "imagem": "assets/images/refeicoes/frangomilanesa.jpeg",
+      "descricao": "Uma combinação saborosa e reconfortante: frango à milanesa assado, sequinho e crocante, servido com arroz branco soltinho e um cremoso creme de milho, que traz um toque especial e cheio de carinho a essa refeição clássica.",
+      "ingredientes": [
+        "frango",
+        "milho",
+        "arroz branco",
+        "farinha panko",
+        "leite em pó desnatado",
+        "azeite",
+        "clara de ovo pasteurizada",
+        "cebola",
+        "farinha de trigo",
+        "sal",
+        "alho",
+        "leite em pó integral",
+        "fécula de batata",
+        "gema de ovo pasteurizada",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "146 kcal",
+          "vd": "7%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "17 g",
+          "vd": "6%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "10 g",
+          "vd": "13%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "4.3 g",
+          "vd": "8%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.1 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "256 mg",
+          "vd": "11%"
+        }
+      ],
+      "categoria": "jantar"
+    },
+    {
+      "id": "14",
+      "nome": "Escondidinho de carne com purê de batata",
+      "imagem": "assets/images/refeicoes/escondidinho.jpeg",
+      "descricao": "Este escondidinho clássico é feito de forma caseira e acolhedora, com um purê de batatas leve e cremoso que envolve uma carne moída bem temperada, complementada por cubos de abobrinha que adicionam frescor e equilíbrio. Uma refeição reconfortante, nutritiva e perfeita para aquecer os dias mais frios, trazendo sabor e conforto em cada garfada.",
+      "ingredientes": [
+        "batata",
+        "carne bovina",
+        "abobrinha orgânica",
+        "cebola",
+        "queijo mussarela",
+        "creme de leite",
+        "extrato de tomate",
+        "polpa de tomate",
+        "azeite",
+        "manteiga",
+        "sal",
+        "alho",
+        "salsinha",
+        "cebolinha",
+        "louro em pó",
+        "alecrim em pó",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "96 kcal",
+          "vd": "5%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "6.4 g",
+          "vd": "2%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "7 g",
+          "vd": "9%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "4.8 g",
+          "vd": "9%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "2.2 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "0.8 g",
+          "vd": "3%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "322 mg",
+          "vd": "13%"
+        }
+      ],
+      "categoria": "jantar"
+    },
+    {
+      "id": "15",
+      "nome": "Canja com peito de frango",
+      "imagem": "assets/images/refeicoes/canja.jpeg",
+      "descricao": "Canja é sinônimo de cuidado, e essa receita traz exatamente essa sensação. Leve, saborosa e nutritiva, é preparada com ingredientes naturais e cheios de benefícios para a saúde. O peito de frango, suculento e de qualidade, é a proteína principal, tornando o prato perfeito para aquecer os dias frios com o conforto de um verdadeiro carinho em forma de comida.",
+      "ingredientes": [
+        "peito de frango",
+        "caldo de frango natural",
+        "cenoura",
+        "batata inglesa",
+        "cebola orgânica",
+        "arroz branco",
+        "tomate orgânico",
+        "salsão",
+        "alho",
+        "cebolinha orgânica",
+        "azeite",
+        "sal",
+        "louro",
+        "páprica doce",
+        "cúrcuma",
+        "pimenta do reino"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "232 kcal",
+          "vd": "12%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "31 g",
+          "vd": "10%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "16 g",
+          "vd": "21%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "4.5 g",
+          "vd": "8%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1.1 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "2.9 g",
+          "vd": "12%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "623 mg",
+          "vd": "26%"
+        }
+      ],
+      "categoria": "jantar"
+    },
+    {
+      "id": "16",
+      "nome": "Frango assado, couscous e legumes",
+      "imagem": "assets/images/refeicoes/frangolegume.jpeg",
+      "descricao": "Frango assado, suculento e perfeitamente dourado, acompanhado de couscous leve e legumes frescos ao estilo mediterrâneo. Uma refeição equilibrada, cheia de sabor e frescor, que traz praticidade ao dia a dia sem abrir mão de um toque especial. Ideal para quem busca uma opção saborosa e nutritiva em qualquer momento do dia.",
+      "ingredientes": [
+        "peito de frango",
+        "couscous marroquino",
+        "berinjela orgânica",
+        "abobrinha",
+        "cebola, tomate",
+        "cebola roxa",
+        "azeite",
+        "salsinha",
+        "alho",
+        "sal",
+        "cebolinha",
+        "hortelã",
+        "vinagre de arroz",
+        "páprica doce",
+        "pimenta do reino",
+        "pimenta síria"
+      ],
+      "nutricional": [
+        {
+          "componente": "Valor energético",
+          "quantidade": "140 kcal",
+          "vd": "7%"
+        },
+        {
+          "componente": "Carboidratos",
+          "quantidade": "12 g",
+          "vd": "4%"
+        },
+        {
+          "componente": "Proteínas",
+          "quantidade": "11 g",
+          "vd": "15%"
+        },
+        {
+          "componente": "Gorduras totais",
+          "quantidade": "5.2 g",
+          "vd": "9%"
+        },
+        {
+          "componente": "Gorduras saturadas",
+          "quantidade": "1.1 g",
+          "vd": "5%"
+        },
+        {
+          "componente": "Gorduras trans",
+          "quantidade": "0 g",
+          "vd": "**"
+        },
+        {
+          "componente": "Fibra alimentar",
+          "quantidade": "1.5 g",
+          "vd": "6%"
+        },
+        {
+          "componente": "Sódio",
+          "quantidade": "394 mg",
+          "vd": "16%"
+        }
+      ],
+      "categoria": "jantar"
     }
   ]
 }
