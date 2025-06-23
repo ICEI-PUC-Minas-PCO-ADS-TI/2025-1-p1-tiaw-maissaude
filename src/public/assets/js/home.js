@@ -215,4 +215,68 @@ document.addEventListener("DOMContentLoaded", () => {
     consumoTotal.textContent = consumoAtual + ' ml';
     atualizarProgresso();
   }
+
+  const addCaloriasBtn = document.getElementById('add-calorias');
+  const addOptionsCalorias = document.getElementById('add-options-calorias');
+  const consumoCalorias = document.getElementById('consumo-calorias');
+  const progressBarCalorias = document.getElementById('progress-bar-calorias');
+  const metaCalorias = document.getElementById('meta-calorias');
+
+  let caloriasAtuais = 0;
+  let metaCaloriasValor = parseInt(localStorage.getItem('metaCaloriasDiaria')) || 2000;
+
+  metaCalorias.textContent = `${metaCaloriasValor} kcal`;
+
+  function atualizarProgressoCalorias() {
+    const progresso = Math.min((caloriasAtuais / metaCaloriasValor) * 100, 100);
+    progressBarCalorias.style.width = progresso + '%';
+  }
+
+  function criarBotoesCalorias(options) {
+    addOptionsCalorias.innerHTML = '';
+    options.forEach(option => {
+      const btn = document.createElement('button');
+      btn.className = 'quantity-btn';
+      btn.textContent = option.label || `${option.amount} kcal`;
+      btn.setAttribute('data-amount', option.amount);
+      addOptionsCalorias.appendChild(btn);
+
+      btn.addEventListener('click', () => {
+        caloriasAtuais += option.amount;
+        consumoCalorias.textContent = caloriasAtuais + ' kcal';
+        localStorage.setItem('consumoCalorias', caloriasAtuais);
+        atualizarProgressoCalorias();
+        addOptionsCalorias.classList.add('hidden');
+      });
+    });
+
+    const zerarBtn = document.createElement('button');
+    zerarBtn.className = 'reset-button';
+    zerarBtn.textContent = 'Zerar Consumo';
+    addOptionsCalorias.appendChild(zerarBtn);
+
+    zerarBtn.addEventListener('click', () => {
+      caloriasAtuais = 0;
+      consumoCalorias.textContent = '0 kcal';
+      localStorage.setItem('consumoCalorias', 0);
+      atualizarProgressoCalorias();
+      addOptionsCalorias.classList.add('hidden');
+    });
+  }
+
+  addCaloriasBtn.addEventListener('click', () => {
+    addOptionsCalorias.classList.toggle('hidden');
+  });
+
+  fetch("http://localhost:3000/kcalOptions")
+    .then(response => response.json())
+    .then(options => criarBotoesCalorias(options))
+    .catch(error => console.error("Erro ao carregar opções de calorias:", error));
+
+  const savedCalorias = localStorage.getItem('consumoCalorias');
+  if (savedCalorias) {
+    caloriasAtuais = parseInt(savedCalorias);
+    consumoCalorias.textContent = caloriasAtuais + ' kcal';
+    atualizarProgressoCalorias();
+  }
 })

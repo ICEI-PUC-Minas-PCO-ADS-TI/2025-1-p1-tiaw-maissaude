@@ -27,11 +27,11 @@ document.getElementById("bmrForm").addEventListener("submit", function (event) {
 
     // Fatores de atividade
     const activityFactors = {
-        sedentary: 1.2,
-        light: 1.375,
-        moderate: 1.55,
-        active: 1.725,
-        veryActive: 1.9
+        sedentario: 1.2,
+        leve: 1.375,
+        moderado: 1.55,
+        ativo: 1.725,
+        muitoAtivo: 1.9
     };
 
     const selectedCalories = bmr * activityFactors[selectedActivity];
@@ -77,11 +77,11 @@ function renderChart(bmr, activityFactors) {
     const ctx = document.getElementById("bmrChart").getContext("2d");
 
     const labels = {
-        sedentary: "Sedentário",
-        light: "Levemente Ativo",
-        moderate: "Moderadamente Ativo",
-        active: "Muito Ativo",
-        veryActive: "Extremamente Ativo"
+        sedentario: "Sedentário",
+        leve: "Levemente Ativo",
+        moderado: "Moderadamente Ativo",
+        ativo: "Muito Ativo",
+        muitoAtivo: "Extremamente Ativo"
     };
 
     const data = Object.entries(activityFactors).map(([level, factor]) => ({
