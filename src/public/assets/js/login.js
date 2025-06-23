@@ -1,15 +1,4 @@
-// Trabalho Interdisciplinar 1 - Aplicações Web
-//
-// Esse módulo realiza o registro de novos usuários e login para aplicações com 
-// backend baseado em API REST provida pelo JSONServer
-// Os dados de usuário estão localizados no arquivo db.json que acompanha este projeto.
-//
-// Autor: Rommel Vieira Carneiro (rommelcarneiro@gmail.com)
-// Data: 09/09/2024
-//
-// Código LoginApp  
-
-
+// login.js - Script para gerenciar o login de usuários em uma aplicação web
 // Página inicial de Login
 const LOGIN_URL = "/modulos/login/login.html";
 let RETURN_URL = "/modulos/login/index.html";
@@ -20,6 +9,31 @@ var db_usuarios = {};
 
 // Objeto para o usuário corrente
 var usuarioCorrente = {};
+
+// DADOS MOCKADOS PARA FUNCIONAR EM HOSPEDAGEM ESTÁTICA
+const MOCK_USUARIOS = [
+  {
+    id: 1,
+    login: "admin",
+    senha: "123",
+    nome: "Administrador do Sistema",
+    email: "admin@abc.com"
+  },
+  {
+    id: 2,
+    login: "user",
+    senha: "123",
+    nome: "Usuario Comum",
+    email: "user@abc.com"
+  },
+  {
+    id: 3,
+    login: "rommel",
+    senha: "123",
+    nome: "Rommel",
+    email: "rommel@gmail.com"
+  }
+];
 
 // Inicializa a aplicação de Login
 function initLoginApp () {
@@ -56,16 +70,8 @@ function initLoginApp () {
 
 
 function carregarUsuarios(callback) {
-    fetch(API_URL)
-    .then(response => response.json())
-    .then(data => {
-        db_usuarios = data;
-        callback ()
-    })
-    .catch(error => {
-        console.error('Erro ao ler usuários via API JSONServer:', error);
-        displayMessage("Erro ao ler usuários");
-    });
+    db_usuarios = MOCK_USUARIOS;
+    callback();
 }
 
 // Verifica se o login do usuário está ok e, se positivo, direciona para a página inicial
@@ -132,6 +138,26 @@ function showUserInfo (element) {
         elemUser.innerHTML = `${usuarioCorrente.nome} (${usuarioCorrente.login}) 
                     <a onclick="logoutUser()">❌</a>`;
     }
+}
+
+// Função utilitária para saber se o usuário está logado
+function isUserLoggedIn() {
+    return !!sessionStorage.getItem('usuarioCorrente');
+}
+
+// Função para saber se o usuário logado é administrador
+function isAdmin() {
+    const user = JSON.parse(sessionStorage.getItem('usuarioCorrente') || '{}');
+    // Considera admin se login for 'admin' (ajuste conforme sua regra)
+    return user.login === 'admin';
+}
+
+// Exemplo de uso: esconder botões de editar/excluir se não for admin
+function toggleUserActions() {
+    const admin = isAdmin();
+    document.querySelectorAll('.btn-edit, .btn-save, .btn-delete').forEach(btn => {
+        btn.style.display = admin ? '' : 'none';
+    });
 }
 
 // Inicializa as estruturas utilizadas pelo LoginApp
