@@ -2,29 +2,29 @@ cff-version: 1.2.0
 message: Please cite this software using these metadata.
 title: Coloque aqui o título do seu trabalho
 authors:
-  - family-names: Sobrenome do aluno 1
-    given-names: Nome do aluno 1 
-  - family-names: Sobrenome do aluno 2
-    given-names: Nome do aluno 2 
-  - family-names: Sobrenome do aluno 3
-    given-names: Nome do aluno 3 
-  - family-names: Sobrenome do aluno 4
-    given-names: Nome do aluno 4 
-  - family-names: Sobrenome do aluno 5
-    given-names: Nome do aluno 5 
-  - family-names: Sobrenome do aluno 6
-    given-names: Nome do aluno 6 
-  - name-suffix: Professor
+  - family-names: Teixeira Ferreira
+    given-names: Guilherme 
+  - family-names: Silva Santiago
+    given-names: Gustavo 
+  - family-names: Marcelo Ribeiro da Silva
+    given-names: João 
+  - family-names: Pablo Marcelino Rocha
+    given-names: Juan 
+  - family-names: Lemos Garibaldi
+    given-names: Paco 
+  - family-names: Aparecida de Souza Rocha
+    given-names: Raissa
+  - name-suffix: Professora
     affiliation: PUC Minas
-    family-names: Sobrenome do(a) professor(a)
-    given-names: Nome do(a) professor(a)
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália
   - name-suffix: Professora
     affiliation: PUC Minas    
 keywords:
-    - coloque aqui a palavra-chave 1
-    - coloque aqui a palavra-chave 2
-    - coloque aqui a palavra-chave 3
-repository-code: coloque o link do seu repositório
+    - Alimentação
+    - Saúde
+    - Rotina
+repository-code: https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude.git
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-09-01
