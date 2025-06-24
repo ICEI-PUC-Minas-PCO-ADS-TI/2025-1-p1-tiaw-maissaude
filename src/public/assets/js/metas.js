@@ -9,7 +9,7 @@ const filtroCategoriaSelect = document.getElementById("filtroCategoria");
 let metas = [];
 
 function carregarMetas() {
-  fetch("http://localhost:3000/metas")
+  fetch("https://tiaw-json-server.vercel.app/metas")
     .then(res => {
       if (!res.ok) throw new Error("Erro ao carregar metas");
       return res.json();
@@ -25,7 +25,7 @@ function carregarMetas() {
 }
 
 function adicionarMeta(meta) {
-  fetch("http://localhost:3000/metas", {
+  fetch("https://tiaw-json-server.vercel.app/metas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -45,7 +45,7 @@ function adicionarMeta(meta) {
 }
 
 function atualizarMeta(meta) {
-  fetch(`http://localhost:3000/metas/${meta.id}`, {
+  fetch(`https://tiaw-json-server.vercel.app/metas/${meta.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -60,7 +60,7 @@ function atualizarMeta(meta) {
 }
 
 function excluirMeta(id) {
-  fetch(`http://localhost:3000/metas/${id}`, {
+  fetch(`https://tiaw-json-server.vercel.app/metas/${id}`, {
     method: "DELETE"
   })
   .then(res => {
