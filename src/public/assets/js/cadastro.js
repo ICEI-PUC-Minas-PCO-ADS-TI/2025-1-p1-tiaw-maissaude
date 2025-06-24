@@ -3,7 +3,7 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const form = document.getElementById("cadastro");
 
-const urlBase = "http://localhost:3000/usuarios";
+const urlBase = "https://tiaw-json-server.vercel.app/usuarios";
 
 function criarUsuario() {
     form.addEventListener("submit", async (event) => {
