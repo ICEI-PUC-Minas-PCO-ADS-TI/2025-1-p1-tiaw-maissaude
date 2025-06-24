@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const senha = document.getElementById("senha").value;
 
             try {
-                const resposta = await fetch(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`);
+                const resposta = await fetch(`https://tiaw-json-server.vercel.app/usuarios?email=${email}&senha=${senha}`);
                 const usuarios = await resposta.json();
 
                 if (usuarios.length === 1) {
