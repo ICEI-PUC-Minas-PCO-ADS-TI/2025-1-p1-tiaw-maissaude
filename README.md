@@ -15,12 +15,12 @@ Um dos principais diferenciais do Ma+s Saúde é seu foco no suporte a nutricion
 
 ## Integrantes
 
-* Raissa Aparecida de Souza Rocha
 * Guilherme Teixeira Ferreira
-* Paco Lemos Garibaldi
 * Gustavo Silva Santiago
 * João Marcelo Ribeiro da Silva
 * Juan Pablo Marcelino Rocha
+* Paco Lemos Garibaldi
+* Raissa Aparecida de Souza Rocha
 
 ## Professor
 
