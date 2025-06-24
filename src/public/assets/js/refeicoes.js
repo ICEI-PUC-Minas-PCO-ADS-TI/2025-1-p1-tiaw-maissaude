@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("http://localhost:3000/refeicoes")
+    fetch("https://https://tiaw-json-server.vercel.app/refeicoes")
         .then(response => response.json())
         .then(refeicoes => {
             refeicoes.forEach(refeicao => {
