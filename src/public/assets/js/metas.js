@@ -9,7 +9,7 @@ const filtroCategoriaSelect = document.getElementById("filtroCategoria");
 let metas = [];
 
 function carregarMetas() {
-  fetch("http://localhost:3000/metas")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas")
     .then(res => {
       if (!res.ok) throw new Error("Erro ao carregar metas");
       return res.json();
@@ -25,7 +25,7 @@ function carregarMetas() {
 }
 
 function adicionarMeta(meta) {
-  fetch("http://localhost:3000/metas", {
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -45,7 +45,7 @@ function adicionarMeta(meta) {
 }
 
 function atualizarMeta(meta) {
-  fetch(`http://localhost:3000/metas/${meta.id}`, {
+  fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas/${meta.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -60,7 +60,7 @@ function atualizarMeta(meta) {
 }
 
 function excluirMeta(id) {
-  fetch(`http://localhost:3000/metas/${id}`, {
+  fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas/${id}`, {
     method: "DELETE"
   })
   .then(res => {

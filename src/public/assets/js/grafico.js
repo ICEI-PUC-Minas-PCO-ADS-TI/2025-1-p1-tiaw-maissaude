@@ -21,7 +21,7 @@ function normalizarCategoria(categoria) {
 
 async function gerarGraficoDeMetas(categoriaFiltro = "todas") {
   try {
-    const resposta = await fetch("http://localhost:3000/metas");
+    const resposta = await fetch("https://tiaw-json-server.vercel.app/metas");
     if (!resposta.ok) {
       throw new Error("Erro ao buscar metas do servidor.");
     }

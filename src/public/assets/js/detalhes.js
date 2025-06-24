@@ -6,7 +6,7 @@ function getUrlParameter(name) {
 function carregarDetalhes() {
     const refeicaoId = getUrlParameter('id');
 
-    fetch("http://localhost:3000/refeicoes")
+    fetch("https://tiaw-json-server.vercel.app/refeicoes")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao carregar os dados');
