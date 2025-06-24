@@ -536,51 +536,77 @@ main {
   background-color: #8CB06C;
   padding: 20px 30px;
   border-radius: 15px;
+  overflow: hidden;
+  position: relative;
 }
 
 .refeicoes-destaque h1 {
   color: white;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.refeicoes-destaque .image-grid {
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-}
-
-.image-grid {
-  display: flex;
   gap: 10px;
-  padding: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.image-placeholder img {
-  width: 240px;
-  height: 170px;
-  object-fit: cover;
-  padding: 10px;
 }
 
 .image-placeholder {
   text-align: center;
 }
 
-.image-link {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.image-link img {
+.image-placeholder img {
+  width: 240px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.image-link img:hover {
-  transform: scale(1.10);
+.image-placeholder img:hover {
+  transform: scale(1.1);
 }
 
+.image-link {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffffaa;
+  border: none;
+  font-size: 2rem;
+  color: #4a4a4a;
+  cursor: pointer;
+  padding: 0 12px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #ffffff;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 /*Refeições destaques*/
 
 /* Inicio Footer */
