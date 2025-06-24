@@ -3,7 +3,7 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const form = document.getElementById("cadastro");
 
-const urlBase = "https://tiaw-json-server.vercel.app/usuarios";
+const urlBase = "https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/usuarios";
 
 function criarUsuario() {
     form.addEventListener("submit", async (event) => {
@@ -16,7 +16,6 @@ function criarUsuario() {
         };
 
         try {
-            // Verifica se o e-mail já está cadastrado
             const resposta = await fetch(`${urlBase}?email=${encodeURIComponent(novoUsuario.email)}`);
             const usuariosExistentes = await resposta.json();
 
@@ -25,7 +24,6 @@ function criarUsuario() {
                 return;
             }
 
-            // Se não existir, cria o novo usuário
             const res = await fetch(urlBase, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
