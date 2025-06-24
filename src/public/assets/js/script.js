@@ -1,6 +1,6 @@
 const currentIndexes = [];
 
-fetch('https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/featureData')
+fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/featureData")
   .then(res => res.json())
   .then(data => {
     const featuresContainer = document.querySelector('.features');
