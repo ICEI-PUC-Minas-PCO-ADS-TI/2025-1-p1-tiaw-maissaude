@@ -34,16 +34,17 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | O site deverá solicitar informações báiscas do usuário no momento do login, como: nome, idade, email e telefone. | ALTA |
+| RF-001 | O site deverá solicitar informações báiscas do usuário no momento do login, como: nome, idade, email e senha. | ALTA |
 | RF-002 | O usuário poderá informar quantas refeições deseja fazer por dia, para que o site possa sugerir um melhor balanceamento alimentar.  | MÉDIA |
-| RF-003 | O site apresentará sugestões de alimentação personalizadas, de acordo com as preferências informadas pelo usuário. | ALTA | 
+| RF-003 | O nutricionista poderá cadastrar planos alimentares personalizados para cada paciente. | ALTA | 
 | RF-004 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas. | MÉDIA |
 | RF-005 | O usuário poderá informar seus dados físicos, como peso e altura, para uma análise alimentar mais adequada. | ALTA |
 | RF-006 | O site permitirá que o usuário escolha o tipo de ajuda que deseja receber (ex: cardápios prontos, dicas rápidas, produtos, etc.). | MÉDIA |
-| RF-007 | O usuário poderá marcar ou favoritar as melhores dicas encontradas no site. | MÉDIA |
+| RF-007 | O paciente poderá visualizar seu plano alimentar e receber recomendações com base nas metas definidas. | MÉDIA |
 | RF-008 | O site poderá disponibilizar produtos relacionados à alimentação saudável para compra, auxiliando o usuário a seguir as recomendações. | MÉDIA |
 | RF-009 | Após um tempo de uso, o site enviará uma mensagem ou e-mail pedindo que o usuário avalie a plataforma. | MÉDIA |
 | RF-010 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
+| RF-011 | O sistema permitirá que o nutricionista defina metas de saúde (ex: ingestão calórica, consumo de água, etc.) para cada paciente. | MÉDIA |
  
 ### Requisitos não funcionais
 
