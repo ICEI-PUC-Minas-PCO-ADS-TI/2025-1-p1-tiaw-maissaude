@@ -8,12 +8,14 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| Atleta | Um sistema para poder indicar no meu consultório | Facilitar o monitoramento e a rotina alimentar de cada paciente |
-| Mãe | Alimentos e opções que reduzam seletividade alimentar | Facilitar a aceitação dos alimentos pela filha e melhorar a saúde geral |
-| Idosa | Ter uma dieta saudável para repor minhas vitaminas | Preciso ter mais energia e meu organismo se regularize para ser mais produtiva |
-| Depressivo e Gordo | Parar de comer alimentos que faça mal a minha saúde | Melhorar minha saúde física e mental sem me sentir sobrecarregado |
-| Estudante | Ter uma rotina com horários para as refeições | Minha rotina é corrida, e me esqueço de alimentar |
-| Vegano | Uma dieta que sugira refeições veganas equilibradas | Manter uma alimentação saudável e prática |
+| Atleta | 	Um sistema para organizar minhas metas alimentares e físicas | Facilitar o monitoramento do meu progresso nas atividades |
+| Nutricionista | 	Um site para acompanhar meus pacientes | Tornar mais fácil o envio de dietas e o acompanhamento da evolução nutricional |
+| Mãe | 	Alimentos e opções que reduzam a seletividade alimentar da filha | Melhorar a aceitação dos alimentos e a saúde geral da criança |
+| Idosa | Ter uma dieta saudável para repor minhas vitaminas | Aumentar minha energia e regular o organismo para ser mais produtiva |
+| Pessoa com depressão e sobrepeso | Saber quantas calorias devo ingerir por dia | Melhorar minha saúde física e perder peso de forma saudável |
+| Estudante | Ter uma rotina com horários definidos para as refeições | Minha rotina é corrida e acabo me esquecendo de me alimentar corretamente |
+| Vegano | Uma dieta com sugestões de refeições veganas equilibradas | Manter uma alimentação saudável, prática e compatível com meus valores |
+| Universitario | 	Uma ferramenta para calcular a quantidade ideal de água por dia | Passo muito tempo estudando e preciso controlar melhor minha ingestão de líquidos |
 
 
 ## Proposta de valor
