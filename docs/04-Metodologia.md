@@ -55,5 +55,4 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude |
 | Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/45 |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=0-1&t=kdCbwWOUYfzM5IKZ-1 |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
- 
+| Hospedagem                          | Vercel                             | https://maissaude-tiaw.vercel.app/ |
