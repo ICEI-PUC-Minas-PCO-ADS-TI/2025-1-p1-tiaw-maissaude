@@ -19,7 +19,7 @@
 ![image](https://github.com/user-attachments/assets/a487944a-0b15-4fa6-b4af-1d1355d435b4)
 ![image](https://github.com/user-attachments/assets/4e5f7d5a-c4e2-40d6-a5b3-34ec9eafa6c8)
 
-> * **Highlights de pesquisa**:
+ * **Highlights de pesquisa**:
 ![image](https://github.com/user-attachments/assets/af9b28df-73ef-40ef-8bec-62d6ff657dc1)
 
 ## Etapa de definição
