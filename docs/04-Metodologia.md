@@ -36,17 +36,17 @@ No desenvolvimento, foi adotado o framework Scrum, com definição de papéis, s
 ![image](https://github.com/user-attachments/assets/96b3558b-fe87-44d3-8e13-0474222e55d2)
 
 ### Ferramentas
-- (1) Visual Studio Code
+- (1) Visual Studio Code, Replit
 - (2) Discord / WhatsApp 
 - (3) Miro / Figma / Canva 
-- (4) Figma
+- (4) Vercel, Replit
 
  
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
 | Processo de Design Thinking         | Miro                               | https://miro.com/app/board/uXjVIGs3KEk=/?share_link_id=647243942918 |
 | Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude |
-| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude |
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p1-tiaw-maissaude/tree/main/docs |
 | Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/45 |
-| Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=0-1&t=kdCbwWOUYfzM5IKZ-1 |
+| Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Ma-s-Sa%C3%BAde---TIAW?node-id=0-1&t=IaIdwLUegxl41TIF-1 |
 | Hospedagem                          | Vercel                             | https://maissaude-tiaw.vercel.app/ |
