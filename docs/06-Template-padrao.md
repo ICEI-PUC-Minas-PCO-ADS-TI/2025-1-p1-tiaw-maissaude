@@ -20,8 +20,6 @@ A aplicação **Lotus** adota uma identidade visual moderna, calma e acolhedora,
 
 A iconografia adotada no projeto foi escolhida para reforçar a identidade visual relacionada à saúde, bem-estar e cuidado com o usuário. O estilo segue uma abordagem minimalista, moderna e amigável, com ícones vetoriais simples, de fácil reconhecimento e boa legibilidade em diferentes tamanhos de tela.
 
-![default_transparent_1000x1000](https://github.com/user-attachments/assets/5a55fcdd-19af-488c-9f6a-94b513d2bd14)
-
-![teste](https://github.com/user-attachments/assets/92db1743-5e53-4d25-a970-a2dd5d1b39c0)
+![teste](https://github.com/user-attachments/assets/38387134-1d16-48d1-ad26-a2554fc66add)
 
 ---
