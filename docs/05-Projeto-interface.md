@@ -20,13 +20,13 @@ A landing page apresenta informações sobre o site, seus recursos e funcionalid
 
 ![Landing Page](https://github.com/user-attachments/assets/73a61819-d453-4a4d-b854-03ee81df188e)
 
-##### PAGINA DE CADASTRO E LOGIN
+##### PÁGINA DE CADASTRO E LOGIN
 
-Permite que o usuário informe seus dados como e-mail e senha para cadastro e login no site.
+Permite que o usuário informe seus dados como nome de usuário, e-mail e senha para cadastro e login no site.
 
-![Cadastro](https://github.com/user-attachments/assets/2ac4139b-c6d1-4939-b6f5-c8d584bb3a86)
+![cadastro](https://github.com/user-attachments/assets/97271682-8916-404b-9419-f8a8df4942e5)
 
-![Login](https://github.com/user-attachments/assets/2a4edab1-4191-44bc-8de3-ad41f978fc95)
+![login](https://github.com/user-attachments/assets/9d14f728-5a16-475d-a0ef-240a597405af)
 
 ##### HOME PAGE
 
