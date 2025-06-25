@@ -34,17 +34,17 @@ Através da home page, o usuário poderá se informar sobre sua rotina diária d
 
 ![Home Page](https://github.com/user-attachments/assets/82deb613-1564-4b92-ac8c-061a263befd1)
 
-##### CONSUMO DE ÁGUA
+##### CALCULADORA DE CONSUMO DE ÁGUA
 
-A página permite que o usuário informe sua idade e peso, a partir disso será indicada a quantidade de água que ele deve beber.
+Calcula automaticamente a quantidade ideal de água que o usuário deve ingerir por dia, com base em dois fatores: peso corporal e nível de atividade física. Essa funcionalidade ajuda o usuário a manter-se hidratado de forma personalizada, promovendo hábitos saudáveis.
 
-![Consumo de Água](https://github.com/user-attachments/assets/fdcb8ee8-772e-424b-a58b-5722e2f8d949)
+![agua](https://github.com/user-attachments/assets/f08bb26c-bbf7-40f6-9086-4cce8beeed28)
 
 ##### CALCULADORA METABÓLICA BASAL
 
-A calculadora vai indicar a quantidade de calorias que o usuário deve consumir por dia de acordo com seu peso e altura.
+Calcula a quantidade estimada de calorias que o usuário deve consumir diariamente, com base em peso, altura, idade, sexo e nível de atividade física. A ferramenta fornece um valor personalizado da Taxa Metabólica Basal (TMB), essencial para definir dietas equilibradas e metas de ganho, perda ou manutenção de peso.
 
-![Calculadora MTB](https://github.com/user-attachments/assets/8c0e2e33-9e1a-467d-b214-dd543d6206a4)
+![mtb](https://github.com/user-attachments/assets/008172ae-04a1-4956-a5d1-3ceab0e824c6)
 
 ##### REFEIÇÕES
 
