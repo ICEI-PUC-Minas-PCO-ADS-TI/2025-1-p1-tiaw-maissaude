@@ -36,7 +36,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 | O site deverá solicitar informações básicas do usuário no momento do cadastro, como: nome, idade, e-mail e senha. | ALTA |
 | RF-002 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas.  | MÉDIA |
-| RF-003 | O site poderá disponibilizar produtos relacionados à alimentação saudável para compra, auxiliando o usuário a seguir as recomendações. | MÉDIA | 
+| RF-003 | A plataforma oferecerá recomendações de alimentos e substituições saudáveis, facilitando a adesão ao plano alimentar personalizado. | MÉDIA | 
 | RF-004 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
 | RF-005 | O paciente poderá informar quantas refeições deseja fazer por dia, para que o sistema sugira um melhor balanceamento alimentar. | MÉDIA |
 | RF-006 | O nutricionista poderá cadastrar planos alimentares personalizados para cada paciente. | ALTA |
@@ -50,17 +50,18 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
 | RNF-001 | O site deverá estar disponível 24 horas por dia, garantindo acesso sempre que o usuário precisar. | ALTA   |
-| RNF-002 | O site poderá permitir que o usuário personalize o tema ou a cor da página, baseado em suas preferências ou no perfil informado. | BAIXA |
+| RNF-002 | Os dados dos usuários devem ser armazenados de forma segura, seguindo protocolos atualizados de segurança e privacidade | ALTA |
 | RNF-003 | Os dados dos usuários devem ser armazenados de forma segura, respeitando protocolos de segurança e privacidade. | ALTA |
 | RNF-004 | O site deverá ser compatível com múltiplas plataformas, funcionando adequadamente em Android, iOS, Windows e Mac. | ALTA |
+| RNF-005 | A interface deverá ser responsiva e adaptável a diferentes tamanhos de tela, priorizando usabilidade em dispositivos móveis. | ALTA |
+| RNF-006 | O site deverá suportar múltiplos usuários simultâneos sem perda significativa de desempenho. | MÉDIA |
 
 ## Restrições
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| Os dados dos usuários não poderão ser armazenados por um período superior a 2 anos. |
-|002| As indicações de produtos ou serviços feitas pelo site não devem ultrapassar o valor de R$300,00. |
-|003| Menores de 18 anos não podem acessar o site, |
-|004| Não é possível compartilhar o plano alimentar. |
-|005| Somente administradores poderão ter acesso ao sistema de segurança de dados. |
-|006| Inicialmente, o site estará disponível apenas em português, não havendo suporte para outros idiomas no primeiro lançamento. |
+|001| Menores de 18 anos só poderão acessar a plataforma com consentimento de um responsável legal. |
+|003| Não é possível compartilhar o plano alimentar. |
+|001| Menores de 18 anos só poderão acessar a plataforma com consentimento de um responsável legal. |
+|004| Somente administradores poderão ter acesso ao sistema de segurança de dados. |
+|005| Inicialmente, o site estará disponível apenas em português, não havendo suporte para outros idiomas no primeiro lançamento. |
