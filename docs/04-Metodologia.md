@@ -29,8 +29,11 @@ Após a finalização de cada sprint, as funcionalidades desenvolvidas eram inte
 
 ### Processo
 
-![image](https://github.com/user-attachments/assets/784c7642-e3c8-40e9-a247-4f28a4503c72)
+O grupo seguiu as etapas do Design Thinking, realizando inicialmente a imersão para entender o problema da alimentação saudável, em seguida definiu os perfis dos usuários e possíveis soluções. A partir disso, foram elaborados protótipos e desenvolvidas funcionalidades com base em feedbacks.
 
+No desenvolvimento, foi adotado o framework Scrum, com definição de papéis, sprints semanais e reuniões de acompanhamento. O gerenciamento de tarefas foi feito por meio do GitHub Projects, utilizando a estrutura de Kanban para organizar as atividades.
+
+![image](https://github.com/user-attachments/assets/96b3558b-fe87-44d3-8e13-0474222e55d2)
 
 ### Ferramentas
 - (1) Visual Studio Code
