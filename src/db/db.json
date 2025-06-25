@@ -52,5 +52,35 @@
         "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
       }
     ]
+  ],
+  "avaliacoes": [
+    {
+      "nome": "João Emanuel",
+      "imagem": "assets/img/CLIENTEAVALIA.jpeg",
+      "comentario": "Usei o aplicativo e perdi 10kg em 3 meses",
+      "estrelas": 5
+    },
+    {
+      "nome": "Sabrina Costa",
+      "imagem": "assets/img/CLIENTEAVALIA2.jpeg",
+      "comentario": "Usei o aplicativo para fazer a minha dieta enquanto fazia musculação, ganhei 12kg de massa magra",
+      "estrelas": 5
+    },
+    {
+      "nome": "Marina Santos",
+      "imagem": "assets/img/client.png",
+      "comentario": "Esse aplicativo é perfeito para fazer o controle da minha dieta.",
+      "estrelas": 5
+    }
+  ],
+  "laning": [
+    {
+      "imagem": "assets/img/bannerMelhor.png",
+      "alt": "Ilustração saudável"
+    },
+    {
+      "imagem": "assets/img/vista-frontal-medico-sorridente-com-maca.jpg",
+      "alt": "Outra imagem central"
+    }
   ]
 }
