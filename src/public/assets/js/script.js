@@ -1,24 +1,52 @@
-const currentIndexes = [0, 0, 0];
-const features = document.querySelectorAll(".feature");
+const currentIndexes = [];
 
-fetch("http://localhost:3000/featureData")
-  .then(response => response.json())
-  .then(featureData => {
-    features.forEach((featureEl, featureIndex) => {
-      const button = featureEl.querySelector(".feature-seta");
-      const imgEl = featureEl.querySelector(".feature-img");
-      const titleEl = featureEl.querySelector(".feature-title");
-      const descEl = featureEl.querySelector(".feature-description");
+fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/features")
+  .then(res => res.json())
+  .then(data => {
+    const featuresContainer = document.querySelector('.features');
 
-      button.addEventListener("click", () => {
-        currentIndexes[featureIndex] =
-          (currentIndexes[featureIndex] + 1) % featureData[featureIndex].length;
+    data.forEach((group, groupIndex) => {
+      currentIndexes[groupIndex] = 0;
 
-        const nextContent = featureData[featureIndex][currentIndexes[featureIndex]];
-        imgEl.src = nextContent.img;
-        titleEl.innerHTML = nextContent.title;
-        descEl.innerHTML = nextContent.description;
+      const featureDiv = document.createElement('div');
+      featureDiv.classList.add('feature');
+      featureDiv.dataset.featureIndex = groupIndex;
+
+      const img = document.createElement('img');
+      img.className = 'feature-img';
+      img.src = group[0].img;
+      img.alt = 'feature';
+
+      const textDiv = document.createElement('div');
+      textDiv.className = 'feature-text';
+
+      const title = document.createElement('h3');
+      title.className = 'feature-title';
+      title.innerHTML = group[0].title;
+
+      const desc = document.createElement('p');
+      desc.className = 'feature-description';
+      desc.textContent = group[0].description;
+
+      const button = document.createElement('button');
+      button.className = 'feature-seta';
+      button.textContent = '→';
+
+      // Evento do botão
+      button.addEventListener('click', () => {
+        currentIndexes[groupIndex] = (currentIndexes[groupIndex] + 1) % group.length;
+        const next = group[currentIndexes[groupIndex]];
+        img.src = next.img;
+        title.innerHTML = next.title;
+        desc.textContent = next.description;
       });
+
+      textDiv.appendChild(title);
+      textDiv.appendChild(desc);
+      featureDiv.appendChild(img);
+      featureDiv.appendChild(textDiv);
+      featureDiv.appendChild(button);
+      featuresContainer.appendChild(featureDiv);
     });
   })
-  .catch(error => console.error('Erro ao carregar o JSON de features:', error));
+  .catch(error => console.error("Erro ao carregar as features:", error));
