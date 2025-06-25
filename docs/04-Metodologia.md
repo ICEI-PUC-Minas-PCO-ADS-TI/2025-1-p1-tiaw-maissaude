@@ -3,36 +3,27 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Para desenvolver o projeto Ma+s Saúde, o grupo usou uma metodologia colaborativa com práticas ágeis, que facilitam a comunicação e a adaptação durante o trabalho. A equipe trabalha com editores de código como VS Code, usa o GitHub para controlar o código e a documentação, e se comunica pelo Discord e WhatsApp para reuniões e alinhamentos. O código é gerenciado com Git, criando branches para cada funcionalidade, fazendo revisões por pull requests e mantendo o projeto organizado. O trabalho é planejado semanalmente, com metas definidas e reuniões para avaliar o progresso. Ferramentas como Trello ou GitHub Projects ajudam a organizar as tarefas, dividir responsabilidades e acompanhar tudo. Essa forma de trabalhar garante um desenvolvimento organizado, colaborativo e focado em entregar resultados sempre.
+Para o desenvolvimento do projeto Ma+s Saúde, a equipe adotou uma metodologia colaborativa baseada em práticas ágeis, com foco em comunicação eficiente e adaptação contínua. Foram utilizados editores de código como o Visual Studio Code, o GitHub para versionamento e documentação, e plataformas de comunicação como Discord e WhatsApp para reuniões e alinhamentos. O gerenciamento do código-fonte foi realizado com Git, utilizando branches específicas para funcionalidades, revisões por pull requests e integração contínua. O planejamento semanal definiu metas claras, com reuniões de acompanhamento do progresso. Ferramentas como o GitHub Projects foram utilizadas para organizar tarefas e responsabilidades, promovendo um desenvolvimento estruturado e colaborativo.
 
 ## Controle de versão
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
 A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `test`: versão para realização dos testes na aplicação
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
+A equipe adotou um fluxo de trabalho baseado na criação de branches individuais para cada integrante, nomeadas de acordo com o nome de cada membro (por exemplo: guilherme, raissa, gustavo), permitindo que cada um desenvolvesse suas sprints de forma independente.
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
+Após a finalização de cada sprint, as funcionalidades desenvolvidas eram integradas na branch test, onde os artefatos eram reunidos e testados em conjunto. Com os testes concluídos e a aplicação em funcionamento, era realizado o merge da branch test para a branch main, garantindo que a versão principal permanecesse estável e pronta para entrega.
 
 ## Planejamento do projeto
 
 ###  Divisão de papéis
 
-- Scrum Master: Raissa Rocha
-- Product Owner: Guilherme Teixeira
+- Scrum Master: Guilherme Teixeira
+- Product Owner: Raissa Rocha
 - Equipe de Desenvolvimento: Guilherme Teixeira, Raissa Aparecida, João Marcelo, Gustavo Silva, Paco Lemos, Juan Pablo
 - Equipe de Design: Guilherme Teixeira, Gustavo Silva.
 
