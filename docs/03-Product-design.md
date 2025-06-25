@@ -24,6 +24,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 ![image](https://github.com/user-attachments/assets/4725aca3-999a-4764-9070-2b7507eff875)
 ![image](https://github.com/user-attachments/assets/6e4f2b75-15f0-4be9-aa81-f843f7896ea4)
 ![image](https://github.com/user-attachments/assets/8759120d-6f54-40bc-a5c2-24c38571a892)
+![image](https://github.com/user-attachments/assets/d961bbb9-e74a-449b-9ebb-2d2327a04997)
 
 ## Requisitos
 
