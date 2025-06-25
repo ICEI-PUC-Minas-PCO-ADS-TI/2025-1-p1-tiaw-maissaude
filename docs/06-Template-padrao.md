@@ -4,9 +4,12 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-> **Links úteis**:
->
-> - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website page layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect liquid layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and why icons improve your web design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+## 1. **Identidade Visual**
+
+A aplicação **Lotus** adota uma identidade visual moderna, calma e acolhedora, com foco na recuperação, equilíbrio emocional e superação dos vícios.
+
+- **Tea Green** `(#D1F5B6)` – Utilizado em todas as páginas como fundo
+
+![paleta](https://github.com/user-attachments/assets/1afd8f4e-47b8-4eff-8184-57ea32863d57)
+
+---
