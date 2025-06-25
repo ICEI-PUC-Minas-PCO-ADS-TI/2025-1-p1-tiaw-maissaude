@@ -34,17 +34,16 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | O site deverá solicitar informações báiscas do usuário no momento do login, como: nome, idade, email e senha. | ALTA |
-| RF-002 | O usuário poderá informar quantas refeições deseja fazer por dia, para que o site possa sugerir um melhor balanceamento alimentar.  | MÉDIA |
-| RF-003 | O nutricionista poderá cadastrar planos alimentares personalizados para cada paciente. | ALTA | 
-| RF-004 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas. | MÉDIA |
-| RF-005 | O usuário poderá informar seus dados físicos, como peso e altura, para uma análise alimentar mais adequada. | ALTA |
-| RF-006 | O site permitirá que o usuário escolha o tipo de ajuda que deseja receber (ex: cardápios prontos, dicas rápidas, produtos, etc.). | MÉDIA |
-| RF-007 | O paciente poderá visualizar seu plano alimentar e receber recomendações com base nas metas definidas. | MÉDIA |
-| RF-008 | O site poderá disponibilizar produtos relacionados à alimentação saudável para compra, auxiliando o usuário a seguir as recomendações. | MÉDIA |
-| RF-009 | Após um tempo de uso, o site enviará uma mensagem ou e-mail pedindo que o usuário avalie a plataforma. | MÉDIA |
-| RF-010 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
-| RF-011 | O sistema permitirá que o nutricionista defina metas de saúde (ex: ingestão calórica, consumo de água, etc.) para cada paciente. | MÉDIA |
+| RF-001 | O site deverá solicitar informações básicas do usuário no momento do cadastro, como: nome, idade, e-mail e senha. | ALTA |
+| RF-002 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas.  | MÉDIA |
+| RF-003 | O site poderá disponibilizar produtos relacionados à alimentação saudável para compra, auxiliando o usuário a seguir as recomendações. | MÉDIA | 
+| RF-004 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
+| RF-005 | O paciente poderá informar quantas refeições deseja fazer por dia, para que o sistema sugira um melhor balanceamento alimentar. | MÉDIA |
+| RF-006 | O nutricionista poderá cadastrar planos alimentares personalizados para cada paciente. | ALTA |
+| RF-007 | O paciente poderá registrar seu progresso (peso, IMC, ingestão de água, etc.) em sua conta pessoal. | ALTA |
+| RF-008 | O nutricionista poderá editar ou atualizar os planos alimentares conforme a evolução do paciente. | MÉDIA |
+| RF-009 | O paciente poderá visualizar seu plano alimentar e receber recomendações com base nas metas definidas. | MÉDIA |
+| RF-010 | O sistema permitirá que o nutricionista defina metas de saúde (como ingestão calórica, consumo de água, etc.) para cada paciente. | MÉDIA |
  
 ### Requisitos não funcionais
 
