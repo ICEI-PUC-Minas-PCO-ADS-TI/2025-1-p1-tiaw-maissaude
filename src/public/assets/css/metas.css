@@ -109,9 +109,12 @@ main {
 .menu-usuario button:hover {
   background-color: #2D5F25;
 }
+
 /* Fim Header */
 
-.container{
+
+
+.container {
   margin-top: 20px;
 }
 
@@ -130,13 +133,17 @@ main {
 }
 
 .card h2 {
+  display: flex;
+  justify-content: center;
   margin-bottom: 15px;
-  color: #2d5f25;
+  color: white;
+  align-items: center;
 }
 
+.adc,
 .card input,
-.card select,
-.card button {
+.card select
+ {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -165,13 +172,14 @@ main {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-#listaMetas{
+#listaMetas {
   margin-top: 10px;
 }
 
 /* Deixe o card com altura máxima e scroll interno */
 .card-lista {
-  max-height: 500px; /* Ajuste conforme necessário */
+  max-height: 500px;
+  /* Ajuste conforme necessário */
   overflow-y: auto;
 }
 
@@ -292,8 +300,23 @@ main {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  gap: 12px;
   border-radius: 4px;
   padding: 0.5rem;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#listaMetas li > div {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#listaMetas li button:last-child {
+  margin-left: 12px;
 }
 
 #listaMetas li span {

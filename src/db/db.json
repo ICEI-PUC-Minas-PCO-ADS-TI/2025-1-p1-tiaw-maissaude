@@ -36,6 +36,22 @@
       "concluida": false,
       "userId": "BaavtvZ",
       "id": 2
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 3
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 4
     }
   ],
   "mealSchedule": [
@@ -152,19 +168,19 @@
     {
       "nome": "João Emanuel",
       "imagem": "assets/images/landing/CLIENTEAVALIA.jpeg",
-      "comentario": "Usei o aplicativo e perdi 10kg em 3 meses",
+      "comentario": "Agora consigo estabelecer minhas metas com facilidade e clareza. Super prático!",
       "estrelas": 5
     },
     {
       "nome": "Sabrina Costa",
       "imagem": "assets/images/landing/CLIENTEAVALIA2.jpeg",
-      "comentario": "Usei o aplicativo para fazer a minha dieta enquanto fazia musculação, ganhei 12kg de massa magra",
+      "comentario": "Depois que comecei a usar o Ma+s Saúde, minha alimentação ficou muito mais equilibrada e organizada!",
       "estrelas": 5
     },
     {
       "nome": "Marina Santos",
       "imagem": "assets/images/landing/client.png",
-      "comentario": "Esse aplicativo é perfeito para fazer o controle da minha dieta.",
+      "comentario": "O app é excelente para acompanhar e melhorar minha alimentação no dia a dia.",
       "estrelas": 5
     }
   ],
