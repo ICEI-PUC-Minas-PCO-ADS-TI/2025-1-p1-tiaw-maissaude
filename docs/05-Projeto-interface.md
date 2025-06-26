@@ -30,9 +30,9 @@ Permite que o usuário informe seus dados como nome de usuário, e-mail e senha 
 
 ##### HOME PAGE
 
-Através da home page, o usuário poderá se informar sobre sua rotina diária de alimentação, seu consumo de água diário, calorias ingeridas no dia, além de refeições indicadas de acordo com a sua dieta personalizada.
+A tela inicial oferece ao usuário uma visão geral de sua rotina diária. Nela, é possível visualizar os horários das refeições, registrar a quantidade de água ingerida e acompanhar quanto ainda falta para atingir a meta do dia. O mesmo se aplica ao controle de calorias consumidas. A página também conta com um carrossel que sugere refeições personalizadas, além de permitir a navegação pelas demais seções do site por meio da barra de navegação superior.
 
-![Home Page](https://github.com/user-attachments/assets/82deb613-1564-4b92-ac8c-061a263befd1)
+![home](https://github.com/user-attachments/assets/c7470048-84d5-43c2-97ac-46ccbea2286d)
 
 ##### CALCULADORA DE CONSUMO DE ÁGUA
 
