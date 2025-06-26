@@ -28,6 +28,14 @@
       "concluida": false,
       "userId": null,
       "id": 1
+    },
+    {
+      "texto": "Correr 10km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 2
     }
   ],
   "mealSchedule": [
@@ -106,37 +114,37 @@
     [
       {
         "img": "assets/images/landing/nutricao1.png",
-        "title": "Acompanhamento inteligente",
-        "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
+        "title": "Seu bem-estar em tempo real",
+        "description": "Acompanhe seus dados de saúde com ferramentas práticas como a calculadora de água e o rastreador de calorias diárias."
       },
       {
         "img": "assets/images/landing/imagemFeatures4.webp",
-        "title": "Monitore sua saúde facilmente",
-        "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
+        "title": "Metabolismo sob controle",
+        "description": "Com a calculadora metabólica, descubra quantas calorias seu corpo precisa e otimize sua alimentação com base no seu perfil."
       }
     ],
     [
       {
         "img": "assets/images/landing/nutricao2.jpg",
-        "title": "Mais cores no prato,<br>mais saúde na vida.",
-        "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
+        "title": "Metas claras, saúde na direção certa",
+        "description": "Defina seus objetivos nutricionais e acompanhe seu progresso com a página de metas personalizadas do Ma+s Saúde."
       },
       {
-        "img": "assets/images/landing/imagemFeatures5.jpg",
-        "title": "Descubra novos sabores naturais",
-        "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
+        "img": "assets/images/landing/nutricao3.jpg",
+        "title": "Cardápios que entendem você",
+        "description": "Receba sugestões de refeições equilibradas com base nas suas preferências, metas e necessidades diárias."
       }
     ],
     [
       {
-        "img": "assets/images/landing/nutricao3.jpg",
-        "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
-        "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
+        "img": "assets/images/landing/ImagemFeatures6.jpg",
+        "title": "Planeje sua rotina alimentar com inteligência.",
+        "description": "Crie uma rotina mais saudável com ferramentas interativas, gráficos visuais e lembretes de hidratação."
       },
       {
-        "img": "assets/images/landing/ImagemFeatures6.jpg",
-        "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
-        "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+        "img": "assets/images/landing/imagemFeatures5.jpg",
+        "title": "Nutrição real para pessoas reais",
+        "description": "Tudo que você precisa para cuidar da saúde: simples, intuitivo e 100% pensado no seu dia a dia."
       }
     ]
   ],
