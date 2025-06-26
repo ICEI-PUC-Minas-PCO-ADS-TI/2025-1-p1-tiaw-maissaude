@@ -118,11 +118,31 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #8CB06C;
+
   margin: 20px auto;
   max-width: 800px;
   border-radius: 20px;
   gap: 10px;
+}
+
+.calendario-semanal button {
+  background-color: transparent;
+  color: #2D5F25;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.calendario-semanal button:hover {
+  background-color: #1E3E18;
+}
+
+.calendario-semanal button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
 .semana-controle button {
@@ -180,6 +200,14 @@ main {
   text-align: center;
   padding: 10px 0;
   min-width: 0;
+}
+
+.dia-atual {
+  background-color: #2D5F25;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px;
 }
 
 .dias-semana,
@@ -260,6 +288,7 @@ main {
   font-weight: bold;
   margin-right: 8px;
 }
+
 /* Card */
 
 /* Agua */
@@ -326,6 +355,7 @@ main {
   margin-top: 20px;
   overflow: hidden;
 }
+
 /* Agua */
 
 /* Calorias */
@@ -377,6 +407,7 @@ main {
   margin-top: 15px;
   gap: 10px;
 }
+
 /* Calorias */
 
 .progress-bar {
@@ -502,8 +533,14 @@ main {
   background-color: #ffffff;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
 /*Refeições destaques*/
 
 /* Inicio Footer */

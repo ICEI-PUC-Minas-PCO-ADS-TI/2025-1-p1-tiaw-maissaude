@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Script 2: calendário dinâmico ---
   let semanaAtual = 0;
-  const dataAtual = new Date();
+  const dataAtual = new Date(); // hoje
   let mesAtual = dataAtual.getMonth();
   let anoAtual = dataAtual.getFullYear();
 
   const diasMesElement = document.getElementById('dias-mes');
-  const tituloSemanaElement = document.getElementById('titulo-semana');
+  const tituloSemanaElement = document.getElementById('titulo-semana') || null;
   const btnSemanaAnterior = document.getElementById('semana-anterior');
   const btnProximaSemana = document.getElementById('proxima-semana');
 
@@ -36,88 +36,71 @@ document.addEventListener("DOMContentLoaded", () => {
     "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
   ];
 
-  function getTotalSemanasNoMes() {
-    const primeiroDiaMes = new Date(anoAtual, mesAtual, 1);
-    const ultimoDiaMes = new Date(anoAtual, mesAtual + 1, 0);
-    const totalDias = ultimoDiaMes.getDate() + primeiroDiaMes.getDay();
-    return Math.ceil(totalDias / 7);
+  // 🧮 Função para calcular a semana do ano de uma data
+  function calcularSemanaDoAno(data) {
+    const primeiroDiaAno = new Date(data.getFullYear(), 0, 1);
+    const diffDias = Math.floor((data - primeiroDiaAno) / (1000 * 60 * 60 * 24));
+    return Math.floor((diffDias + primeiroDiaAno.getDay()) / 7);
   }
 
   function atualizarCalendario() {
-    const primeiroDiaMes = new Date(anoAtual, mesAtual, 1);
-    const ultimoDiaMes = new Date(anoAtual, mesAtual + 1, 0);
-    const totalSemanas = getTotalSemanasNoMes();
+    const dataInicioAno = new Date(anoAtual, 0, 1);
 
-    if (semanaAtual >= totalSemanas) {
-      semanaAtual = totalSemanas - 1;
+    // 🟢 FORÇANDO a semana a começar na SEGUNDA (ISO-like)
+    const diaSemanaPrimeiro = dataInicioAno.getDay();
+    const ajuste = (diaSemanaPrimeiro === 0 ? -6 : 1) - diaSemanaPrimeiro;
+
+    const dataInicioSemana = new Date(dataInicioAno);
+    dataInicioSemana.setDate(dataInicioSemana.getDate() + ajuste + (semanaAtual * 7));
+
+    const dataFimSemana = new Date(dataInicioSemana);
+    dataFimSemana.setDate(dataFimSemana.getDate() + 6);
+
+    mesAtual = dataInicioSemana.getMonth();
+    anoAtual = dataInicioSemana.getFullYear();
+
+    if (tituloSemanaElement) {
+      tituloSemanaElement.textContent = `Semana de ${dataInicioSemana.getDate()} de ${meses[dataInicioSemana.getMonth()]} até ${dataFimSemana.getDate()} de ${meses[dataFimSemana.getMonth()]}`;
     }
 
-    let primeiroDiaSemana = new Date(anoAtual, mesAtual, 1);
-    primeiroDiaSemana.setDate(primeiroDiaSemana.getDate() + (semanaAtual * 7) - primeiroDiaSemana.getDay() + 1);
-
-    if (primeiroDiaSemana < primeiroDiaMes) {
-      primeiroDiaSemana = new Date(primeiroDiaMes);
-    }
-
-    tituloSemanaElement.textContent = `${meses[mesAtual]} ${anoAtual} - Semana ${semanaAtual + 1}`;
     diasMesElement.innerHTML = '';
-    let dataRender = new Date(primeiroDiaSemana);
+    let dataRender = new Date(dataInicioSemana);
 
     for (let i = 0; i < 7; i++) {
       const span = document.createElement('span');
-      if (dataRender.getMonth() === mesAtual && dataRender.getFullYear() === anoAtual) {
-        span.textContent = dataRender.getDate();
+      span.textContent = dataRender.getDate();
 
-        const hoje = new Date();
-        if (dataRender.getDate() === hoje.getDate() &&
-          dataRender.getMonth() === hoje.getMonth() &&
-          dataRender.getFullYear() === hoje.getFullYear()) {
-          span.classList.add('dia-atual');
-        }
-      } else {
-        span.textContent = '';
+      if (dataRender.getMonth() !== mesAtual) {
+        span.classList.add('fora-do-mes');
       }
+
+      // 🎯 Se for hoje, destaque!
+      if (
+        dataRender.getDate() === dataAtual.getDate() &&
+        dataRender.getMonth() === dataAtual.getMonth() &&
+        dataRender.getFullYear() === dataAtual.getFullYear()
+      ) {
+        span.classList.add('dia-atual');
+      }
+
       diasMesElement.appendChild(span);
       dataRender.setDate(dataRender.getDate() + 1);
     }
-
-    btnSemanaAnterior.disabled = semanaAtual === 0 && mesAtual === 0 && anoAtual === new Date().getFullYear();
-    btnProximaSemana.disabled = false;
-  }
-
-  function mudarMes(incremento) {
-    mesAtual += incremento;
-    if (mesAtual > 11) {
-      mesAtual = 0;
-      anoAtual++;
-    } else if (mesAtual < 0) {
-      mesAtual = 11;
-      anoAtual--;
-    }
-    semanaAtual = 0;
-    atualizarCalendario();
   }
 
   btnSemanaAnterior.addEventListener('click', () => {
     if (semanaAtual > 0) {
       semanaAtual--;
-    } else {
-      mudarMes(-1);
+      atualizarCalendario();
     }
-    atualizarCalendario();
   });
 
   btnProximaSemana.addEventListener('click', () => {
-    const totalSemanas = getTotalSemanasNoMes();
-    if (semanaAtual < totalSemanas - 1) {
-      semanaAtual++;
-    } else {
-      mudarMes(1);
-      semanaAtual = 0;
-    }
+    semanaAtual++;
     atualizarCalendario();
   });
 
+  semanaAtual = calcularSemanaDoAno(dataAtual);
   atualizarCalendario();
 
   // --- Script 3: agenda de refeições carregada do JSON ---
