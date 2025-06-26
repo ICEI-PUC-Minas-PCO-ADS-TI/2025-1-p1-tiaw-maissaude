@@ -22,7 +22,7 @@ A iconografia adotada no projeto foi escolhida para reforçar a identidade visua
 Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usuario mais agradavel e mais intuitiva
 
 - **Navbar** com o logotipo do Ma+s Saúde, links de navegação e o perfil do usário.
-- **Main** onde são carregadas as seções dinâmicas (progresso, missões, etc.).
+- **Main** onde são carregadas as seções dinâmicas (progresso, refeições, etc.).
 - **Rodapé** com links sobre o nosso grupo e contato.
 
 **Exemplo de Layout**
