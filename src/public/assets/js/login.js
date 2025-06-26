@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     const Usuario = usuarios[0];
 
                     sessionStorage.setItem("Usuario", JSON.stringify(Usuario));
-
                     localStorage.setItem("usuarioLogado", Usuario.email);
                     localStorage.setItem("userId", Usuario.id);
+
+
 
                     window.location.href = "home.html";
                 } else {

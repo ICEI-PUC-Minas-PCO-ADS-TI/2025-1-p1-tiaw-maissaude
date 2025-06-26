@@ -162,7 +162,9 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener('click', () => {
         consumoAtual += option.amount;
         consumoTotal.textContent = consumoAtual + ' ml';
-        localStorage.setItem('consumoAgua', consumoAtual);
+        if (usuarioLogado) {
+          localStorage.setItem(`${usuarioLogado}_consumoAgua`, consumoAtual);
+        }
         atualizarProgresso();
         addOptions.classList.add('hidden');
       });
@@ -177,7 +179,9 @@ document.addEventListener("DOMContentLoaded", () => {
     zerarBtn.addEventListener('click', () => {
       consumoAtual = 0;
       consumoTotal.textContent = '0 ml';
-      localStorage.setItem('consumoAgua', 0);
+      if (usuarioLogado) {
+        localStorage.setItem(`${usuarioLogado}_consumoAgua`, 0);
+      }
       atualizarProgresso();
       addOptions.classList.add('hidden');
     });
@@ -204,7 +208,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error("Erro ao carregar opções de água:", error));
 
   // Restaura consumo salvo
-  const savedConsumo = localStorage.getItem('consumoAgua');
+  let savedConsumo = 0;
+  if (usuarioLogado) {
+    savedConsumo = localStorage.getItem(`${usuarioLogado}_consumoAgua`);
+  }
   if (savedConsumo) {
     consumoAtual = parseInt(savedConsumo);
     consumoTotal.textContent = consumoAtual + ' ml';
