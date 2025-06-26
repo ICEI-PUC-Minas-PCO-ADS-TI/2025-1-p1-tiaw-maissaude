@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const dataAtual = new Date();
   let mesAtual = dataAtual.getMonth();
   let anoAtual = dataAtual.getFullYear();
-
+  
   // Elementos do DOM
   const diasMesElement = document.getElementById('dias-mes');
   const tituloSemanaElement = document.getElementById('titulo-semana');
@@ -46,9 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (primeiroDiaSemana < primeiroDiaMes) {
       primeiroDiaSemana = new Date(primeiroDiaMes);
     }
-    
-    // Atualizar título
-    tituloSemanaElement.textContent = `${meses[mesAtual]} ${anoAtual} - Semana ${semanaAtual + 1}`;
     
     // Gerar os dias da semana
     diasMesElement.innerHTML = '';
