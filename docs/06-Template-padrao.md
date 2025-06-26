@@ -6,7 +6,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 ## 1. **Identidade Visual**
 
-A aplicação **Lotus** adota uma identidade visual moderna, calma e acolhedora, com foco na recuperação, equilíbrio emocional e superação dos vícios.
+A iconografia adotada no projeto foi escolhida para reforçar a identidade visual relacionada à saúde, bem-estar e cuidado com o usuário. O estilo segue uma abordagem minimalista, moderna e amigável, com ícones vetoriais simples, de fácil reconhecimento e boa legibilidade em diferentes tamanhos de tela.
 
 - **Tea Green** `(#D1F5B6)` – Utilizado em todas as páginas como fundo
 - **Olivine** `(#8CB06C)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
@@ -22,10 +22,12 @@ A aplicação **Lotus** adota uma identidade visual moderna, calma e acolhedora,
 Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usuario mais agradavel e mais intuitiva
 
 - **Navbar** com o logotipo do Ma+s Saúde, links de navegação e o perfil do usário.
-- **** onde são carregadas as seções dinâmicas (progresso, missões, etc.).
+- **Main** onde são carregadas as seções dinâmicas (progresso, missões, etc.).
 - **Rodapé** com links sobre o nosso grupo e contato.
 
 **Exemplo de Layout**
+
+![home](https://github.com/user-attachments/assets/a510b6de-1af2-4162-943a-1ab0a0a7de00)
 
 ---
 ## 3. **Responsividade**
