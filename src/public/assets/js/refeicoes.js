@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
+    fetch("http://localhost:3000/refeicoes")
         .then(response => response.json())
         .then(refeicoes => {
             refeicoes.forEach(refeicao => {

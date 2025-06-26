@@ -118,11 +118,31 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #8CB06C;
+
   margin: 20px auto;
   max-width: 800px;
   border-radius: 20px;
   gap: 10px;
+}
+
+.calendario-semanal button {
+  background-color: transparent;
+  color: #2D5F25;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.calendario-semanal button:hover {
+  background-color: #1E3E18;
+}
+
+.calendario-semanal button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
 .semana-controle button {
@@ -182,6 +202,14 @@ main {
   min-width: 0;
 }
 
+.dia-atual {
+  background-color: #2D5F25;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px;
+}
+
 .dias-semana,
 .numeros-dias {
   display: flex;
@@ -191,21 +219,11 @@ main {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
   grid-template-rows: auto auto;
   gap: 20px;
   padding: 20px;
   margin-top: 20px;
-}
-
-.calorias-box {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.liquid-box {
-  grid-column: 1;
-  grid-row: 1;
+  align-items: stretch;
 }
 
 .container-tabelas {
@@ -215,59 +233,50 @@ main {
   flex-wrap: wrap;
   margin: 20px auto;
   width: fit-content;
-
 }
 
-.calorias-box {
-  background-color: #8CB06C;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 500px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .metas {
   display: flex;
 }
 
-/*Card*/
+/* Card */
 .refeicoes-card {
   grid-column: 3;
   grid-row: 1 / span 2;
+  background-color: #a3cd8a;
+  border-radius: 12px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .card {
+  background-color: #a3cd8a;
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  width: 300px;
-  max-width: 100%;
-  height: fit-content;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #a3cd8a;
+  justify-content: space-between;
 }
 
 #meal-schedule {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 20px;
-  margin-right: 20px;
-  margin-left: auto;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .meal {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #5553;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #0002;
+  padding-bottom: 8px;
 }
 
 .meal img {
@@ -275,14 +284,14 @@ main {
   margin-right: 10px;
 }
 
-/*Card*/
-
 .time {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-/* Água */
+/* Card */
+
+/* Agua */
 .liquid-box {
   background-color: #8CB06C;
   border-radius: 10px;
@@ -290,6 +299,25 @@ main {
   width: 100%;
   max-width: 500px;
   margin: 20px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.container-liquidos {
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+  padding-right: 40px;
+  display: grid;
+}
+
+.liquid-box h3 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .liquid-info {
@@ -303,7 +331,7 @@ main {
   margin: 10px;
   flex: 1;
   min-width: 120px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .liquid-label {
@@ -328,81 +356,7 @@ main {
   overflow: hidden;
 }
 
-.progress-bar {
-  height: 100%;
-  background-color: #2D5F25;
-  width: 0%;
-  transition: width 0.5s ease;
-}
-
-.reset-button {
-  background-color: #8CB06C;
-  color: #2D5F25;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.reset-button:hover {
-  background-color: #2D5F25;
-  color: white;
-}
-
-.container-liquidos {
-  width: 100%;
-  max-width: 500px;
-  max-height: 600px;
-  margin: 30px auto;
-  padding: 0 20px;
-  padding-right: 40px;
-  display: grid;
-}
-
-.liquid-box h3 {
-  color: black;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.add-button {
-  background-color: #2D5F25;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-
-}
-
-.add-button:hover {
-  background-color: #1E3E18;
-  transform: scale(1.1);
-}
-
-.quantity-btn {
-  background-color: #8CB06C;
-  color: #2D5F25;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.quantity-btn:hover {
-  background-color: #2D5F25;
-  color: white;
-}
-/* Água */
+/* Agua */
 
 /* Calorias */
 .calorias-box {
@@ -412,6 +366,11 @@ main {
   width: 100%;
   max-width: 500px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .calorie-info {
@@ -425,7 +384,7 @@ main {
   margin: 10px;
   flex: 1;
   min-width: 120px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .calorie-label {
@@ -441,13 +400,6 @@ main {
   color: #000;
 }
 
-.progress-bar {
-  height: 100%;
-  background-color: #2D5F25;
-  width: 0%;
-  transition: width 0.5s ease;
-}
-
 .add-options {
   display: flex;
   justify-content: space-around;
@@ -456,7 +408,17 @@ main {
   gap: 10px;
 }
 
-.reset-button {
+/* Calorias */
+
+.progress-bar {
+  height: 100%;
+  background-color: #2D5F25;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.reset-button,
+.quantity-btn {
   background-color: #8CB06C;
   color: #2D5F25;
   border: none;
@@ -467,26 +429,10 @@ main {
   transition: all 0.3s ease;
 }
 
-.reset-button:hover {
+.reset-button:hover,
+.quantity-btn:hover {
   background-color: #2D5F25;
   color: white;
-}
-
-.container-liquidos {
-  width: 100%;
-  max-width: 500px;
-  max-height: 600px;
-  margin: 30px auto;
-  padding: 0 20px;
-  padding-right: 40px;
-  display: grid;
-}
-
-.liquid-box h3 {
-  color: black;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  text-align: center;
 }
 
 .add-button {
@@ -500,7 +446,6 @@ main {
   cursor: pointer;
   margin-top: 10px;
   transition: all 0.3s ease;
-
 }
 
 .add-button:hover {
@@ -508,26 +453,9 @@ main {
   transform: scale(1.1);
 }
 
-.quantity-btn {
-  background-color: #8CB06C;
-  color: #2D5F25;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.quantity-btn:hover {
-  background-color: #2D5F25;
-  color: white;
-}
-
 .hidden {
   display: none;
 }
-/* Calorias */
 
 /*Refeições Destaques*/
 .refeicoes-destaque {
@@ -605,8 +533,14 @@ main {
   background-color: #ffffff;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
 /*Refeições destaques*/
 
 /* Inicio Footer */

@@ -9,15 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const senha = document.getElementById("senha").value;
 
             try {
-                const resposta = await fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/usuarios?email=${email}&senha=${senha}`);
+                const resposta = await fetch(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`);
                 const usuarios = await resposta.json();
 
                 if (usuarios.length === 1) {
                     const Usuario = usuarios[0];
 
                     sessionStorage.setItem("Usuario", JSON.stringify(Usuario));
-
                     localStorage.setItem("usuarioLogado", Usuario.email);
+                    localStorage.setItem("userId", Usuario.id);
+
+
 
                     window.location.href = "home.html";
                 } else {
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (usuarioLogado && usuarioContainer) {
         const menuUsuario = document.createElement("div");
         menuUsuario.className = "menu-usuario";
-        menuUsuario.style.display = "none"; 
+        menuUsuario.style.display = "none";
         menuUsuario.innerHTML = `
             <p>Olá, ${usuarioLogado.usuario}</p>
             <button id="btn-sair">Sair</button>
@@ -62,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (btnSair) {
             btnSair.addEventListener("click", () => {
                 sessionStorage.removeItem("Usuario");
-                localStorage.removeItem("usuarioLogado"); 
+                localStorage.removeItem("usuarioLogado");
                 window.location.href = "login.html";
             });
         }

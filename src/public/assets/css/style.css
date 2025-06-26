@@ -13,60 +13,55 @@ body {
 
 /* Inicio Cabeçalho */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #8CB06C;
-  padding: 15px 30px;
-  color: white;
-  border-bottom: 4px solid #8CB06C;
-  height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8CB06C;
+    padding: 15px 30px;
+    color: white;
+    border-bottom: 4px solid #8CB06C;
+    height: 70px;
 }
 
 .logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .logo img {
-  height: 280px;
-  width: 100%;
+    height: 280px;
+    width: 100%;
 }
 
 .nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: #CFF1A2;
+    color: #CFF1A2;
 }
-
 /* Fim Cabeçalho */
-
-
-/* BANNER */
-
 
 .banner img {
     width: 100%;
-    margin: 0;
+    height: 565px;
+    object-fit: cover;
 }
 
-/* FEATURES */
 .features {
     display: flex;
     flex-direction: column;
@@ -137,13 +132,19 @@ body {
     transform: scale(1.05);
 }
 
-/* Destaque vermelho */
 .highlight {
     color: red;
     font-weight: bold;
 }
 
-/* AVALIAÇÃO */
+.img-center img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center top;
+    object-position: 30% 40%;
+}
+
 .avaliacao {
     background-color: #D1F5B6;
     padding: 50px 20px;
@@ -164,13 +165,20 @@ body {
     gap: 20px;
 }
 
+
 .avaliacao-card {
-    background: #fff;
-    border-radius: 12px;
-    width: 300px;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.avaliacao-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
 .avaliacao-card img {
@@ -198,10 +206,8 @@ body {
     font-size: 16px;
 }
 
-/* SOBRE */
 .sobre {
     background-color: #D1F5B6;
-    /* verde claro */
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -228,110 +234,4 @@ body {
 
 .sobre-text p {
     font-size: 1.1rem;
-}
-
-
-/* BLOG */
-
-
-.blog {
-    background-color: #D1F5B6;
-    padding: 60px 20px;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.blog-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-    color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.blog-titulo span {
-    display: inline-block;
-    width: 4px;
-    height: 20px;
-    background-color: #FF2C55;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-
-.blog-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-
-.blog-card {
-    background-color: #ccc;
-    border-radius: 15px;
-    padding: 20px;
-    width: 250px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-.blog-img {
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.blog-img img {
-    max-height: 100px;
-    object-fit: contain;
-    border-radius: 10px;
-
-}
-
-
-.blog-card h3 {
-    font-size: 1rem;
-    margin: 15px 0 10px;
-    color: #000;
-}
-
-.blog-card p {
-    font-size: 0.9rem;
-    color: #333;
-}
-
-.blog-card span {
-    color: #FF2C55;
-    font-weight: bold;
-    margin-right: 10px;
-    text-transform: uppercase;
-}
-
-
-.blog-btn {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.blog-btn button {
-    background-color: #FF2C55;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.blog-btn button:hover {
-    background-color: #e02147;
 }

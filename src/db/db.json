@@ -1,143 +1,197 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "adm",
       "email": "adm@gmail.com",
       "senha": "123456",
       "admin": true
     },
     {
-      "usuario": "guilherme",
-      "email": "guiftf2007@gmail.com",
+      "usuario": "Guilherme",
+      "email": "guilherme@gmail.com",
       "senha": "123456",
-      "id": 2
+      "id": "BaavtvZ"
     },
     {
       "usuario": "amalia",
-      "email": "amalia@gmail.com",
+      "email": "amalia@",
       "senha": "123456",
-      "id": 4
-    },
-    {
-      "usuario": "raquel",
-      "email": "raquel@gmail.com",
-      "senha": "123456",
-      "id": 5
-    },
-    {
-      "usuario": "gustavo",
-      "email": "gustavo@gmail.com",
-      "senha": "123456",
-      "id": 6
+      "id": "BNlpEQk"
     }
   ],
   "metas": [
     {
-      "id": "b16a",
-      "texto": "Correr 100KM",
+      "texto": "Andar 4km",
       "categoria": "Exercício",
-      "prazo": "2025-06-30",
-      "concluida": false
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": null,
+      "id": 1
     },
     {
-      "texto": "Beber 3L de Água",
-      "categoria": "Alimentação",
-      "prazo": "2025-06-23",
+      "texto": "Correr 10km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
       "concluida": false,
-      "id": "QudA6o1"
+      "userId": "BaavtvZ",
+      "id": 2
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 3
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 4
     }
   ],
   "mealSchedule": [
     {
       "hora": "08:00",
       "refeicao": "Café da manhã",
-      "icone": "☕"
+      "icone": "☕",
+      "id": "c029"
     },
     {
       "hora": "11:00",
       "refeicao": "Lanche da manhã",
-      "icone": "🍞"
+      "icone": "🍞",
+      "id": "a6b5"
     },
     {
       "hora": "13:00",
       "refeicao": "Almoço",
-      "icone": "🍗"
+      "icone": "🍗",
+      "id": "ab15"
     },
     {
       "hora": "16:00",
       "refeicao": "Lanche da tarde",
-      "icone": "🍞"
+      "icone": "🍞",
+      "id": "8b63"
     },
     {
       "hora": "19:00",
       "refeicao": "Jantar",
-      "icone": "🍽️"
+      "icone": "🍽️",
+      "id": "fe9b"
     },
     {
       "hora": "21:00",
       "refeicao": "Lanche da noite",
-      "icone": "🥪"
+      "icone": "🥪",
+      "id": "b7a5"
     }
   ],
   "waterOptions": [
     {
       "amount": 200,
-      "label": "200 ml"
+      "label": "200 ml",
+      "id": "a11a"
     },
     {
       "amount": 300,
-      "label": "300 ml"
+      "label": "300 ml",
+      "id": "0d19"
     },
     {
       "amount": 500,
-      "label": "500 ml"
+      "label": "500 ml",
+      "id": "2cc3"
     }
   ],
   "kcalOptions": [
     {
       "amount": 200,
-      "label": "200 kcal"
+      "label": "200 kcal",
+      "id": "b718"
     },
     {
       "amount": 500,
-      "label": "500 kcal"
+      "label": "500 kcal",
+      "id": "8b12"
     },
     {
       "amount": 700,
-      "label": "700 kcal"
+      "label": "700 kcal",
+      "id": "520a"
     }
   ],
-  "featureData": [
+  "features": [
+    [
+      {
+        "img": "assets/images/landing/nutricao1.png",
+        "title": "Seu bem-estar em tempo real",
+        "description": "Acompanhe seus dados de saúde com ferramentas práticas como a calculadora de água e o rastreador de calorias diárias."
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures4.webp",
+        "title": "Metabolismo sob controle",
+        "description": "Com a calculadora metabólica, descubra quantas calorias seu corpo precisa e otimize sua alimentação com base no seu perfil."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/nutricao2.jpg",
+        "title": "Metas claras, saúde na direção certa",
+        "description": "Defina seus objetivos nutricionais e acompanhe seu progresso com a página de metas personalizadas do Ma+s Saúde."
+      },
+      {
+        "img": "assets/images/landing/nutricao3.jpg",
+        "title": "Cardápios que entendem você",
+        "description": "Receba sugestões de refeições equilibradas com base nas suas preferências, metas e necessidades diárias."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/ImagemFeatures6.jpg",
+        "title": "Planeje sua rotina alimentar com inteligência.",
+        "description": "Crie uma rotina mais saudável com ferramentas interativas, gráficos visuais e lembretes de hidratação."
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures5.jpg",
+        "title": "Nutrição real para pessoas reais",
+        "description": "Tudo que você precisa para cuidar da saúde: simples, intuitivo e 100% pensado no seu dia a dia."
+      }
+    ]
+  ],
+  "avaliacoes": [
     {
-      "img": "assets/images/landingpage/nutricao1.png",
-      "title": "Acompanhamento inteligente",
-      "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
+      "nome": "João Emanuel",
+      "imagem": "assets/images/landing/CLIENTEAVALIA.jpeg",
+      "comentario": "Agora consigo estabelecer minhas metas com facilidade e clareza. Super prático!",
+      "estrelas": 5
     },
     {
-      "img": "assets/img/imagemFeatures4.webp",
-      "title": "Monitore sua saúde facilmente",
-      "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
+      "nome": "Sabrina Costa",
+      "imagem": "assets/images/landing/CLIENTEAVALIA2.jpeg",
+      "comentario": "Depois que comecei a usar o Ma+s Saúde, minha alimentação ficou muito mais equilibrada e organizada!",
+      "estrelas": 5
     },
     {
-      "img": "assets/img/nutricao2.jpg",
-      "title": "Mais cores no prato,<br>mais saúde na vida.",
-      "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
+      "nome": "Marina Santos",
+      "imagem": "assets/images/landing/client.png",
+      "comentario": "O app é excelente para acompanhar e melhorar minha alimentação no dia a dia.",
+      "estrelas": 5
+    }
+  ],
+  "laning": [
+    {
+      "imagem": "assets/images/landing/bannerMelhor.png",
+      "alt": "Ilustração saudável"
     },
     {
-      "img": "assets/img/imagemFeatures5.jpg",
-      "title": "Descubra novos sabores naturais",
-      "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
-    },
-    {
-      "img": "assets/img/nutricao3.jpg",
-      "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
-      "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
-    },
-    {
-      "img": "assets/img/ImagemFeatures6.jpg",
-      "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
-      "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+      "imagem": "assets/images/landing/vista-frontal-medico-sorridente-com-maca.jpg",
+      "alt": "Outra imagem central"
     }
   ],
   "refeicoes": [
