@@ -131,7 +131,7 @@
       {
         "img": "assets/images/landing/nutricao3.jpg",
         "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
-        "description": "Cada prato \"feita de forma tradicional\" é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
+        "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
       },
       {
         "img": "assets/images/landing/ImagemFeatures6.jpg",
@@ -140,20 +140,34 @@
       }
     ]
   ],
-  "perfil": [
+  "avaliacoes": [
     {
-      "id": "4bd9",
-      "nome": "fqsdq",
-      "idade": 123,
-      "peso": 123,
-      "altura": 123,
-      "sexo": "Masculino",
-      "atividade": "Leve",
-      "meta": "Perder Peso",
-      "calorias": 123,
-      "proteinas": 1231,
-      "carboidratos": 3212,
-      "gorduras": 33123
+      "nome": "João Emanuel",
+      "imagem": "assets/images/landing/CLIENTEAVALIA.jpeg",
+      "comentario": "Usei o aplicativo e perdi 10kg em 3 meses",
+      "estrelas": 5
+    },
+    {
+      "nome": "Sabrina Costa",
+      "imagem": "assets/images/landing/CLIENTEAVALIA2.jpeg",
+      "comentario": "Usei o aplicativo para fazer a minha dieta enquanto fazia musculação, ganhei 12kg de massa magra",
+      "estrelas": 5
+    },
+    {
+      "nome": "Marina Santos",
+      "imagem": "assets/images/landing/client.png",
+      "comentario": "Esse aplicativo é perfeito para fazer o controle da minha dieta.",
+      "estrelas": 5
+    }
+  ],
+  "laning": [
+    {
+      "imagem": "assets/images/landing/bannerMelhor.png",
+      "alt": "Ilustração saudável"
+    },
+    {
+      "imagem": "assets/images/landing/vista-frontal-medico-sorridente-com-maca.jpg",
+      "alt": "Outra imagem central"
     }
   ],
   "refeicoes": [
