@@ -22,4 +22,7 @@ A iconografia adotada no projeto foi escolhida para reforçar a identidade visua
 
 ![teste](https://github.com/user-attachments/assets/38387134-1d16-48d1-ad26-a2554fc66add)
 
+![teste](https://github.com/user-attachments/assets/6e40eed4-5cde-48aa-9afd-343400673df4)
+
+
 ---
