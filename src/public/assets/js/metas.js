@@ -6,16 +6,18 @@ const lista = document.getElementById("listaMetas");
 const progressBar = document.getElementById("progressBar");
 const filtroCategoriaSelect = document.getElementById("filtroCategoria");
 
+const userId = localStorage.getItem("userId"); // recupera o ID do usuário logado
 let metas = [];
 
 function carregarMetas() {
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas")
+  fetch("http://localhost:3000/metas")
     .then(res => {
       if (!res.ok) throw new Error("Erro ao carregar metas");
       return res.json();
     })
     .then(data => {
-      metas = data;
+      // Filtra metas apenas do usuário logado
+      metas = data.filter(meta => meta.userId === userId);
       renderizarMetas();
       gerarGraficoDeMetas(filtroCategoriaSelect.value);
     })
@@ -25,7 +27,10 @@ function carregarMetas() {
 }
 
 function adicionarMeta(meta) {
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas", {
+  // Adiciona userId na meta
+  meta.userId = userId;
+
+  fetch("http://localhost:3000/metas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -45,7 +50,7 @@ function adicionarMeta(meta) {
 }
 
 function atualizarMeta(meta) {
-  fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas/${meta.id}`, {
+  fetch(`http://localhost:3000/metas/${meta.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meta)
@@ -60,7 +65,7 @@ function atualizarMeta(meta) {
 }
 
 function excluirMeta(id) {
-  fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas/${id}`, {
+  fetch(`http://localhost:3000/metas/${id}`, { // corrigido: faltava uma barra antes de ${id}
     method: "DELETE"
   })
   .then(res => {

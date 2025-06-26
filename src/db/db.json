@@ -1,143 +1,159 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "adm",
       "email": "adm@gmail.com",
       "senha": "123456",
       "admin": true
     },
     {
-      "usuario": "guilherme",
-      "email": "guiftf2007@gmail.com",
+      "usuario": "Guilherme",
+      "email": "guilherme@gmail.com",
       "senha": "123456",
-      "id": 2
+      "id": "BaavtvZ"
     },
     {
-      "usuario": "amalia",
+      "usuario": "Amalia",
       "email": "amalia@gmail.com",
       "senha": "123456",
-      "id": 4
-    },
-    {
-      "usuario": "raquel",
-      "email": "raquel@gmail.com",
-      "senha": "123456",
-      "id": 5
-    },
-    {
-      "usuario": "gustavo",
-      "email": "gustavo@gmail.com",
-      "senha": "123456",
-      "id": 6
+      "id": "tERJlPJ"
     }
   ],
   "metas": [
     {
-      "id": "b16a",
-      "texto": "Correr 100KM",
+      "texto": "Andar 4km",
       "categoria": "Exercício",
-      "prazo": "2025-06-30",
-      "concluida": false
-    },
-    {
-      "texto": "Beber 3L de Água",
-      "categoria": "Alimentação",
-      "prazo": "2025-06-23",
+      "prazo": "2025-06-26",
       "concluida": false,
-      "id": "QudA6o1"
+      "userId": null,
+      "id": 1
     }
   ],
   "mealSchedule": [
     {
       "hora": "08:00",
       "refeicao": "Café da manhã",
-      "icone": "☕"
+      "icone": "☕",
+      "id": "c029"
     },
     {
       "hora": "11:00",
       "refeicao": "Lanche da manhã",
-      "icone": "🍞"
+      "icone": "🍞",
+      "id": "a6b5"
     },
     {
       "hora": "13:00",
       "refeicao": "Almoço",
-      "icone": "🍗"
+      "icone": "🍗",
+      "id": "ab15"
     },
     {
       "hora": "16:00",
       "refeicao": "Lanche da tarde",
-      "icone": "🍞"
+      "icone": "🍞",
+      "id": "8b63"
     },
     {
       "hora": "19:00",
       "refeicao": "Jantar",
-      "icone": "🍽️"
+      "icone": "🍽️",
+      "id": "fe9b"
     },
     {
       "hora": "21:00",
       "refeicao": "Lanche da noite",
-      "icone": "🥪"
+      "icone": "🥪",
+      "id": "b7a5"
     }
   ],
   "waterOptions": [
     {
       "amount": 200,
-      "label": "200 ml"
+      "label": "200 ml",
+      "id": "a11a"
     },
     {
       "amount": 300,
-      "label": "300 ml"
+      "label": "300 ml",
+      "id": "0d19"
     },
     {
       "amount": 500,
-      "label": "500 ml"
+      "label": "500 ml",
+      "id": "2cc3"
     }
   ],
   "kcalOptions": [
     {
       "amount": 200,
-      "label": "200 kcal"
+      "label": "200 kcal",
+      "id": "b718"
     },
     {
       "amount": 500,
-      "label": "500 kcal"
+      "label": "500 kcal",
+      "id": "8b12"
     },
     {
       "amount": 700,
-      "label": "700 kcal"
+      "label": "700 kcal",
+      "id": "520a"
     }
   ],
-  "featureData": [
+  "features": [
+    [
+      {
+        "img": "assets/images/landing/nutricao1.png",
+        "title": "Acompanhamento inteligente",
+        "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures4.webp",
+        "title": "Monitore sua saúde facilmente",
+        "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/nutricao2.jpg",
+        "title": "Mais cores no prato,<br>mais saúde na vida.",
+        "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures5.jpg",
+        "title": "Descubra novos sabores naturais",
+        "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/nutricao3.jpg",
+        "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
+        "description": "Cada prato \"feita de forma tradicional\" é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
+      },
+      {
+        "img": "assets/images/landing/ImagemFeatures6.jpg",
+        "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
+        "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+      }
+    ]
+  ],
+  "perfil": [
     {
-      "img": "assets/images/landingpage/nutricao1.png",
-      "title": "Acompanhamento inteligente",
-      "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
-    },
-    {
-      "img": "assets/img/imagemFeatures4.webp",
-      "title": "Monitore sua saúde facilmente",
-      "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
-    },
-    {
-      "img": "assets/img/nutricao2.jpg",
-      "title": "Mais cores no prato,<br>mais saúde na vida.",
-      "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
-    },
-    {
-      "img": "assets/img/imagemFeatures5.jpg",
-      "title": "Descubra novos sabores naturais",
-      "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
-    },
-    {
-      "img": "assets/img/nutricao3.jpg",
-      "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
-      "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
-    },
-    {
-      "img": "assets/img/ImagemFeatures6.jpg",
-      "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
-      "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+      "id": "4bd9",
+      "nome": "fqsdq",
+      "idade": 123,
+      "peso": 123,
+      "altura": 123,
+      "sexo": "Masculino",
+      "atividade": "Leve",
+      "meta": "Perder Peso",
+      "calorias": 123,
+      "proteinas": 1231,
+      "carboidratos": 3212,
+      "gorduras": 33123
     }
   ],
   "refeicoes": [
