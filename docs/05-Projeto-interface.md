@@ -34,6 +34,14 @@ A tela inicial oferece ao usuário uma visão geral de sua rotina diária. Nela,
 
 ![home](https://github.com/user-attachments/assets/c7470048-84d5-43c2-97ac-46ccbea2286d)
 
+##### PÁGINA DE REFEIÇÕES E DETALHES
+
+Nesta página, o usuário visualiza sugestões de refeições personalizadas, alinhadas às suas necessidades nutricionais e metas diárias. As opções são apresentadas de forma clara e organizada, facilitando o planejamento alimentar. Ao selecionar uma refeição, o usuário tem acesso a uma visualização completa do prato, incluindo imagem ilustrativa, lista de ingredientes e uma tabela nutricional detalhada com dados como calorias, proteínas, carboidratos e gorduras. Tudo é apresentado de maneira intuitiva, ajudando na tomada de decisões conscientes e promovendo uma alimentação mais equilibrada.
+
+![refeicoes](https://github.com/user-attachments/assets/d0f91333-b340-4d6d-b58a-d823fa31bcb2)
+
+![detalhes](https://github.com/user-attachments/assets/dd87b973-f857-47d4-bf26-18dd805cec54)
+
 ##### CALCULADORA DE CONSUMO DE ÁGUA
 
 Calcula automaticamente a quantidade ideal de água que o usuário deve ingerir por dia, com base em dois fatores: peso corporal e nível de atividade física. Essa funcionalidade ajuda o usuário a manter-se hidratado de forma personalizada, promovendo hábitos saudáveis.
@@ -45,13 +53,6 @@ Calcula automaticamente a quantidade ideal de água que o usuário deve ingerir 
 Calcula a quantidade estimada de calorias que o usuário deve consumir diariamente, com base em peso, altura, idade, sexo e nível de atividade física. A ferramenta fornece um valor personalizado da Taxa Metabólica Basal (TMB), essencial para definir dietas equilibradas e metas de ganho, perda ou manutenção de peso.
 
 ![mtb](https://github.com/user-attachments/assets/008172ae-04a1-4956-a5d1-3ceab0e824c6)
-
-##### REFEIÇÕES
-
-O site vai indicar refeições que o usuário pode fazer de acordo com o seu plano alimentar.
-
-![Refeições](https://github.com/user-attachments/assets/5f02ad90-7e98-4b7a-bb12-c0c574621af5)
-
 
 ### Protótipo Interativo
 
