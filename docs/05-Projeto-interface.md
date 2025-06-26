@@ -16,9 +16,9 @@
 
 ##### LANDING PAGE
 
-A landing page apresenta informações sobre o site, seus recursos e funcionalidades.
+A landing page tem como objetivo apresentar o site de forma atrativa e informativa. Nela, o usuário encontra carrosséis que destacam as principais funcionalidades da plataforma, como o acompanhamento de refeições, metas de hidratação e controle calórico personalizado. Além disso, há depoimentos de usuários reais que reforçam a credibilidade do projeto, mostrando como a ferramenta contribuiu positivamente para seus hábitos de saúde. É uma introdução convidativa, pensada para engajar novos visitantes e incentivá-los a explorar o site.
 
-![Landing Page](https://github.com/user-attachments/assets/73a61819-d453-4a4d-b854-03ee81df188e)
+![landing](https://github.com/user-attachments/assets/4d84a4ba-befd-4788-b5c9-5a6de02f42c1)
 
 ##### PÁGINA DE CADASTRO E LOGIN
 
