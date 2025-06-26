@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- Script 1: carregar refeições ---
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
+  fetch("http://localhost:3000/refeicoes")
     .then(response => response.json())
     .then(refeicoes => {
       refeicoes.forEach(refeicao => {
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   atualizarCalendario();
 
   // --- Script 3: agenda de refeições carregada do JSON ---
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule")
+  fetch("http://localhost:3000/mealSchedule")
     .then(response => response.json())
     .then(mealData => {
       const container = document.getElementById("meal-schedule");
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Carrega opções de água
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/waterOptions")
+  fetch("http://localhost:3000/waterOptions")
     .then(response => response.json())
     .then(options => criarBotoesAgua(options))
     .catch(error => console.error("Erro ao carregar opções de água:", error));
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Carrega opções de calorias
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/kcalOptions")
+  fetch("http://localhost:3000/kcalOptions")
     .then(response => response.json())
     .then(options => criarBotoesCalorias(options))
     .catch(error => console.error("Erro ao carregar opções de calorias:", error));
