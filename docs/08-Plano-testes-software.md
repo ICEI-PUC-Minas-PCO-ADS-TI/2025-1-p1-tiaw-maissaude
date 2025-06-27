@@ -31,7 +31,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico, 
 | Requisito associado | RF-006 - Registro de consumo de água e calorias <br> RF-007 - Consultar horarios de refeições <br> RF-008 - Carrossel com indicações de refeições |
 | Objetivo do teste | Verificar se o usuário tem acesso ao panorama do site. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site [https://maissaude-tiaw.vercel.app/home.html](https://maissaude-tiaw.vercel.app/home.html) <br> - O usuário deve conseguir adicionar a quantidade de água e calorias consumidas, assim como também remover se necessario <br> - O usuário podera consultar os horarios do seu planejamento para se alimentar <br> - No fim da página deve haver um pequeno carrossel com algumas refeições do seu plano personalizado <br> |
-| Critério de êxito | - O login foi realizado com sucesso. <br> - O usuário é redirecionado para a home page.|
+| Critério de êxito | - Usuário logado tem acesso a home page. |
 | Responsável pela elaboração do caso de teste | Guilherme Teixeira |
 
 <br>
