@@ -18,6 +18,36 @@
       "email": "amalia@",
       "senha": "123456",
       "id": "BNlpEQk"
+    },
+    {
+      "usuario": "eric",
+      "email": "eric@gmail.com",
+      "senha": "123456",
+      "id": "qoNuJ36"
+    },
+    {
+      "usuario": "Matheus Canudo ",
+      "email": "matheus@email.com",
+      "senha": "123",
+      "id": "cwIPRjB"
+    },
+    {
+      "usuario": "Gabriela Julia",
+      "email": "gabriela@email.com",
+      "senha": "123",
+      "id": "E-WEAH7"
+    },
+    {
+      "usuario": "a",
+      "email": "a",
+      "senha": "a",
+      "id": "7BOeXnt"
+    },
+    {
+      "usuario": "mamaco",
+      "email": "mamaco@",
+      "senha": "123",
+      "id": "boaquqT"
     }
   ],
   "metas": [
@@ -52,6 +82,62 @@
       "concluida": false,
       "userId": "NoRbm5F",
       "id": 4
+    },
+    {
+      "texto": "correr 5km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 5
+    },
+    {
+      "texto": "comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 6
+    },
+    {
+      "texto": "ganhar massa",
+      "categoria": "Saúde",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 7
+    },
+    {
+      "texto": "comer fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 9
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "E-WEAH7",
+      "id": 10
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 11
+    },
+    {
+      "texto": "Meditar",
+      "categoria": "Saúde",
+      "prazo": "2025-06-27",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 12
     }
   ],
   "mealSchedule": [
