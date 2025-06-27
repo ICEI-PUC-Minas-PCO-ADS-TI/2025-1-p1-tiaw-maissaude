@@ -102,8 +102,10 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 
 A aplicação Ma+s Saúde foi desenvolvida como uma plataforma web, utilizando tecnologias do lado do cliente (HTML, CSS, JavaScript) e integrando-se a um backend simulado via JSON Server. A escolha das plataformas de hospedagem considerou a facilidade de uso, compatibilidade com as tecnologias adotadas e a estabilidade no acesso aos recursos.
 
-*Front-end*
+**Front-end**
+
 O front-end (HTML, CSS, JavaScript e imagens) está hospedado na plataforma Vercel. A escolha foi feita pela facilidade de uso, deploy automatizado via GitHub e suporte eficiente para aplicações web estáticas e SPA (Single Page Applications). O site pode ser acessado por meio de uma URL gerada automaticamente pela Vercel.
 
-*JSON Server*
+**JSON Server**
+
 Utilizamos o JSON Server para simular uma API REST com um arquivo .json. No entanto, por limitações técnicas, não foi possível hospedar o servidor diretamente no Vercel. Por isso, optamos pela Replit, onde adaptamos o ambiente para que fosse possível hospedar o JSON Server. Essa solução permitiu a manipulação dos dados (metas, refeições, favoritos, etc.) via requisições HTTP, integrando-se perfeitamente ao front-end.
