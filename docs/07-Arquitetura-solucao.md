@@ -33,48 +33,57 @@ Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
 
-##### Estrutura de dados - Contatos
+##### Estrutura de dados - Usuários 
 
-Contatos da aplicação
+Registro dos usuários do sistema utilizados para cadastro e login do sistema.
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+    "usuario": "amalia",
+    "email": "amalia@",
+    "senha": "123456",
+    "id": "BNlpEQk"
+  }
+```
+
+##### Estrutura de dados - Metas
+
+Metas dos usuários
+
+```json
+  {
+    "texto": "Correr 10km",
+    "categoria": "Exercício",
+    "prazo": "2025-06-28",
+    "concluida": false,
+    "userId": "BaavtvZ",
+    "id": 2
   }
   
 ```
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de dados - Refeições
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+Refeições indicadas para o usúario
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
+    "id": "1",
+    "nome": "Panqueca de Mirtilo",
+    "imagem": "assets/images/refeicoes/panquecamirtilo.jpeg",
+    "descricao": "Com 15g de proteína por porção, esta panqueca proteica é preparada sem adição de açúcares e sem o uso de farinha branca. A combinação de mirtilos naturais com chocolate   branco de alta qualidade garante um sabor marcante, aliado a uma composição nutritiva. Uma escolha prática e equilibrada para quem valoriza refeições saborosas e funcionais.",
+    "ingredientes": [
+       "clara de ovo", "farelo de aveia", "gema de ovo", "maltitol", "chocolate branco sem açúcar", "mirtilo", "whey 80%", "leite em pó integral",
+      ],
+    "nutricional": [
+        {"componente": "Valor energético", "quantidade": "310 kcal", "vd": "16%"},
+        {"componente": "Carboidratos", "quantidade": "37 g", "vd": "12%"},
+        {"componente": "Proteínas", "quantidade": "15 g", "vd": "20%"},
+      ]
+    "categoria": "cafe-da-manha"
   }
+  
 ```
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação, quanto outras estruturas que foram criadas para algum tipo de configuração.
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
 
 ### Módulos e APIs
 
