@@ -42,6 +42,12 @@ Nesta página, o usuário visualiza sugestões de refeições personalizadas, al
 
 ![detalhes](https://github.com/user-attachments/assets/dd87b973-f857-47d4-bf26-18dd805cec54)
 
+##### METAS
+
+Nesta página, o usuário pode definir e acompanhar suas metas de saúde e bem-estar de forma personalizada. É possível adicionar novas metas, selecionar a categoria desejada (como alimentação, hidratação ou atividade física) e definir um prazo para conclusão. As metas criadas são exibidas em uma lista interativa, enquanto um gráfico visual dinâmico mostra o progresso geral, facilitando o monitoramento do desempenho ao longo do tempo. A interface foi pensada para incentivar a constância e tornar o acompanhamento de objetivos mais prático e motivador.
+
+![metas](https://github.com/user-attachments/assets/87b50ec6-afbb-481c-a666-3e0b71228e0f)
+
 ##### CALCULADORA DE CONSUMO DE ÁGUA
 
 Calcula automaticamente a quantidade ideal de água que o usuário deve ingerir por dia, com base em dois fatores: peso corporal e nível de atividade física. Essa funcionalidade ajuda o usuário a manter-se hidratado de forma personalizada, promovendo hábitos saudáveis.
