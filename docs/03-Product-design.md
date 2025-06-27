@@ -34,15 +34,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | O site deverá solicitar informações básicas do usuário no momento do cadastro, como: nome, idade, e-mail e senha. | ALTA |
-| RF-002 | O site indicará o tempo estimado necessário para que o usuário siga suas recomendações e atinja suas metas.  | MÉDIA |
-| RF-003 | A plataforma oferecerá recomendações de alimentos e substituições saudáveis, facilitando a adesão ao plano alimentar personalizado. | MÉDIA | 
-| RF-004 | O site exibirá avaliações e feedbacks feitos por outros usuários para que novos usuários possam consultar. | MÉDIA |
-| RF-005 | O paciente poderá informar quantas refeições deseja fazer por dia, para que o sistema sugira um melhor balanceamento alimentar. | MÉDIA |
-| RF-006 | O nutricionista poderá cadastrar planos alimentares personalizados para cada paciente. | ALTA |
-| RF-007 | O paciente poderá registrar seu progresso (peso, IMC, ingestão de água, etc.) em sua conta pessoal. | ALTA |
-| RF-008 | O nutricionista poderá editar ou atualizar os planos alimentares conforme a evolução do paciente. | MÉDIA |
-| RF-009 | O paciente poderá visualizar seu plano alimentar e receber recomendações com base nas metas definidas. | MÉDIA |
+| RF-001 | O site deverá permitir o cadastro e login de usuários com nome, idade, e-mail e senha. | ALTA |
+| RF-002 | O usuário poderá visualizar seu plano alimentar personalizado com sugestões de refeições e substituições. | MÉDIA |
+| RF-003 | O usuário poderá cadastrar metas com nome, categoria e prazo, visualizar a lista de metas e acompanhar seu progresso por meio de um gráfico.  | MÉDIA |
+| RF-004 | O sistema calculará automaticamente a recomendação diária de ingestão de água com base nas informações fornecidas pelo usuário. | MÉDIA | 
+| RF-005 | O sistema calculará a necessidade calórica diária do usuário com base na Taxa Metabólica Basal (TMB), a partir das informações fornecidas. | MÉDIA |
+| RF-006 | O usuário poderá registrar, diretamente na página inicial, a quantidade de água e calorias ingerida no dia. A quantidade total necessária é atualizada automaticamente após o cálculo feito na página de consumo de água e metabolismo basal. | MÉDIA |
+| RF-007 | O usuário poderá visualizar os horários recomendados para suas refeições na página inicial, com base nas sugestões do nutricionista, podendo adaptá-los conforme sua rotina. | ALTA |
+| RF-008 | A página inicial exibirá um carrossel com refeições indicadas pelo nutricionista para o usuário, facilitando o acesso rápido às sugestões. | MÉDIA |
+| RF-009 | O nutricionista poderá editar ou atualizar os planos alimentares conforme a evolução do paciente. | MÉDIA |
 | RF-010 | O sistema permitirá que o nutricionista defina metas de saúde (como ingestão calórica, consumo de água, etc.) para cada paciente. | MÉDIA |
  
 ### Requisitos não funcionais
