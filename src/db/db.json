@@ -18,6 +18,12 @@
       "email": "amalia@",
       "senha": "123456",
       "id": "BNlpEQk"
+    },
+    {
+      "usuario": "daniel",
+      "email": "dan@gmail.com",
+      "senha": "123456",
+      "id": "IR32jAd"
     }
   ],
   "metas": [
@@ -52,6 +58,62 @@
       "concluida": false,
       "userId": "NoRbm5F",
       "id": 4
+    },
+    {
+      "texto": "correr 5km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 5
+    },
+    {
+      "texto": "comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 6
+    },
+    {
+      "texto": "ganhar massa",
+      "categoria": "Saúde",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 7
+    },
+    {
+      "texto": "comer fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 9
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "E-WEAH7",
+      "id": 10
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 11
+    },
+    {
+      "texto": "Meditar",
+      "categoria": "Saúde",
+      "prazo": "2025-06-27",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 12
     }
   ],
   "mealSchedule": [
