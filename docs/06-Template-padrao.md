@@ -27,7 +27,7 @@ Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usu
 
 **Exemplo de Layout**
 
-![home](https://github.com/user-attachments/assets/a510b6de-1af2-4162-943a-1ab0a0a7de00)
+![home](https://github.com/user-attachments/assets/4bd3df91-bfb6-4c34-97e6-5361b7dea42f)
 
 ---
 ## 3. **Responsividade**
