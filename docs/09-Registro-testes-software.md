@@ -31,6 +31,16 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Requisito associado | RF-005 - A aplicação deve permitir que um usuário consiga calcular a quantidade ideal de calorias que ele deve consumir por dia. |
 | Registro de evidência | [RF-005-Calorias](videos/RF-005-Calorias.mp4) |
 
+| **Caso de teste** 	| **CT-006 – Home Page** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-006 <br> RF-007 <br> RF-008 - A página principal do site deve dar um panorama geral para o usuário. |
+| Registro de evidência | [RF-005-Calorias](videos/RF-005-.mp4) |
+
+| **Caso de teste** 	| **CT-007 – Página de Administradores** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-011 - A aplicação deve permitir que o administrador gerencie os usuários e nuttricionistas do site. |
+| Registro de evidência | [RF-011-Adm](videos/RF-011-Adm.mp4) |
+
 ## Avaliação
 
 Discorra sobre os resultados do teste, ressaltando os pontos fortes e fracos identificados na solução. Comente como o grupo pretende abordar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
