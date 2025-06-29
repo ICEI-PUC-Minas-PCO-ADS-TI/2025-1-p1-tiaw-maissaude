@@ -30,12 +30,13 @@ Descrição das estruturas de dados utilizadas na solução com exemplos no form
 Registro dos usuários do sistema utilizados para cadastro e login do sistema.
 
 ```json
-  {
-    "usuario": "amalia",
-    "email": "amalia@",
-    "senha": "123456",
-    "id": "BNlpEQk"
-  }
+    {
+      "usuario": "Amalia",
+      "email": "amalia@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-06-24T03:54:12.793Z",
+      "id": "G5M2FLm"
+    }
 ```
 
 ##### Estrutura de dados - Metas
