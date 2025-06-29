@@ -38,7 +38,7 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-007 – Página de Administradores** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-011 - A aplicação deve permitir que o administrador gerencie os usuários e nuttricionistas do site. |
+| Requisito associado | RF-011 - A aplicação deve permitir que o administrador gerencie os usuários e nutricionistas do site. |
 | Registro de evidência | [RF-011-Adm](videos/RF-011-Adm.mp4) |
 
 ## Avaliação
