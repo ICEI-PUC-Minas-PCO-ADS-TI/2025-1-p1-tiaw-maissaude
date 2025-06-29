@@ -9,8 +9,7 @@
 
  ## User flow
 
-![image](https://github.com/user-attachments/assets/b5257a37-a2d1-435f-9aa5-62ee4f1fb9c2)
-
+![User-flow](https://github.com/user-attachments/assets/edade72e-4598-49e1-b7f3-f9090327532c)
 
 ## Wireframes
 
