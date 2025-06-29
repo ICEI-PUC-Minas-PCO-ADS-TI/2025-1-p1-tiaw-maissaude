@@ -73,3 +73,13 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico, 
 | Passos | - Acessar o navegador <br> - Informar o endereço do site [https://maissaude-tiaw.vercel.app/metabolismo.html](https://maissaude-tiaw.vercel.app/metabolismo.html) <br> - O usuário deve selecionar seu sexo, inserir sua idade, peso, altura e o nível de atividade física praticada.  Após isso clicar no botão "Calcular Calorias Basais" <br> - A página deve apresentar a quantidade de kcal que o usuário deve ingerir, com um grafico abaixo <br> - Esse resultado da quantidade de kcal deve ser enviado ao artefato da home page. |
 | Critério de êxito | - O usuário consegue calcular seu consumo diario de kcal |
 | Responsável pela elaboração do caso de teste | Guilherme Teixeira |
+
+<br>
+
+| **Caso de teste**  | **CT-008 – Página de ADM**  |
+|:---: |:---: |
+| Requisito associado | RF-011 - O administrador poderá acessar uma página exclusiva com visualização de todos os usuários cadastrados, além de gráficos que apresentam estatísticas sobre o uso da plataforma. |
+| Objetivo do teste | Verificar se a página de adm está funcionando |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site [https://maissaude-fbzo787ud-guilhermetfts-projects.vercel.app/adm.html](https://maissaude-fbzo787ud-guilhermetfts-projects.vercel.app/adm.html) <br> - O administrador deve conseguir visualizar os usuarios cadastrados no site, assim como remover se necessario |
+| Critério de êxito | - O administrador conseguira visualizar as funções da página |
+| Responsável pela elaboração do caso de teste | Guilherme Teixeira |

@@ -2,32 +2,49 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+A aplicação Ma+s Saúde é estruturada em duas partes principais: o front-end e o backend simulado. O front-end foi desenvolvido com HTML, CSS e JavaScript, adotando o modelo de SPA (Single Page Application), onde o conteúdo é carregado dinamicamente sem recarregar a página. Ele inclui páginas como a home com metas diárias, sistema de login/cadastro, painel administrativo e gráficos interativos com a biblioteca Chart.js. Já o backend foi simulado utilizando o JSON Server, que fornece uma API REST baseada em um arquivo .json, permitindo operações de CRUD com os dados da aplicação, como usuários, refeições, metas e favoritos. Em relação à hospedagem, o front-end está no Vercel, plataforma moderna e de fácil uso, enquanto o backend, por limitações do Vercel com servidores contínuos, foi hospedado no Replit, onde foi criado um mini-servidor adaptado para simular corretamente o comportamento do JSON Server.
 
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro e login
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite ao usuário se autenticar no sistema e criar uma nova conta para acessar as funcionalidades da aplicação.
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Acesse o site e vá para a página “Login/Cadastro”;
+  * Informe seu nome, e-mail e senha para se cadastrar;
+  * O usuario é redirecionado para o login, basta utilizar as informações cadastradas;
+  * O usuário será redirecionado para a home page.
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+![login html](https://github.com/user-attachments/assets/2c5973d8-9f2a-44e2-bbea-4d6a0aa149b5)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Consumo de água
+
+Permite calcular a quantidade ideal de água diária com base em informações do usuário e registrar a ingestão ao longo do dia.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Consumo de água”;
+  * Preencha os dados e clique em “Calcular minha necessidade de água”;
+  * O resultado é exibido com um gráfico e enviado à homepage para controle diário.
+* **Tela da funcionalidade**:
+
+![agua](https://github.com/user-attachments/assets/0af5351e-5c04-4e94-9a3e-2693bcb4176d)
+
+##### Funcionalidade 3 - Metas
+
+Permite cadastrar, visualizar e acompanhar metas de saúde, com exibição de progresso e gráficos.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Metas”;
+  * Cadastre a meta no primeiro card;
+  * Veja a meta listada no card do meio;
+  * Visualize os gráficos no último card.
+* **Tela da funcionalidade**:
+
+![metas](https://github.com/user-attachments/assets/3ba81c94-e16b-48b0-b791-e4c06daef3b6)
 
 ### Estruturas de dados
 
@@ -38,12 +55,13 @@ Descrição das estruturas de dados utilizadas na solução com exemplos no form
 Registro dos usuários do sistema utilizados para cadastro e login do sistema.
 
 ```json
-  {
-    "usuario": "amalia",
-    "email": "amalia@",
-    "senha": "123456",
-    "id": "BNlpEQk"
-  }
+    {
+      "usuario": "Amalia",
+      "email": "amalia@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-06-24T03:54:12.793Z",
+      "id": "G5M2FLm"
+    }
 ```
 
 ##### Estrutura de dados - Metas
@@ -89,6 +107,10 @@ Refeições indicadas para o usuário
 
 Esta seção apresenta os módulos e APIs utilizados na solução.
 
+**Fontes**:
+
+* Google Fonts - [https://fonts.google.com/specimen/Montserrat](https://fonts.google.com/specimen/Montserrat)
+
 **Images**:
 
 * Unsplash - [https://unsplash.com/](https://unsplash.com/) 
@@ -96,6 +118,7 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 **Scripts:**
 
 * Chart.js - [https://www.chartjs.org/](https://www.chartjs.org/)
+* AnyChart - [https://www.anychart.com/](https://www.anychart.com/)
 
 ## Hospedagem
 

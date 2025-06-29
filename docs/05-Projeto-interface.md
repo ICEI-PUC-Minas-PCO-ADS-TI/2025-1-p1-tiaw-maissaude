@@ -9,8 +9,7 @@
 
  ## User flow
 
-![image](https://github.com/user-attachments/assets/b5257a37-a2d1-435f-9aa5-62ee4f1fb9c2)
-
+![User-flow](https://github.com/user-attachments/assets/edade72e-4598-49e1-b7f3-f9090327532c)
 
 ## Wireframes
 
@@ -32,7 +31,7 @@ Permite que o usuário informe seus dados como nome de usuário, e-mail e senha 
 
 A tela inicial oferece ao usuário uma visão geral de sua rotina diária. Nela, é possível visualizar os horários das refeições, registrar a quantidade de água ingerida e acompanhar quanto ainda falta para atingir a meta do dia. O mesmo se aplica ao controle de calorias consumidas. A página também conta com um carrossel que sugere refeições personalizadas, além de permitir a navegação pelas demais seções do site por meio da barra de navegação superior.
 
-![home](https://github.com/user-attachments/assets/c7470048-84d5-43c2-97ac-46ccbea2286d)
+![home](https://github.com/user-attachments/assets/55c71826-421c-4d88-8668-5ceb0903519b)
 
 ##### PÁGINA DE REFEIÇÕES E DETALHES
 
@@ -68,4 +67,6 @@ A página do administrador oferece uma visão completa da gestão da plataforma.
 
 ### Protótipo Interativo
 
-✅ [Protótipo interativo]https://www.figma.com/proto/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=21-95&p=f&t=uErG8qONuFnjRRkD-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=21%3A95
+✅ [Protótipo interativo](https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Ma-s-Sa%C3%BAde---TIAW?node-id=0-1&t=GEZVefaBIBGFJjBu-1)
+
+
