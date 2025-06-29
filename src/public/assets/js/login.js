@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".container");
     const body = document.querySelector("body");
 
-    // Alternar entre as classes do body para animação
     if (btnSignIn && btnSignUp) {
         btnSignIn.addEventListener("click", () => {
             body.className = "sign-in-js";
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 usuario: usuario.value,
                 email: emailCadastro.value,
                 senha: senhaCadastro.value,
-                dataCadastro: new Date().toISOString()  // ✅ adiciona data e hora do cadastro
+                dataCadastro: new Date().toISOString()  
             };
 
             try {
@@ -99,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     localStorage.setItem("userId", Usuario.id);
 
                     if (Usuario.admin === true) {
-                        // Redireciona para admin
                         window.location.href = "adm.html";
                     } else {
                         window.location.href = "home.html";
