@@ -24,9 +24,9 @@ A landing page tem como objetivo apresentar o site de forma atrativa e informati
 
 Permite que o usuário informe seus dados como nome de usuário, e-mail e senha para cadastro e login no site.
 
-![cadastro](https://github.com/user-attachments/assets/97271682-8916-404b-9419-f8a8df4942e5)
+![cadastro](https://github.com/user-attachments/assets/2f8129a8-a8f4-43bf-b75c-8e4081dcddb3)
 
-![login](https://github.com/user-attachments/assets/9d14f728-5a16-475d-a0ef-240a597405af)
+![login](https://github.com/user-attachments/assets/d5ce484f-cd1e-4a85-b704-17945605f622)
 
 ##### HOME PAGE
 
@@ -59,6 +59,12 @@ Calcula automaticamente a quantidade ideal de água que o usuário deve ingerir 
 Calcula a quantidade estimada de calorias que o usuário deve consumir diariamente, com base em peso, altura, idade, sexo e nível de atividade física. A ferramenta fornece um valor personalizado da Taxa Metabólica Basal (TMB), essencial para definir dietas equilibradas e metas de ganho, perda ou manutenção de peso.
 
 ![mtb](https://github.com/user-attachments/assets/008172ae-04a1-4956-a5d1-3ceab0e824c6)
+
+##### PÁGINA DE ADMINISTRADORES
+
+A página do administrador oferece uma visão completa da gestão da plataforma. Nela, é possível visualizar a quantidade total de usuários e nutricionistas cadastrados, além de acompanhar o crescimento da base de usuários ao longo do tempo por meio de gráficos informativos. A interface também permite realizar ações administrativas, como a remoção de usuários e nutricionistas, garantindo controle e segurança sobre o uso do sistema. Tudo é apresentado de forma organizada e acessível, facilitando a tomada de decisões e o monitoramento da atividade na plataforma.
+
+
 
 ### Protótipo Interativo
 
