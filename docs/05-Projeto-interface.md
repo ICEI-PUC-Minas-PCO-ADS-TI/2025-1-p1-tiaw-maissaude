@@ -64,7 +64,7 @@ Calcula a quantidade estimada de calorias que o usuário deve consumir diariamen
 
 A página do administrador oferece uma visão completa da gestão da plataforma. Nela, é possível visualizar a quantidade total de usuários e nutricionistas cadastrados, além de acompanhar o crescimento da base de usuários ao longo do tempo por meio de gráficos informativos. A interface também permite realizar ações administrativas, como a remoção de usuários e nutricionistas, garantindo controle e segurança sobre o uso do sistema. Tudo é apresentado de forma organizada e acessível, facilitando a tomada de decisões e o monitoramento da atividade na plataforma.
 
-
+![adm](https://github.com/user-attachments/assets/d8cfac95-436a-46a9-8918-6a14a332cb14)
 
 ### Protótipo Interativo
 
