@@ -29,14 +29,8 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-005 – Ingestão de calorias** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-005 - A aplicação deve permitir que um usuário consiga calcular a quantidade ideal de calorias que ele deve consumir por dia. |
-| Registro de evidência | [RF-005-Calorias](docs/videos/RF-004-Agua.mp4) |
-
-> **Links úteis**:
-> - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
+| Registro de evidência | [RF-005-Calorias](docs/videos/RF-005-Calorias.mp4) |
 
 ## Avaliação
 
 Discorra sobre os resultados do teste, ressaltando os pontos fortes e fracos identificados na solução. Comente como o grupo pretende abordar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links úteis**:
-> - [Ferramentas de Teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
