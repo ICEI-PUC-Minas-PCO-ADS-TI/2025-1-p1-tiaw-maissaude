@@ -189,7 +189,7 @@ main {
   width: 30px;
   height: 30px;
   background-color: #8CB06C;
-  color: black;
+
   text-align: center;
   padding: 6px 0;
   min-width: 0;
@@ -351,33 +351,29 @@ main {
   box-shadow: #000 10px;
 }
 
-.container-liquidos {
-  width: 100%;
-  max-width: 500px;
-  max-height: 600px;
-  margin: 30px auto;
-  padding: 0 20px;
-  padding-right: 40px;
-  display: grid;
-}
-
 .liquid-box h3 {
-  color: black;
+  color: white;
   margin-bottom: 15px;
   font-size: 1.5rem;
   text-align: center;
 }
 
+/* Altera aqui para evitar quebra */
 .liquid-info {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;  /* evita quebra */
+  gap: 20px;          /* espaçamento uniforme */
+}
+
+.liquid-info span {
+  color: white;
 }
 
 .liquid-item {
   text-align: center;
-  margin: 10px;
-  flex: 1;
+  margin: 10px 0;  /* só margem vertical para não interferir no gap */
+  flex: 1 1 auto;
   min-width: 120px;
   background-color: transparent;
 }
@@ -414,23 +410,33 @@ main {
   width: 100%;
   max-width: 500px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block; 
   grid-column: 2;
   grid-row: 1;
+}
+
+.calorias-box h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .calorie-info {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  gap: 20px;      
+}
+
+.calorie-info span {
+  color: white;
 }
 
 .calorie-item {
   text-align: center;
-  margin: 10px;
-  flex: 1;
+  margin: 10px 0; /* só vertical para manter o gap funcionando */
+  flex: 1 1 auto;
   min-width: 120px;
   background-color: transparent;
 }
@@ -456,18 +462,17 @@ main {
   gap: 10px;
 }
 
+.progress-bar-cal {
+  height: 100%;
+  background-color: #2D5F25;
+  width: 0%;
+  transition: width 0.5s ease;
+}
 /* Calorias */
 
 .progress-bar {
   height: 100%;
-  background-color: rgb(105, 160, 255);
-  width: 0%;
-  transition: width 0.5s ease;
-}
-
-.progress-bar-cal {
-  height: 100%;
-  background-color: rgb(221, 125, 23);
+  background-color: #2D5F25;
   width: 0%;
   transition: width 0.5s ease;
 }

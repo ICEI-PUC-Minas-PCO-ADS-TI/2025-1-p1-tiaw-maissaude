@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(div);
       });
 
-      // 🔽 Adiciona formulário de nova refeição
       const form = document.createElement("div");
       form.className = "adicionar-refeicao";
       form.innerHTML = `
@@ -153,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error("Erro ao carregar agenda de refeições:", error));
 
-  // 🔧 Cria visual da refeição
   function criarRefeicaoElemento(item) {
     const div = document.createElement("div");
     div.className = "meal";
@@ -165,9 +163,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return div;
   }
 
-  // 🖱️ Edição inline + exclusão
   document.getElementById("meal-schedule").addEventListener("click", (e) => {
-    // Editar horário ao clicar
+
     if (e.target.classList.contains("hora-editavel")) {
       const span = e.target;
       const id = span.dataset.id;
