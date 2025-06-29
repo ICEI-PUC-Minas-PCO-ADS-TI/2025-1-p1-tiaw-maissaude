@@ -8,6 +8,19 @@ A aplicação Ma+s Saúde é estruturada em duas partes principais: o front-end 
 
 Esta seção apresenta as funcionalidades da solução.
 
+##### Funcionalidade 1 - Cadastro e login
+
+Permite ao usuário se autenticar no sistema e criar uma nova conta para acessar as funcionalidades da aplicação.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Login/Cadastro”;
+  * Informe seu nome, e-mail e senha para se cadastrar;
+  * O usuario é redirecionado para o login, basta utilizar as informações cadastradas;
+  * O usuário será redirecionado para a home page.
+* **Tela da funcionalidade**:
+
+![login html](https://github.com/user-attachments/assets/2c5973d8-9f2a-44e2-bbea-4d6a0aa149b5)
+
 ##### Funcionalidade 2 - Consumo de água
 
 Permite calcular a quantidade ideal de água diária com base em informações do usuário e registrar a ingestão ao longo do dia.
