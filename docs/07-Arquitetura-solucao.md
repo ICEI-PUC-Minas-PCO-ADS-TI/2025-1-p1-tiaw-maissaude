@@ -2,9 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+A aplicação Ma+s Saúde é estruturada em duas partes principais: o front-end e o backend simulado. O front-end foi desenvolvido com HTML, CSS e JavaScript, adotando o modelo de SPA (Single Page Application), onde o conteúdo é carregado dinamicamente sem recarregar a página. Ele inclui páginas como a home com metas diárias, sistema de login/cadastro, painel administrativo e gráficos interativos com a biblioteca Chart.js. Já o backend foi simulado utilizando o JSON Server, que fornece uma API REST baseada em um arquivo .json, permitindo operações de CRUD com os dados da aplicação, como usuários, refeições, metas e favoritos. Em relação à hospedagem, o front-end está no Vercel, plataforma moderna e de fácil uso, enquanto o backend, por limitações do Vercel com servidores contínuos, foi hospedado no Replit, onde foi criado um mini-servidor adaptado para simular corretamente o comportamento do JSON Server.
 
 ## Funcionalidades
 
@@ -22,12 +20,6 @@ Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 * **Tela da funcionalidade**:
 
 ![Tela de funcionalidade](images/exemplo-funcionalidade.png)
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
 
 ### Estruturas de dados
 
