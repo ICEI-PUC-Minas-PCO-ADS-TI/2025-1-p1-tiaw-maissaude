@@ -21,17 +21,18 @@ Permite ao usuário se autenticar no sistema e criar uma nova conta para acessar
 
 ![login html](https://github.com/user-attachments/assets/2c5973d8-9f2a-44e2-bbea-4d6a0aa149b5)
 
-##### Funcionalidade 2 - Consumo de água
+##### Funcionalidade 2 - Home Page
 
-Permite calcular a quantidade ideal de água diária com base em informações do usuário e registrar a ingestão ao longo do dia.
+Permite que o usuário tenha uma panorama geral do site, conseguindo controlar sua ingestão de água e calorias, controlar horarios de refeiçoes e mais.
 
 * **Instruções de acesso:**
-  * Acesse o site e vá para a página “Consumo de água”;
-  * Preencha os dados e clique em “Calcular minha necessidade de água”;
-  * O resultado é exibido com um gráfico e enviado à homepage para controle diário.
+  * Acesse o site e vá para a página principal;
+  * Altere os valores de calorias e liquidos;
+  * Configure seus horarios de refeições;
+  * Tenha um carrossel indicando refeições.
 * **Tela da funcionalidade**:
 
-![agua](https://github.com/user-attachments/assets/0af5351e-5c04-4e94-9a3e-2693bcb4176d)
+![home](https://github.com/user-attachments/assets/ccab8b36-65cb-4d96-976e-34ab0d3e8b74)
 
 ##### Funcionalidade 3 - Metas
 
@@ -45,6 +46,42 @@ Permite cadastrar, visualizar e acompanhar metas de saúde, com exibição de pr
 * **Tela da funcionalidade**:
 
 ![metas](https://github.com/user-attachments/assets/3ba81c94-e16b-48b0-b791-e4c06daef3b6)
+
+##### Funcionalidade 4 - Consumo de água
+
+Permite calcular a quantidade ideal de água diária com base em informações do usuário e registrar a ingestão ao longo do dia.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Consumo de água”;
+  * Preencha os dados e clique em “Calcular minha necessidade de água”;
+  * O resultado é exibido com um gráfico e enviado à homepage para controle diário.
+* **Tela da funcionalidade**:
+
+![agua](https://github.com/user-attachments/assets/0af5351e-5c04-4e94-9a3e-2693bcb4176d)
+
+##### Funcionalidade 5 - Consumo de Calorias
+
+Permite calcular a quantidade ideal de calorias diária com base em informações do usuário e registrar a ingestão ao longo do dia.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Calculadora TMB”;
+  * Preencha os dados e clique em “Calcular Calorias Basais”;
+  * O resultado é exibido com um gráfico e enviado à homepage para controle diário.
+* **Tela da funcionalidade**:
+
+![metabolismo](https://github.com/user-attachments/assets/456e0399-ff66-4fde-9354-214416f94c4b)
+
+##### Funcionalidade 6 - Página de Administradores
+
+Permite o administrador visualizar a qunatidade de usuários presentes no site, assim como nutricionista. além de poder remove-los.
+
+* **Instruções de acesso:**
+  * Faça login com o usuário do administrador;
+  * Tenha acesso a um painel atualizado em tempo real com informações dos usuários;
+  * É possivel remover usuário e nutricionistas.
+* **Tela da funcionalidade**:
+
+![adm](https://github.com/user-attachments/assets/a17c26e1-4da7-4cfe-8b59-8b7cf40d72de)
 
 ### Estruturas de dados
 
