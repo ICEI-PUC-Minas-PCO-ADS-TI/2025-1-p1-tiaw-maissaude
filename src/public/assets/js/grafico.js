@@ -21,7 +21,7 @@ function normalizarCategoria(categoria) {
 
 async function gerarGraficoDeMetas(categoriaFiltro = "todas") {
   try {
-    const resposta = await fetch("http://localhost:3000/metas");
+    const resposta = await fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas");
     if (!resposta.ok) {
       throw new Error("Erro ao buscar metas do servidor.");
     }

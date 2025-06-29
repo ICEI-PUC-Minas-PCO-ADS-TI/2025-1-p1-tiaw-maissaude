@@ -110,6 +110,14 @@ main {
   background-color: #2D5F25;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 /* Fim Header */
 
 /*Inicio informações*/
@@ -335,6 +343,7 @@ main {
 .adicionar-refeicao button:hover {
   background-color: #6a944a;
 }
+
 /* Card */
 
 /* Agua */
@@ -361,8 +370,10 @@ main {
 .liquid-info {
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;  /* evita quebra */
-  gap: 20px;          /* espaçamento uniforme */
+  flex-wrap: nowrap;
+  /* evita quebra */
+  gap: 20px;
+  /* espaçamento uniforme */
 }
 
 .liquid-info span {
@@ -371,7 +382,8 @@ main {
 
 .liquid-item {
   text-align: center;
-  margin: 10px 0;  /* só margem vertical para não interferir no gap */
+  margin: 10px 0;
+  /* só margem vertical para não interferir no gap */
   flex: 1 1 auto;
   min-width: 120px;
   background-color: transparent;
@@ -409,7 +421,7 @@ main {
   width: 100%;
   max-width: 500px;
   margin: 20px;
-  display: block; 
+  display: block;
   grid-column: 2;
   grid-row: 1;
 }
@@ -424,8 +436,8 @@ main {
 .calorie-info {
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap; 
-  gap: 20px;      
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .calorie-info span {
@@ -434,7 +446,8 @@ main {
 
 .calorie-item {
   text-align: center;
-  margin: 10px 0; /* só vertical para manter o gap funcionando */
+  margin: 10px 0;
+  /* só vertical para manter o gap funcionando */
   flex: 1 1 auto;
   min-width: 120px;
   background-color: transparent;
@@ -467,6 +480,7 @@ main {
   width: 0%;
   transition: width 0.5s ease;
 }
+
 /* Calorias */
 
 .progress-bar {
@@ -648,5 +662,109 @@ footer a:hover {
 
   .imagem {
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .liquid-box,
+  .calorias-box,
+  .refeicoes-card,
+  .refeicoes-destaque {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .refeicoes-destaque {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .refeicoes-card {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .calorias-box {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .liquid-box {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .liquid-info,
+  .calorie-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dias-semana {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .dias-semana span,
+  .dias-semana button {
+    flex: 0 0 auto;
+    margin: 5px;
+  }
+
+  .numeros-dias {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .numeros-dias span {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    max-height: 10px;
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .usuario-container {
+    margin-left: 0;
   }
 }

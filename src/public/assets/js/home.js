@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- Script 1: carregar refeições ---
-  fetch("http://localhost:3000/refeicoes")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
     .then(response => response.json())
     .then(refeicoes => {
       refeicoes.forEach(refeicao => {
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   atualizarCalendario();
 
   // --- Script 3: agenda de refeições com edição inline, exclusão e adição (sem ícones) ---
-  fetch("http://localhost:3000/mealSchedule")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule")
     .then(response => response.json())
     .then(mealData => {
       const container = document.getElementById("meal-schedule");
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const novaRefeicao = { hora, refeicao };
 
-        fetch("http://localhost:3000/mealSchedule", {
+        fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(novaRefeicao)
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       function salvarHora() {
         const novaHora = input.value;
 
-        fetch(`http://localhost:3000/mealSchedule/${id}`, {
+        fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule/${id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ hora: novaHora })
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.classList.contains("delete-meal")) {
       const id = e.target.dataset.id;
       if (confirm("Deseja excluir esta refeição?")) {
-        fetch(`http://localhost:3000/mealSchedule/${id}`, {
+        fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule/${id}`, {
           method: "DELETE"
         })
           .then(res => {
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Carrega opções de água
-  fetch("http://localhost:3000/waterOptions")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/waterOptions")
     .then(response => response.json())
     .then(options => criarBotoesAgua(options))
     .catch(error => console.error("Erro ao carregar opções de água:", error));
@@ -390,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Carrega opções de calorias
-  fetch("http://localhost:3000/kcalOptions")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/kcalOptions")
     .then(response => response.json())
     .then(options => criarBotoesCalorias(options))
     .catch(error => console.error("Erro ao carregar opções de calorias:", error));
