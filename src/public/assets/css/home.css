@@ -109,7 +109,6 @@ main {
 .menu-usuario button:hover {
   background-color: #2D5F25;
 }
-
 /* Fim Header */
 
 /*Inicio informações*/
@@ -574,7 +573,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 /* Fim Footer*/
 
 @media (min-width: 601px) and (max-width: 1024px) {

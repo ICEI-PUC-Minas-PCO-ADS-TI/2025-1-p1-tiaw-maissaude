@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #D1F5B6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Inicio Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8CB06C;
+    padding: 15px 30px;
+    color: white;
+    border-bottom: 4px solid #8CB06C;
+    height: 70px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 280px;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #CFF1A2;
+}
+
+#icone-usuario {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.usuario-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu-usuario {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.menu-usuario p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.menu-usuario button {
+    background-color: #2D5F25;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-usuario button:hover {
+    background-color: #2D5F25;
+}
+
+/* Fim Header */
+
+.painel{
+    display: flex;
+    min-height: 100vh;
+}
+
+.Lateral {
+    width: 170px;
+    background-color: #8CB06C;
+    color: white;
+    padding: 20px;
+}
+
+.Lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Lateral li{
+    margin-bottom: 15px;
+}
+
+.Lateral ul li {
+    margin-bottom: 25px;
+}
+
+.Lateral ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo{
+    flex: 1;
+    padding: 30px;
+}
+
+.card-usuario {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
