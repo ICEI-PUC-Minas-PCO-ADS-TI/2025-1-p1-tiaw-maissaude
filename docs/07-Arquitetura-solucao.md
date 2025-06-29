@@ -71,6 +71,18 @@ Permite calcular a quantidade ideal de calorias diária com base em informaçõe
 
 ![metabolismo](https://github.com/user-attachments/assets/456e0399-ff66-4fde-9354-214416f94c4b)
 
+##### Funcionalidade 6 - Página de Administradores
+
+Permite o administrador visualizar a qunatidade de usuários presentes no site, assim como nutricionista. além de poder remove-los.
+
+* **Instruções de acesso:**
+  * Faça login com o usuário do administrador;
+  * Tenha acesso a um painel atualizado em tempo real com informações dos usuários;
+  * É possivel remover usuário e nutricionistas.
+* **Tela da funcionalidade**:
+
+![adm](https://github.com/user-attachments/assets/a17c26e1-4da7-4cfe-8b59-8b7cf40d72de)
+
 ### Estruturas de dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
