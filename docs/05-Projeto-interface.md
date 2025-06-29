@@ -67,4 +67,6 @@ A página do administrador oferece uma visão completa da gestão da plataforma.
 
 ### Protótipo Interativo
 
-✅ [Protótipo interativo]https://www.figma.com/proto/OwXLerfSa2E3PKo33tk2bl/Trabalho-TIAW?node-id=21-95&p=f&t=uErG8qONuFnjRRkD-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=21%3A95
+✅ [Protótipo interativo](https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Ma-s-Sa%C3%BAde---TIAW?node-id=0-1&t=GEZVefaBIBGFJjBu-1)
+
+
