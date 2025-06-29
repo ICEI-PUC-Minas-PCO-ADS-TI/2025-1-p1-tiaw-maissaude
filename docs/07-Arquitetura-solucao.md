@@ -81,6 +81,10 @@ Refeições indicadas para o usuário
 
 Esta seção apresenta os módulos e APIs utilizados na solução.
 
+**Fontes**:
+
+* Google Fonts - [https://fonts.google.com/specimen/Montserrat](https://fonts.google.com/specimen/Montserrat)
+
 **Images**:
 
 * Unsplash - [https://unsplash.com/](https://unsplash.com/) 
@@ -88,6 +92,7 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 **Scripts:**
 
 * Chart.js - [https://www.chartjs.org/](https://www.chartjs.org/)
+* AnyChart - [https://www.anychart.com/](https://www.anychart.com/)
 
 ## Hospedagem
 
