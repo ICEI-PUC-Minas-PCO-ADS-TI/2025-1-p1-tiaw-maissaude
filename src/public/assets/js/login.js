@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 usuario: usuario.value,
                 email: emailCadastro.value,
                 senha: senhaCadastro.value,
+                dataCadastro: new Date().toISOString()  // ✅ adiciona data e hora do cadastro
             };
 
             try {
@@ -97,7 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     localStorage.setItem("usuarioLogado", Usuario.email);
                     localStorage.setItem("userId", Usuario.id);
 
-                    window.location.href = "home.html";
+                    if (Usuario.admin === true) {
+                        // Redireciona para admin
+                        window.location.href = "adm.html";
+                    } else {
+                        window.location.href = "home.html";
+                    }
                 } else {
                     alert("E-mail ou senha inválidos.");
                 }

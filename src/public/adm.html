@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/siteconfig/" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/adm.css">
+    <title>Administradores</title>
+</head>
+
+<body>
+
+    <main class="painel">
+        <aside class="Lateral">
+            <ul>
+                <li><a href="#" onclick="mostrarTela('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="mostrarTela('usuarios')">Gerenciamento de usuários</a></li>
+                <li><a href="#" onclick="mostrarTela('nutricionistas')">Nutricionistas Cadastrados</a></li>
+                <li class="sair"><a href="#" onclick="logout()">Sair</a></li>
+            </ul>
+        </aside>
+
+        <section class="conteudo" id="conteudoPrincipal">
+            <h2>Bem-vindo ao painel!</h2>
+        </section>
+
+
+    </main>
+
+    <script src="https://cdn.anychart.com/releases/8.13.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/adm.js"></script>
+
+</body>
+
+</html>
