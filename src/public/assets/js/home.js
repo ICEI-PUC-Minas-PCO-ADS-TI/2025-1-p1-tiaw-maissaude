@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
   ];
 
-  // 🧮 Função para calcular a semana do ano de uma data
   function calcularSemanaDoAno(data) {
     const primeiroDiaAno = new Date(data.getFullYear(), 0, 1);
     const diffDias = Math.floor((data - primeiroDiaAno) / (1000 * 60 * 60 * 24));
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function atualizarCalendario() {
     const dataInicioAno = new Date(anoAtual, 0, 1);
 
-    // 🟢 FORÇANDO a semana a começar na SEGUNDA (ISO-like)
     const diaSemanaPrimeiro = dataInicioAno.getDay();
     const ajuste = (diaSemanaPrimeiro === 0 ? -6 : 1) - diaSemanaPrimeiro;
 
@@ -74,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         span.classList.add('fora-do-mes');
       }
 
-      // 🎯 Se for hoje, destaque!
       if (
         dataRender.getDate() === dataAtual.getDate() &&
         dataRender.getMonth() === dataAtual.getMonth() &&
@@ -207,7 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Excluir
     if (e.target.classList.contains("delete-meal")) {
       const id = e.target.dataset.id;
       if (confirm("Deseja excluir esta refeição?")) {
@@ -231,9 +227,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let consumoAtual = 0;
 
-  // 🔹 Recupera o email do usuário logado para buscar a meta correta
   const usuarioLogado = localStorage.getItem('usuarioLogado');
-  let metaConsumo = 2240; // valor padrão caso não encontre meta personalizada
+  let metaConsumo = 2240; 
 
   if (usuarioLogado) {
     const metaSalva = localStorage.getItem(`${usuarioLogado}_metaAguaDiaria`);
@@ -244,13 +239,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   metaElemento.textContent = `${metaConsumo} ml`;
 
-  // Recalcula progresso com base na meta
   function atualizarProgresso() {
     const progresso = Math.min((consumoAtual / metaConsumo) * 100, 100);
     progressBar.style.width = progresso + '%';
   }
 
-  // Cria os botões com quantidades
   function criarBotoesAgua(options) {
     addOptions.innerHTML = '';
     options.forEach(option => {
@@ -302,13 +295,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Carrega opções de água
   fetch("http://localhost:3000/waterOptions")
     .then(response => response.json())
     .then(options => criarBotoesAgua(options))
     .catch(error => console.error("Erro ao carregar opções de água:", error));
 
-  // Restaura consumo salvo
   let savedConsumo = 0;
   if (usuarioLogado) {
     savedConsumo = localStorage.getItem(`${usuarioLogado}_consumoAgua`);
@@ -319,7 +310,6 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarProgresso();
   }
 
-  // --- Script 5: controle de Calorias via JSON ---
   const addCaloriasBtn = document.getElementById('add-calorias');
   const addOptionsCalorias = document.getElementById('add-options-calorias');
   const consumoCalorias = document.getElementById('consumo-calorias');
@@ -328,8 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let caloriasAtuais = 0;
 
-  // Recupera email do usuário logado para buscar meta personalizada e consumo
-  let metaCaloriasValor = 2000; // valor padrão
+  let metaCaloriasValor = 2000;
 
   if (usuarioLogado) {
     const metaSalva = localStorage.getItem(`${usuarioLogado}_metaCaloriasDiaria`);
@@ -389,13 +378,11 @@ document.addEventListener("DOMContentLoaded", () => {
     addOptionsCalorias.classList.toggle('hidden');
   });
 
-  // Carrega opções de calorias
   fetch("http://localhost:3000/kcalOptions")
     .then(response => response.json())
     .then(options => criarBotoesCalorias(options))
     .catch(error => console.error("Erro ao carregar opções de calorias:", error));
 
-  // Restaura consumo salvo, personalizado por usuário
   let savedCalorias = 0;
   if (usuarioLogado) {
     savedCalorias = localStorage.getItem(`${usuarioLogado}_consumoCalorias`);

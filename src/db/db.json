@@ -11,7 +11,7 @@
       "usuario": "Ricardo",
       "email": "ricardo@gmail.com",
       "senha": "123456",
-      "id": "IWW54It",
+      "id": "IWm54It",
       "dataCadastro": "2025-06-20T19:04:33.123Z",
       "nutricionista": true
     },
@@ -78,6 +78,76 @@
       "senha": "flash",
       "dataCadastro": "2025-03-18T05:30:35.485Z",
       "id": "4BJgYFd"
+    },
+    {
+      "usuario": "Ana",
+      "email": "ana.souza@gmail.com",
+      "senha": "senhaAna01",
+      "dataCadastro": "2025-02-15T10:22:10.321Z",
+      "id": "Xy12zQw"
+    },
+    {
+      "usuario": "Lucas",
+      "email": "lucas.pereira@gmail.com",
+      "senha": "senhaLucas99",
+      "dataCadastro": "2025-03-05T14:50:45.000Z",
+      "id": "Mnop123"
+    },
+    {
+      "usuario": "Maria",
+      "email": "maria.lima@gmail.com",
+      "senha": "maria2025",
+      "dataCadastro": "2025-01-30T09:15:20.987Z",
+      "id": "Qwertyu"
+    },
+    {
+      "usuario": "Carlos",
+      "email": "carlos_santos@gmail.com",
+      "senha": "car12345",
+      "dataCadastro": "2025-04-10T21:33:55.432Z",
+      "id": "ZxCvbnm"
+    },
+    {
+      "usuario": "Juliana",
+      "email": "juliana.martins@gmail.com",
+      "senha": "ju2025",
+      "dataCadastro": "2025-03-20T08:00:00.000Z",
+      "id": "Ploi987"
+    },
+    {
+      "usuario": "Felipe",
+      "email": "felipe.oliveira@gmail.com",
+      "senha": "felipe!23",
+      "dataCadastro": "2025-02-28T18:45:12.654Z",
+      "id": "Asdf123"
+    },
+    {
+      "usuario": "Camila",
+      "email": "camila.rodrigues@gmail.com",
+      "senha": "camilaR99",
+      "dataCadastro": "2025-01-10T11:22:33.789Z",
+      "id": "Yuiop12"
+    },
+    {
+      "usuario": "Rafael",
+      "email": "rafael.moura@gmail.com",
+      "senha": "rafael2025",
+      "dataCadastro": "2025-04-15T07:55:05.123Z",
+      "id": "Ghjk456"
+    },
+    {
+      "usuario": "Bianca",
+      "email": "bianca.alves@gmail.com",
+      "senha": "b!anca2025",
+      "dataCadastro": "2025-03-28T16:10:10.010Z",
+      "id": "Lkjh789"
+    },
+    {
+      "usuario": "macario",
+      "email": "macario@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-06-29T17:13:02.477Z",
+      "id": "G7PAEuJ"
     }
   ],
   "metas": [
@@ -172,11 +242,6 @@
   ],
   "mealSchedule": [
     {
-      "hora": "08:00",
-      "refeicao": "Café da manhã",
-      "id": "c029"
-    },
-    {
       "hora": "11:00",
       "refeicao": "Lanche da manhã",
       "id": "a6b5"
@@ -200,6 +265,11 @@
       "hora": "21:00",
       "refeicao": "Lanche da noite",
       "id": "b7a5"
+    },
+    {
+      "hora": "15:30",
+      "refeicao": "Café da tarde",
+      "id": "FCliJIe"
     }
   ],
   "waterOptions": [

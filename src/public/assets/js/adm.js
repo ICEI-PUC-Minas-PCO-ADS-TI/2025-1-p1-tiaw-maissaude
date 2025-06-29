@@ -250,7 +250,7 @@ function mostrarTela(tela) {
                 <h3>...</h3>
             </div>
         </div>
-        <canvas id="graficoCrescimento" width="400" height="200" style="margin-top:30px;"></canvas>
+        <div class="grafico"><canvas id="graficoCrescimento" width="400" height="200" style="margin-top:30px;"></canvas></div>
     `;
         carregarDadosDashboard();
     }
@@ -308,3 +308,7 @@ function logout() {
 
     window.location.href = "login.html";
 }
+
+window.onload = function() {
+    mostrarTela('dashboard');
+};

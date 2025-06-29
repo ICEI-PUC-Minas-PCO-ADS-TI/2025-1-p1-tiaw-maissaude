@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
           item.innerHTML = `
             <a href="detalhes.html?id=${refeicao.id}" class="image-link">
               <img src="${refeicao.imagem}" alt="${refeicao.nome}">
-              <p>${refeicao.nome}</p>
             </a>
           `;
           slide.appendChild(item);
