@@ -8,29 +8,25 @@
       "admin": true
     },
     {
-      "usuario": "Rodrigo",
-      "email": "rodrigo@gmail.com",
+      "usuario": "Ricardo",
+      "email": "ricardo@gmail.com",
       "senha": "123456",
-      "nutricionista": true,
-      "id": "BaavtvZ"
+      "id": "IWW54It",
+      "nutricionista": true
     },
     {
       "usuario": "Guilherme",
       "email": "guilherme@gmail.com",
       "senha": "123456",
+      "dataCadastro": "2025-06-28T19:04:33.123Z",
       "id": "BaavtvZ"
     },
     {
-      "usuario": "amalia",
-      "email": "amalia@",
+      "usuario": "Amalia",
+      "email": "amalia@gmail.com",
       "senha": "123456",
-      "id": "BNlpEQk"
-    },
-    {
-      "usuario": "daniel",
-      "email": "dan@gmail.com",
-      "senha": "123456",
-      "id": "IR32jAd"
+      "dataCadastro": "2025-06-29T03:54:12.793Z",
+      "id": "G5M2FLm"
     }
   ],
   "metas": [

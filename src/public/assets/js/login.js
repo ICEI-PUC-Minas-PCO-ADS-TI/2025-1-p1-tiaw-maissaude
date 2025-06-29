@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 usuario: usuario.value,
                 email: emailCadastro.value,
                 senha: senhaCadastro.value,
+                dataCadastro: new Date().toISOString()  // ✅ adiciona data e hora do cadastro
             };
 
             try {
