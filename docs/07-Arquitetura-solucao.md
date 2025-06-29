@@ -21,6 +21,19 @@ Permite ao usuário se autenticar no sistema e criar uma nova conta para acessar
 
 ![login html](https://github.com/user-attachments/assets/2c5973d8-9f2a-44e2-bbea-4d6a0aa149b5)
 
+##### Funcionalidade 2 - Home Page
+
+Permite que o usuário tenha uma panorama geral do site, conseguindo controlar sua ingestão de água e calorias, controlar horarios de refeiçoes e mais.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página principal;
+  * Altere os valores de calorias e liquidos;
+  * Configure seus horarios de refeições;
+  * Tenha um carrossel indicando refeições.
+* **Tela da funcionalidade**:
+
+![home](https://github.com/user-attachments/assets/ccab8b36-65cb-4d96-976e-34ab0d3e8b74)
+
 ##### Funcionalidade 3 - Metas
 
 Permite cadastrar, visualizar e acompanhar metas de saúde, com exibição de progresso e gráficos.
