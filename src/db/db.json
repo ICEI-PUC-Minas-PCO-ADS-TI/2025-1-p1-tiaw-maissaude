@@ -12,21 +12,65 @@
       "email": "ricardo@gmail.com",
       "senha": "123456",
       "id": "IWW54It",
+      "dataCadastro": "2025-06-20T19:04:33.123Z",
+      "nutricionista": true
+    },
+    {
+      "usuario": "Angela",
+      "email": "Angela@gmail.com",
+      "senha": "123456",
+      "id": "IWW54It",
+      "dataCadastro": "2025-04-20T19:04:33.123Z",
       "nutricionista": true
     },
     {
       "usuario": "Guilherme",
       "email": "guilherme@gmail.com",
       "senha": "123456",
-      "dataCadastro": "2025-06-28T19:04:33.123Z",
+      "dataCadastro": "2025-04-22T19:04:33.123Z",
       "id": "BaavtvZ"
     },
     {
       "usuario": "Amalia",
       "email": "amalia@gmail.com",
       "senha": "123456",
-      "dataCadastro": "2025-06-29T03:54:12.793Z",
+      "dataCadastro": "2025-06-24T03:54:12.793Z",
       "id": "G5M2FLm"
+    },
+    {
+      "usuario": "Ronaldo",
+      "email": "ronaldo@gmail.com",
+      "senha": "123654",
+      "dataCadastro": "2025-06-26T04:08:05.879Z",
+      "id": "kLuuNhI"
+    },
+    {
+      "usuario": "Macaé",
+      "email": "macae@gmail.com",
+      "senha": "1937",
+      "dataCadastro": "2025-06-28T04:08:20.257Z",
+      "id": "PTc4F9D"
+    },
+    {
+      "usuario": "Raquel",
+      "email": "raque@gmail.com",
+      "senha": "1008",
+      "dataCadastro": "2025-06-30T04:08:34.767Z",
+      "id": "sF6Cgxd"
+    },
+    {
+      "usuario": "Robson",
+      "email": "robson@gmail.com",
+      "senha": "31415",
+      "dataCadastro": "2025-05-10T04:10:20.445Z",
+      "id": "I8vMaJ2"
+    },
+    {
+      "usuario": "Kyan",
+      "email": "kyan@gmail.com",
+      "senha": "777",
+      "dataCadastro": "2025-05-12T04:10:35.833Z",
+      "id": "UkcEaqV"
     }
   ],
   "metas": [

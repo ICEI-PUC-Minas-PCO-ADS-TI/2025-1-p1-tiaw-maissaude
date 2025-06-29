@@ -21,128 +21,45 @@ main {
     flex: 1;
 }
 
-/* Inicio Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8CB06C;
-    padding: 15px 30px;
-    color: white;
-    border-bottom: 4px solid #8CB06C;
-    height: 70px;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.logo img {
-    height: 280px;
-    width: 100%;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav a:hover {
-    color: #CFF1A2;
-}
-
-#icone-usuario {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.usuario-container {
-    position: relative;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.menu-usuario {
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: #1e1e1e;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.menu-usuario p {
-    margin: 0 0 8px 0;
-    font-weight: bold;
-}
-
-.menu-usuario button {
-    background-color: #2D5F25;
-    color: #fff;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.menu-usuario button:hover {
-    background-color: #2D5F25;
-}
-
-/* Fim Header */
-
-.painel{
+.painel {
     display: flex;
     min-height: 100vh;
 }
 
 .Lateral {
+    position: relative;
     width: 170px;
     background-color: #8CB06C;
     color: white;
     padding: 20px;
+    min-height: 100vh;
 }
 
 .Lateral ul {
     list-style: none;
     padding: 0;
-}
-
-.Lateral li{
-    margin-bottom: 15px;
+    margin: 0;
 }
 
 .Lateral ul li {
     margin-bottom: 25px;
 }
 
-.Lateral ul li a {
-    color: white;
-    text-decoration: none;
+.Lateral ul li.sair {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin-bottom: 0;
 }
 
-.conteudo{
+.Lateral ul li.sair a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conteudo {
     flex: 1;
     padding: 30px;
 }
@@ -153,7 +70,10 @@ main {
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cards-dashboard {
@@ -168,7 +88,7 @@ main {
     border-left: 6px solid #4CAF50;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -195,7 +115,7 @@ main {
     border-left: 6px solid #4CAF50;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -208,4 +128,21 @@ main {
     font-size: 2em;
     margin-top: 10px;
     color: #222;
+}
+
+#graficoCrescimento {
+    max-width: 400px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.card-usuario button.btn-excluir {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
 }

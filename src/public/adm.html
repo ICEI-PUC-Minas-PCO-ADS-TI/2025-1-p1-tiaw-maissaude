@@ -11,37 +11,19 @@
 
 <body>
 
-    <header class="header">
-
-        <div class="logo">
-            <a href="#">
-                <img src="assets/images/siteconfig/default_transparent_1000x1000.png" alt="Logo Ma+s Saúde">
-            </a>
-        </div>
-
-        <nav class="nav">
-            <ul>
-                <li><a href="login.html">Conta</a></li>
-                <li><a href="login.html">Sair</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
     <main class="painel">
         <aside class="Lateral">
             <ul>
                 <li><a href="#" onclick="mostrarTela('dashboard')">Dashboard</a></li>
                 <li><a href="#" onclick="mostrarTela('usuarios')">Gerenciamento de usuários</a></li>
                 <li><a href="#" onclick="mostrarTela('nutricionistas')">Nutricionistas Cadastrados</a></li>
+                <li class="sair"><a href="#" onclick="logout()">Sair</a></li>
             </ul>
         </aside>
 
         <section class="conteudo" id="conteudoPrincipal">
             <h2>Bem-vindo ao painel!</h2>
         </section>
-
 
 
     </main>
