@@ -44,6 +44,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | RF-008 | A página inicial exibirá um carrossel com refeições indicadas pelo nutricionista para o usuário, facilitando o acesso rápido às sugestões. | MÉDIA |
 | RF-009 | O nutricionista poderá editar ou atualizar os planos alimentares conforme a evolução do paciente. | MÉDIA |
 | RF-010 | O sistema permitirá que o nutricionista defina metas de saúde (como ingestão calórica, consumo de água, etc.) para cada paciente. | MÉDIA |
+| RF-011 | O administrador poderá acessar uma página exclusiva com visualização de todos os usuários cadastrados, além de gráficos que apresentam estatísticas sobre o uso da plataforma. | MÉDIA |
  
 ### Requisitos não funcionais
 
