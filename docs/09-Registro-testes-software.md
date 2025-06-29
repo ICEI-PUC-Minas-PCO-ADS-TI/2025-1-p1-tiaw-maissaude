@@ -9,27 +9,27 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-001 – Cadastro e login de usuário** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-001 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro e login de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | [RF-001-Cadastro](docs/videos/RF-001-Cadastro.mp4) |
+| Registro de evidência | [RF-001-Cadastro](videos/RF-001-Cadastro.mp4) |
 
 | **Caso de teste** 	| **CT-002 – Cardapio personalizado** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-002 - A aplicação deve permitir que um usuário consiga visualizar as refeições indicadas para sua dieta. |
-| Registro de evidência | [RF-002-Refeicoes](docs/videos/RF-002-Refeicoes.mp4) |
+| Registro de evidência | [RF-002-Refeicoes](videos/RF-002-Refeicoes.mp4) |
 
 | **Caso de teste** 	| **CT-003 – Cadastro e visualização de metas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - A aplicação deve permitir que o usuário consiga cadastrar metas personalizadas e visualiza-las. |
-| Registro de evidência | [RF-003-Metas](docs/videos/RF-003-Metas.mp4) |
+| Registro de evidência | [RF-003-Metas](videos/RF-003-Metas.mp4) |
 
 | **Caso de teste** 	| **CT-004 – Consumo de água** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-004 - A aplicação deve permitir que um usuário consiga calcular a quantidade ideal de água que ele deve consumir por dia. |
-| Registro de evidência | [RF-004-Agua](docs/videos/RF-004-Agua.mp4) |
+| Registro de evidência | [RF-004-Agua](videos/RF-004-Agua.mp4) |
 
 | **Caso de teste** 	| **CT-005 – Ingestão de calorias** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-005 - A aplicação deve permitir que um usuário consiga calcular a quantidade ideal de calorias que ele deve consumir por dia. |
-| Registro de evidência | [RF-005-Calorias](docs/videos/RF-005-Calorias.mp4) |
+| Registro de evidência | [RF-005-Calorias](videos/RF-005-Calorias.mp4) |
 
 ## Avaliação
 
