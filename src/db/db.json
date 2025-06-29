@@ -71,6 +71,13 @@
       "senha": "777",
       "dataCadastro": "2025-05-12T04:10:35.833Z",
       "id": "UkcEaqV"
+    },
+    {
+      "usuario": "Bary Allen",
+      "email": "barry@gmail.com",
+      "senha": "flash",
+      "dataCadastro": "2025-03-18T05:30:35.485Z",
+      "id": "4BJgYFd"
     }
   ],
   "metas": [
@@ -167,37 +174,31 @@
     {
       "hora": "08:00",
       "refeicao": "Café da manhã",
-      "icone": "☕",
       "id": "c029"
     },
     {
       "hora": "11:00",
       "refeicao": "Lanche da manhã",
-      "icone": "🍞",
       "id": "a6b5"
     },
     {
       "hora": "13:00",
       "refeicao": "Almoço",
-      "icone": "🍗",
       "id": "ab15"
     },
     {
       "hora": "16:00",
       "refeicao": "Lanche da tarde",
-      "icone": "🍞",
       "id": "8b63"
     },
     {
       "hora": "19:00",
       "refeicao": "Jantar",
-      "icone": "🍽️",
       "id": "fe9b"
     },
     {
       "hora": "21:00",
       "refeicao": "Lanche da noite",
-      "icone": "🥪",
       "id": "b7a5"
     }
   ],

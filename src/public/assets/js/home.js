@@ -103,23 +103,127 @@ document.addEventListener("DOMContentLoaded", () => {
   semanaAtual = calcularSemanaDoAno(dataAtual);
   atualizarCalendario();
 
-  // --- Script 3: agenda de refeições carregada do JSON ---
+  // --- Script 3: agenda de refeições com edição inline, exclusão e adição (sem ícones) ---
   fetch("http://localhost:3000/mealSchedule")
     .then(response => response.json())
     .then(mealData => {
       const container = document.getElementById("meal-schedule");
+      container.innerHTML = '';
+
       mealData.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "meal";
-        div.innerHTML = `
-          <span>${item.icone}</span>
-          <span class="time">${item.hora}</span>
-          <span>${item.refeicao}</span>
-        `;
+        const div = criarRefeicaoElemento(item);
         container.appendChild(div);
+      });
+
+      // 🔽 Adiciona formulário de nova refeição
+      const form = document.createElement("div");
+      form.className = "adicionar-refeicao";
+      form.innerHTML = `
+      <input type="text" id="nova-hora" placeholder="08:00">
+      <input type="text" id="nova-refeicao" placeholder="Café da manhã">
+      <button id="btn-adicionar">Adicionar</button>
+    `;
+      container.appendChild(form);
+
+      document.getElementById("btn-adicionar").addEventListener("click", () => {
+        const hora = document.getElementById("nova-hora").value.trim();
+        const refeicao = document.getElementById("nova-refeicao").value.trim();
+
+        if (!hora || !refeicao) {
+          alert("Preencha o horário e o nome da refeição.");
+          return;
+        }
+
+        const novaRefeicao = { hora, refeicao };
+
+        fetch("http://localhost:3000/mealSchedule", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(novaRefeicao)
+        })
+          .then(res => res.json())
+          .then(data => {
+            const novaDiv = criarRefeicaoElemento(data);
+            container.insertBefore(novaDiv, form);
+            document.getElementById("nova-hora").value = "";
+            document.getElementById("nova-refeicao").value = "";
+          })
+          .catch(err => console.error("Erro ao adicionar refeição:", err));
       });
     })
     .catch(error => console.error("Erro ao carregar agenda de refeições:", error));
+
+  // 🔧 Cria visual da refeição
+  function criarRefeicaoElemento(item) {
+    const div = document.createElement("div");
+    div.className = "meal";
+    div.innerHTML = `
+    <span class="hora-editavel" data-id="${item.id}">${item.hora}</span>
+    <span>${item.refeicao}</span>
+    <button class="delete-meal" data-id="${item.id}">🗑️</button>
+  `;
+    return div;
+  }
+
+  // 🖱️ Edição inline + exclusão
+  document.getElementById("meal-schedule").addEventListener("click", (e) => {
+    // Editar horário ao clicar
+    if (e.target.classList.contains("hora-editavel")) {
+      const span = e.target;
+      const id = span.dataset.id;
+      const horaAtual = span.textContent;
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.value = horaAtual;
+      input.className = "hora-input";
+      input.dataset.id = id;
+
+      span.replaceWith(input);
+      input.focus();
+
+      input.addEventListener("blur", salvarHora);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") input.blur();
+      });
+
+      function salvarHora() {
+        const novaHora = input.value;
+
+        fetch(`http://localhost:3000/mealSchedule/${id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ hora: novaHora })
+        })
+          .then(res => {
+            if (!res.ok) throw new Error("Erro ao salvar horário.");
+            const novoSpan = document.createElement("span");
+            novoSpan.className = "hora-editavel";
+            novoSpan.dataset.id = id;
+            novoSpan.textContent = novaHora;
+            input.replaceWith(novoSpan);
+          })
+          .catch(err => {
+            alert("Erro ao atualizar hora.");
+            console.error(err);
+          });
+      }
+    }
+
+    // Excluir
+    if (e.target.classList.contains("delete-meal")) {
+      const id = e.target.dataset.id;
+      if (confirm("Deseja excluir esta refeição?")) {
+        fetch(`http://localhost:3000/mealSchedule/${id}`, {
+          method: "DELETE"
+        })
+          .then(res => {
+            if (res.ok) e.target.closest(".meal").remove();
+          })
+          .catch(err => console.error("Erro ao excluir refeição:", err));
+      }
+    }
+  });
 
   // --- Script 4: controle de líquidos via JSON ---
   const addButton = document.getElementById('add-agua');

@@ -109,6 +109,7 @@ main {
 .menu-usuario button:hover {
   background-color: #2D5F25;
 }
+
 /* Fim Header */
 
 /*Inicio informações*/
@@ -244,7 +245,7 @@ main {
 .refeicoes-card {
   grid-column: 3;
   grid-row: 1 / span 2;
-  background-color: #a3cd8a;
+  background-color: #8CB06C;
   border-radius: 12px;
   padding: 25px 20px;
   display: flex;
@@ -276,18 +277,65 @@ main {
   align-items: center;
   border-bottom: 1px solid #0002;
   padding-bottom: 8px;
+  gap: 10px;
 }
 
-.meal img {
-  width: 24px;
-  margin-right: 10px;
+.meal button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.time {
-  font-weight: bold;
-  margin-right: 8px;
+.hora-editavel {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background 0.3s;
 }
 
+.hora-editavel:hover {
+  background-color: transparent;
+}
+
+.hora-input {
+  font-size: 14px;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px;
+}
+
+.adicionar-refeicao {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.adicionar-refeicao input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 110px;
+}
+
+.adicionar-refeicao button {
+  padding: 6px 12px;
+  background-color: #8CB06C;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adicionar-refeicao button:hover {
+  background-color: #6a944a;
+}
 /* Card */
 
 /* Agua */
@@ -300,6 +348,7 @@ main {
   margin: 20px;
   grid-column: 1;
   grid-row: 1;
+  box-shadow: #000 10px;
 }
 
 .container-liquidos {
@@ -411,7 +460,14 @@ main {
 
 .progress-bar {
   height: 100%;
-  background-color: #2D5F25;
+  background-color: rgb(105, 160, 255);
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-cal {
+  height: 100%;
+  background-color: rgb(221, 125, 23);
   width: 0%;
   transition: width 0.5s ease;
 }
@@ -573,6 +629,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 /* Fim Footer*/
 
 @media (min-width: 601px) and (max-width: 1024px) {
