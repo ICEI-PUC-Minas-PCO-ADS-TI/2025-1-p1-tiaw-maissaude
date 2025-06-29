@@ -20,6 +20,19 @@ Permite calcular a quantidade ideal de água diária com base em informações d
 
 ![agua](https://github.com/user-attachments/assets/0af5351e-5c04-4e94-9a3e-2693bcb4176d)
 
+##### Funcionalidade 3 - Metas
+
+Permite cadastrar, visualizar e acompanhar metas de saúde, com exibição de progresso e gráficos.
+
+* **Instruções de acesso:**
+  * Acesse o site e vá para a página “Metas”;
+  * Cadastre a meta no primeiro card;
+  * Veja a meta listada no card do meio;
+  * Visualize os gráficos no último card.
+* **Tela da funcionalidade**:
+
+![metas](https://github.com/user-attachments/assets/3ba81c94-e16b-48b0-b791-e4c06daef3b6)
+
 ### Estruturas de dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
