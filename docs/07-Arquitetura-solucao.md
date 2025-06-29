@@ -8,18 +8,17 @@ A aplicação Ma+s Saúde é estruturada em duas partes principais: o front-end 
 
 Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 2 - Consumo de água
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite calcular a quantidade ideal de água diária com base em informações do usuário e registrar a ingestão ao longo do dia.
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Acesse o site e vá para a página “Consumo de água”;
+  * Preencha os dados e clique em “Calcular minha necessidade de água”;
+  * O resultado é exibido com um gráfico e enviado à homepage para controle diário.
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+![agua](https://github.com/user-attachments/assets/0af5351e-5c04-4e94-9a3e-2693bcb4176d)
 
 ### Estruturas de dados
 
