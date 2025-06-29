@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
+  fetch("http://localhost:3000/refeicoes")
     .then(response => response.json())
     .then(refeicoes => {
       const track = document.getElementById("carousel-track-categorias");
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
           item.innerHTML = `
             <a href="detalhes.html?id=${refeicao.id}" class="image-link">
               <img src="${refeicao.imagem}" alt="${refeicao.nome}">
-              <p>${refeicao.nome}</p>
             </a>
           `;
           slide.appendChild(item);

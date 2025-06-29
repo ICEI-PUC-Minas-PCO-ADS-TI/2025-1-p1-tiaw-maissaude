@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const urlBase = "https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/usuarios";
+    const urlBase = "http://localhost:3000/usuarios";
 
     const btnSignIn = document.getElementById("signin");
     const btnSignUp = document.getElementById("signup");

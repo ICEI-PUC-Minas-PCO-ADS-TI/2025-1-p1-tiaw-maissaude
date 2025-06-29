@@ -6,7 +6,7 @@ function getUrlParameter(name) {
 function carregarDetalhes() {
     const refeicaoId = getUrlParameter('id');
 
-    fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
+    fetch("http://localhost:3000/refeicoes")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao carregar os dados');
