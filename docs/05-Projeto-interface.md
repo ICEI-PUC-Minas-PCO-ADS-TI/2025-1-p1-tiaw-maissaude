@@ -31,7 +31,7 @@ Permite que o usuário informe seus dados como nome de usuário, e-mail e senha 
 
 A tela inicial oferece ao usuário uma visão geral de sua rotina diária. Nela, é possível visualizar os horários das refeições, registrar a quantidade de água ingerida e acompanhar quanto ainda falta para atingir a meta do dia. O mesmo se aplica ao controle de calorias consumidas. A página também conta com um carrossel que sugere refeições personalizadas, além de permitir a navegação pelas demais seções do site por meio da barra de navegação superior.
 
-![home](https://github.com/user-attachments/assets/c7470048-84d5-43c2-97ac-46ccbea2286d)
+![home](https://github.com/user-attachments/assets/55c71826-421c-4d88-8668-5ceb0903519b)
 
 ##### PÁGINA DE REFEIÇÕES E DETALHES
 
