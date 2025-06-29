@@ -33,7 +33,7 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-006 – Home Page** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-006 <br> RF-007 <br> RF-008 - A página principal do site deve dar um panorama geral para o usuário. |
+| Requisito associado | RF-006, RF-007, RF-008 - A página principal do site deve dar um panorama geral para o usuário. |
 | Registro de evidência | [RF-005-Calorias](videos/RF-005-.mp4) |
 
 | **Caso de teste** 	| **CT-007 – Página de Administradores** 	|
