@@ -50,3 +50,4 @@ No desenvolvimento, foi adotado o framework Scrum, com definição de papéis, s
 | Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/45 |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/OwXLerfSa2E3PKo33tk2bl/Ma-s-Sa%C3%BAde---TIAW?node-id=0-1&t=IaIdwLUegxl41TIF-1 |
 | Hospedagem                          | Vercel                             | https://maissaude-tiaw.vercel.app/ |
+| Hospedagem                          | Replit                             | https://replit.com/join/demwdcskgl-guiftf2007 |
