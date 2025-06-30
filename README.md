@@ -28,13 +28,34 @@ Um dos principais diferenciais do Ma+s Saúde é seu foco no suporte a nutricion
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Etapa 1 – Testar o Sistema no Replit
+Antes de acessar o site final, o usuário deve verificar o funcionamento local do sistema através do ambiente Replit:
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+🔗 https://replit.com/join/demwdcskgl-guiftf2007
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+Passos:
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Acesse o link acima.
+
+Clique em "Run" no canto superior da tela.
+
+No terminal, execute o seguinte comando para iniciar a aplicação:
+
+´npm start´
+
+Etapa 2 – Acessar o Site Publicado
+Após confirmar que o sistema está funcionando corretamente no Replit, acesse a versão final da aplicação:
+
+🔗 https://maissaude-tiaw.vercel.app
+
+👥 Cadastro e Acesso ao Painel de Administração
+Qualquer usuário pode se cadastrar pelo site para utilizar as funcionalidades básicas.
+
+Para acessar a página de administrador, utilize o seguinte login:
+
+Usuário: adm@gmail.com
+
+Senha: 123456
 
 # Documentação
 
