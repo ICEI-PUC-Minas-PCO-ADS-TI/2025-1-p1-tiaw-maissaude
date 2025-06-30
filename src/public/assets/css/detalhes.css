@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #D1F5B6;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+/* Inicio Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8CB06C;
+  padding: 15px 30px;
+  color: white;
+  border-bottom: 4px solid #8CB06C;
+  height: 70px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 280px;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #CFF1A2;
+}
+
+#icone-usuario {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.usuario-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu-usuario {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.menu-usuario p {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+.menu-usuario button {
+  background-color: #2D5F25;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-usuario button:hover {
+  background-color: #2D5F25;
+}
+/* Fim Header */
+
+/* Inicio Body */
+#detalhes-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 20px;
+}
+
+.detalhes-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagem {
+    max-width: 500px;
+    width: 100%;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.conteudo {
+    flex: 1;
+    min-width: 250px;
+    flex-grow: 2;
+    flex-basis: 0;
+    margin-top: 60px;
+}
+
+.conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.conteudo p {
+    font-size: 18px;
+    color: #555;
+}
+
+.conteudo h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.conteudo ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.conteudo li {
+    margin-bottom: 5px;
+}
+
+.info-nutricional {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.tabela-nutricional-container{
+    flex: 1;
+    min-width: 300px;
+    margin-top: -90px;
+}
+
+.ingredientes,
+.tabela-nutricional-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ingredientes h3,
+.tabela-nutricional-container h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.ingredientes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.ingredientes li {
+    margin-bottom: 3px;
+}
+
+.tabela-nutricional {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+  
+.tabela-nutricional th,
+.tabela-nutricional td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+  
+.tabela-nutricional th {
+    background-color: #CFF1A2;
+    color: #333;
+    font-weight: bold;
+}
+  
+.tabela-nutricional td {
+    color: #555;
+}
+
+.nota-vd {
+    font-size: 14px;
+    color: #666;
+}
+/* Fim do Body */
+
+/* Inicio Footer */
+footer {
+  padding: 10px 0;
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: #8CB06C;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Fim Footer*/
+
+/* Responsividade */
+@media (max-width: 600px) {   
+.imagem{
+    margin-top:25px;
+}
+
+    .ingredientes{
+        margin-bottom: 100px;
+    }
+    
+    footer li {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    footer ul {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    .conteudo{
+        margin-bottom: 80px;
+    }
+
+    .ingredientes{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .imagem{
+        margin-top: 25px;
+    }
+}

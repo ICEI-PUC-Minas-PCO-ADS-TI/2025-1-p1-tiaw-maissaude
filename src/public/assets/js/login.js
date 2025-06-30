@@ -1,138 +1,76 @@
-// Trabalho Interdisciplinar 1 - Aplicações Web
-//
-// Esse módulo realiza o registro de novos usuários e login para aplicações com 
-// backend baseado em API REST provida pelo JSONServer
-// Os dados de usuário estão localizados no arquivo db.json que acompanha este projeto.
-//
-// Autor: Rommel Vieira Carneiro (rommelcarneiro@gmail.com)
-// Data: 09/09/2024
-//
-// Código LoginApp  
+document.addEventListener("DOMContentLoaded", () => {
 
+    const formLogin = document.getElementById("login");
+    if (formLogin) {
+        formLogin.addEventListener("submit", async (e) => {
+            e.preventDefault();
 
-// Página inicial de Login
-const LOGIN_URL = "/modulos/login/login.html";
-let RETURN_URL = "/modulos/login/index.html";
-const API_URL = '/usuarios';
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
 
-// Objeto para o banco de dados de usuários baseado em JSON
-var db_usuarios = {};
+            try {
+                const resposta = await fetch(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`);
+                const usuarios = await resposta.json();
 
-// Objeto para o usuário corrente
-var usuarioCorrente = {};
+                if (usuarios.length === 1) {
+                    const Usuario = usuarios[0];
 
-// Inicializa a aplicação de Login
-function initLoginApp () {
-    let pagina = window.location.pathname;
-    if (pagina != LOGIN_URL) {
-        // CONFIGURA A URLS DE RETORNO COMO A PÁGINA ATUAL
-        sessionStorage.setItem('returnURL', pagina);
-        RETURN_URL = pagina;
+                    sessionStorage.setItem("Usuario", JSON.stringify(Usuario));
 
-        // INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
-        usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
-        if (usuarioCorrenteJSON) {
-            usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
-        } else {
-            window.location.href = LOGIN_URL;
+                    localStorage.setItem("usuarioLogado", Usuario.email);
+
+                    window.location.href = "home.html";
+                } else {
+                    document.getElementById("erro-login").textContent = "E-mail ou senha inválidos.";
+                }
+            } catch (erro) {
+                console.error("Erro ao fazer login:", erro);
+            }
+        });
+    }
+
+    const usuarioLogado = JSON.parse(sessionStorage.getItem("Usuario"));
+
+    const usuarioContainer = document.querySelector(".usuario-container");
+    const iconeUsuario = document.getElementById("icone-usuario");
+
+    if (usuarioLogado && usuarioContainer) {
+        const menuUsuario = document.createElement("div");
+        menuUsuario.className = "menu-usuario";
+        menuUsuario.style.display = "none"; 
+        menuUsuario.innerHTML = `
+            <p>Olá, ${usuarioLogado.usuario}</p>
+            <button id="btn-sair">Sair</button>
+        `;
+        usuarioContainer.appendChild(menuUsuario);
+
+        if (iconeUsuario) {
+            iconeUsuario.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const visivel = menuUsuario.style.display === "block";
+                menuUsuario.style.display = visivel ? "none" : "block";
+            });
         }
 
-        // REGISTRA LISTENER PARA O EVENTO DE CARREGAMENTO DA PÁGINA PARA ATUALIZAR INFORMAÇÕES DO USUÁRIO
-        document.addEventListener('DOMContentLoaded', function () {
-            showUserInfo ('userInfo');
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".usuario-container")) {
+                menuUsuario.style.display = "none";
+            }
         });
-    }
-    else {
-        // VERIFICA SE A URL DE RETORNO ESTÁ DEFINIDA NO SESSION STORAGE, CASO CONTRARIO USA A PÁGINA INICIAL
-        let returnURL = sessionStorage.getItem('returnURL');
-        RETURN_URL = returnURL || RETURN_URL
-        
-        // INICIALIZA BANCO DE DADOS DE USUÁRIOS
-        carregarUsuarios(() => {
-            console.log('Usuários carregados...');
-        });
-    }
-};
 
-
-function carregarUsuarios(callback) {
-    fetch(API_URL)
-    .then(response => response.json())
-    .then(data => {
-        db_usuarios = data;
-        callback ()
-    })
-    .catch(error => {
-        console.error('Erro ao ler usuários via API JSONServer:', error);
-        displayMessage("Erro ao ler usuários");
-    });
-}
-
-// Verifica se o login do usuário está ok e, se positivo, direciona para a página inicial
-function loginUser (login, senha) {
-
-    // Verifica todos os itens do banco de dados de usuarios 
-    // para localizar o usuário informado no formulario de login
-    for (var i = 0; i < db_usuarios.length; i++) {
-        var usuario = db_usuarios[i];
-
-        // Se encontrou login, carrega usuário corrente e salva no Session Storage
-        if (login == usuario.login && senha == usuario.senha) {
-            usuarioCorrente.id = usuario.id;
-            usuarioCorrente.login = usuario.login;
-            usuarioCorrente.email = usuario.email;
-            usuarioCorrente.nome = usuario.nome;
-
-            // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
-            sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
-
-            // Retorna true para usuário encontrado
-            return true;
+        const btnSair = menuUsuario.querySelector("#btn-sair");
+        if (btnSair) {
+            btnSair.addEventListener("click", () => {
+                sessionStorage.removeItem("Usuario");
+                localStorage.removeItem("usuarioLogado"); 
+                window.location.href = "login.html";
+            });
+        }
+    } else {
+        if (iconeUsuario) {
+            iconeUsuario.addEventListener("click", () => {
+                window.location.href = "login.html";
+            });
         }
     }
-
-    // Se chegou até aqui é por que não encontrou o usuário e retorna falso
-    return false;
-}
-
-// Apaga os dados do usuário corrente no sessionStorage
-function logoutUser () {
-    sessionStorage.removeItem ('usuarioCorrente');
-    window.location = LOGIN_URL;
-}
-
-function addUser (nome, login, senha, email) {
-
-    // Cria um objeto de usuario para o novo usuario 
-    let usuario = { "login": login, "senha": senha, "nome": nome, "email": email };
-
-    // Envia dados do novo usuário para ser inserido no JSON Server
-    fetch(API_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(usuario),
-    })
-        .then(response => response.json())
-        .then(data => {
-            // Adiciona o novo usuário na variável db_usuarios em memória
-            db_usuarios.push (usuario);
-            displayMessage("Usuário inserido com sucesso");
-        })
-        .catch(error => {
-            console.error('Erro ao inserir usuário via API JSONServer:', error);
-            displayMessage("Erro ao inserir usuário");
-        });
-}
-
-function showUserInfo (element) {
-    var elemUser = document.getElementById(element);
-    if (elemUser) {
-        elemUser.innerHTML = `${usuarioCorrente.nome} (${usuarioCorrente.login}) 
-                    <a onclick="logoutUser()">❌</a>`;
-    }
-}
-
-// Inicializa as estruturas utilizadas pelo LoginApp
-initLoginApp ();
+});
