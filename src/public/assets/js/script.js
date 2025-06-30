@@ -1,6 +1,6 @@
 const currentIndexes = [];
 
-fetch('http://localhost:3000/features')
+fetch('https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/features')
   .then(res => res.json())
   .then(data => {
     const featuresContainer = document.querySelector('.features');
@@ -53,7 +53,7 @@ fetch('http://localhost:3000/features')
 
 //AVALIACOES
 
-fetch("http://localhost:3000/avaliacoes")
+fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/avaliacoes")
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('avaliacaoContainer');
@@ -76,7 +76,7 @@ fetch("http://localhost:3000/avaliacoes")
 
 //BANNER
 
-fetch("http://localhost:3000/laning")
+fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/laning")
   .then(res => res.json())
   .then(data => {
     // Banner
