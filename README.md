@@ -35,13 +35,9 @@ Antes de acessar o site final, o usuário deve verificar o funcionamento local d
 
 Passos:
 
-Acesse o link acima.
-
-Clique em "Run" no canto superior da tela.
-
-No terminal, execute o seguinte comando para iniciar a aplicação:
-
-´npm start´
+* Acesse o link acima.
+* No terminal, execute o seguinte comando para iniciar a aplicação:
+* ´npm start´
 
 Etapa 2 – Acessar o Site Publicado
 Após confirmar que o sistema está funcionando corretamente no Replit, acesse a versão final da aplicação:
@@ -54,7 +50,6 @@ Qualquer usuário pode se cadastrar pelo site para utilizar as funcionalidades b
 Para acessar a página de administrador, utilize o seguinte login:
 
 Usuário: adm@gmail.com
-
 Senha: 123456
 
 # Documentação
