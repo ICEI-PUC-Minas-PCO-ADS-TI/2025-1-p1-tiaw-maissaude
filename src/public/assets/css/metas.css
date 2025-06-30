@@ -1,17 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #D1F5B6;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #D1F5B6;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Inicio Header */
@@ -102,135 +109,240 @@ body {
 .menu-usuario button:hover {
   background-color: #2D5F25;
 }
+
 /* Fim Header */
 
+
+
 .container {
-    flex: 1;
-    max-width: 600px;
-    width: 100%;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 2rem;
+  margin-top: 20px;
 }
 
-.container h1 {
-    text-align: center;
-    font-size: 1.8rem;
+.container-metas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-/* Formulario */
+.card {
+  background-color: #8CB06C;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: white;
+  align-items: center;
+}
+
+.adc,
+.card input,
+.card select
+ {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.card button {
+  background-color: #2d5f25;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background-color: #2d5f25;
+}
+
+.lista-metas li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#listaMetas {
+  margin-top: 10px;
+}
+
+/* Deixe o card com altura máxima e scroll interno */
+.card-lista {
+  max-height: 500px;
+  /* Ajuste conforme necessário */
+  overflow-y: auto;
+}
+
+/* Opcional: scrollbar mais clean para o card */
+.card-lista::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-lista::-webkit-scrollbar-thumb {
+  background-color: #8cb06c;
+  border-radius: 10px;
+}
+
+.card-lista::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.progress {
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #2d5f25;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+.grafico-container canvas,
+.card-grafico canvas {
+  width: 100%;
+  max-height: 250px;
+  margin-top: 15px;
+}
+
 .entrada form {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.entrada form > * {
-    padding: 0.5rem;
-    font-size: 1rem;
+.entrada form>* {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .entrada input {
-    flex: 1;
-    border: none;
-    border-bottom: 1px solid #40a640;
-    outline: none;
-    background-color: transparent;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #40a640;
+  outline: none;
+  background-color: transparent;
 }
 
 .entrada select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    border-bottom: 1px solid #40a640;
-    background-color: transparent;
-    color: #333;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #40a640;
+  background-color: transparent;
+  color: #333;
 }
 
 .entrada button {
-    background-color: #40a640;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+  background-color: #40a640;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
 }
 
 .entrada button:hover {
-    background-color: #369136;
+  background-color: #369136;
 }
 
 .input-erro {
-    border-bottom: 1px solid #dc143c !important;
-    background-color: #ffe5e5 !important;
+  border-bottom: 1px solid #dc143c !important;
+  background-color: #ffe5e5 !important;
 }
 
 .filtro-categoria {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 10px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+  align-items: flex-start;
 }
 
 .filtro-categoria label {
-    font-size: 0.85rem;
-    color: #333;
-    margin-left: 2px;
+  font-size: 0.85rem;
+  color: #333;
+  margin-left: 2px;
 }
 
 .filtro-categoria select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    border-bottom: 1px solid #40a640;
-    background-color: transparent;
-    color: #333;
-    width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #40a640;
+  background-color: transparent;
+  color: #333;
+  width: 100%;
 }
-
 
 /* Lista de Metas */
 #listaMetas {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #listaMetas li {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 4px;
-    padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 12px;
+  border-radius: 4px;
+  padding: 0.5rem;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#listaMetas li > div {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#listaMetas li button:last-child {
+  margin-left: 12px;
 }
 
 #listaMetas li span {
-    flex: 1;
-    cursor: pointer;
+  flex: 1;
+  cursor: pointer;
 }
 
 #listaMetas li button {
-    background: none;
-    border: none;
-    color: #dc143c;
-    font-size: 1.2rem;
-    cursor: pointer;
+  background: none;
+  border: none;
+  color: #dc143c;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 span.concluida {
-    text-decoration: line-through;
-    color: #778899;
+  text-decoration: line-through;
+  color: #778899;
 }
 
 .editar-input {
-    flex: 1;
-    font-size: 1rem;
-    padding: 0.3rem;
-    border: 1px solid #40a640;
-    border-radius: 4px;
+  flex: 1;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border: 1px solid #40a640;
+  border-radius: 4px;
 }
 
 #listaMetas li {
@@ -242,38 +354,39 @@ span.concluida {
 }
 
 #listaMetas li:hover {
-  background-color: #f0f8ff; /* cor clara suave */
+  background-color: #f0f8ff;
+  /* cor clara suave */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
 /* Categorias TAG */
 .tag-categoria {
-    display: inline-block;
-    font-size: 0.70rem;
-    font-weight: 600;
-    padding: 4px 6px;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-right: 15px;
-    color: #fff;
-    background-color: #666;
-    max-width: fit-content;
-    white-space: nowrap;
-    line-height: 1;
+  display: inline-block;
+  font-size: 0.70rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-right: 15px;
+  color: #fff;
+  background-color: #666;
+  max-width: fit-content;
+  white-space: nowrap;
+  line-height: 1;
 }
 
 /* Cores por categoria */
 .tag-categoria.saúde {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 .tag-categoria.exercício {
-    background-color: #2196F3;
+  background-color: #2196F3;
 }
 
 .tag-categoria.alimentação {
-    background-color: #961515;
+  background-color: #961515;
 }
 
 .tag-data {
@@ -288,34 +401,35 @@ span.concluida {
 
 /* Barra de Progresso */
 .progress {
-    height: 20px;
-    background: #e0e0e0;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-top: 1rem;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 1rem;
 }
 
 .progress-bar {
-    height: 100%;
-    background-color: #40a640;
-    width: 0%;
-    transition: width 0.3s ease-in-out;
+  height: 100%;
+  background-color: #40a640;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
 }
 
 /* Grafico*/
 .grafico-container {
-  width: 350px;      
-  margin: 40px auto;  
-  text-align: center; 
+  width: 350px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 #graficoMetas {
-  width: 100% !important;   
-  height: auto !important;  
-  max-height: 300px;        
-  display: block;          
-  margin: 0 auto;           
+  width: 100% !important;
+  height: auto !important;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
 }
+
 /* Fim do Grafico */
 
 /* Inicio Footer */
@@ -349,4 +463,5 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 /* Fim Footer*/

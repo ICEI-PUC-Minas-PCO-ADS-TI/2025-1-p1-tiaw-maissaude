@@ -37,56 +37,51 @@
 
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <h1>Metas</h1>
+    <div class="container-metas">
 
-    <div class="entrada">
-      <form id="formMetas">
-        <input type="text" placeholder="Meta ..." id="campoEntrada" />
+      <div class="card card-adicionar">
+        <h2>Adicionar Meta</h2>
+        <form id="formMetas">
+          <input type="text" placeholder="Meta ..." id="campoEntrada" />
 
-        <select id="categoria">
-          <option value="">Categoria...</option>
-          <option value="Saúde">Saúde</option>
-          <option value="Exercício">Exercício</option>
-          <option value="Alimentação">Alimentação</option>
-        </select>
+          <select id="categoria">
+            <option value="">Categoria...</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Exercício">Exercício</option>
+            <option value="Alimentação">Alimentação</option>
+          </select>
 
-        <input type="date" id="dataPrazo" />
+          <input type="date" id="dataPrazo" />
 
-        <button type="submit">Adicionar</button>
-      </form>
-    </div>
+          <button type="submit" class="adc">Adicionar</button>
+        </form>
+      </div>
 
-    <div class="filtro-categoria">
-      <div class="filtro-categoria">
-        <label for="filtroCategoria" class="label-filtro">Filtrar gráfico por categoria:</label>
+      <div class="card card-lista">
+        <h2>Metas</h2>
+        <div class="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <ul id="listaMetas"></ul>
+      </div>
+
+      <div class="card card-grafico">
+        <h2>Filtrar metas por categoria</h2>
         <select id="filtroCategoria" class="select-filtro">
           <option value="todas">Todas</option>
           <option value="Saúde">Saúde</option>
           <option value="Exercício">Exercício</option>
           <option value="Alimentação">Alimentação</option>
         </select>
+
+        <canvas id="graficoMetas" width="400" height="200"></canvas>
       </div>
+
     </div>
 
-    <div>
-      <h3>Metas</h3>
-      <ul id="listaMetas"></ul>
-    </div>
-
-    <div class="progress">
-      <div class="progress-bar" id="progressBar"></div>
-    </div>
-
-    <div class="grafico-container">
-      <h2>Metas por Categoria</h2>
-      <canvas id="graficoMetas" width="400" height="200"></canvas>
-    </div>
-
-  </div>
-
-  </div>
+  </main>
 
   <footer class="footer">
     <ul>

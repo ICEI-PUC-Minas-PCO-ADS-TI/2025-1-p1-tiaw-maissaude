@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/siteconfig/favicon_transparent_32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Ma+s Saúde</title>
 </head>
@@ -21,128 +22,36 @@
     <nav class="nav">
       <ul>
         <li><a href="login.html">Entrar</a></li>
-        <li><a href="cadastro.html">Cadastrar-se</a></li>
+        <li><a href="login.html">Cadastrar-se</a></li>
       </ul>
 
     </nav>
 
   </header>
 
-  <section class="banner">
-    <img src="assets/images/landing/bannerMelhor.png" alt="Ilustração saudável">
-  </section>
+  <section class="banner" id="banner"></section>
 
-  <section class="features">
+  <section class="features"></section>
 
-    <div class="feature" data-feature-index="0">
-      <img class="feature-img" src="assets/images/landing/nutricao1.png" alt="nutricao">
-      <div class="feature-text">
-        <h3 class="feature-title">Acompanhamento inteligente</h3>
-        <p class="feature-description">
-          Acompanhe de forma simples e rápida sua saúde, nosso site nutricional
-        </p>
-      </div>
-      <button class="feature-seta">→</button>
-    </div>
+  <div class="img-center" id="imgCenter"></div>
 
-    <div class="feature" data-feature-index="1">
-      <img class="feature-img" src="assets/images/landing/nutricao2.jpg" alt="nutricao">
-      <div class="feature-text">
-        <h3 class="feature-title">Mais cores no prato,<br>mais saúde na vida.</h3>
-        <p class="feature-description">
-          A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir
-          diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude.
-        </p>
-      </div>
-      <button class="feature-seta">→</button>
-    </div>
-
-    <div class="feature" data-feature-index="2">
-      <img class="feature-img" src="assets/images/landing/nutricao3.jpg" alt="nutricao">
-      <div class="feature-text">
-        <h3 class="feature-title"><span class="highlight">Atenção</span> Perca de forma tradicional</h3>
-        <p class="feature-description">
-          Cada prato "feita de forma tradicional" é uma ode à excelência. Desde o meticuloso corte do sashimi
-          até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão.
-        </p>
-      </div>
-      <button class="feature-seta">→</button>
-    </div>
-
-  </section>
 
   <section class="avaliacao">
     <h2>O que nossos clientes estão dizendo</h2>
-
-    <div class="avaliacao-container">
-      <div class="avaliacao-card">
-        <img src="assets/images/landing/CLIENTEAVALIA.jpeg" alt="Daniele Almeida">
-        <h4>João Emanuel</h4>
-        <p>Usei o aplicativo e perdi 10kg em 3 meses</p>
-        <div class="stars">★ ★ ★ ★ ★</div>
-      </div>
-
-      <div class="avaliacao-card">
-        <img src="assets/images/landing/CLIENTEAVALIA2.jpeg" alt="Ricardo França">
-        <h4>Sabrina Costa</h4>
-        <p>
-          Usei o aplicativo para fazer a minha dieta enquanto fazia musculação,
-          ganhei 12kg de massa magra
-        </p>
-        <div class="stars">★ ★ ★ ★ ★</div>
-      </div>
+    <div class="avaliacao-container" id="avaliacaoContainer">
     </div>
   </section>
 
   <section class="sobre">
     <div class="sobre-text">
       <h2>Sobre o Ma+s Saúde</h2>
-      <p>Mais Saúde é um software voltado para a área de nutrição, desenvolvido com o objetivo de promover hábitos
-        alimentares mais saudáveis e personalizados. Com uma interface intuitiva e acessível, o Mais Saúde
-        permite que usuários acompanhem sua alimentação diária, recebam orientações nutricionais com base em
-        seus objetivos (como emagrecimento, ganho de massa muscular ou controle de doenças como diabetes) e
-        tenham acesso a planos alimentares elaborados por nutricionistas. Além disso, o software oferece
-        funcionalidades como o registro de ingestão de água, lembretes de refeições e um banco de receitas
-        saudáveis. O Mais Saúde é a ferramenta ideal para quem busca qualidade de vida e bem-estar por meio da
-        alimentação.</p>
-    </div>
-  </section>
-
-  <section class="blog">
-    <h2 class="blog-titulo"><span></span>Confira o nosso blog</h2>
-
-    <div class="blog-cards">
-      <div class="blog-card">
-        <div class="blog-img">
-          <img src="assets/images/landing/batatadoceBLOG.jpeg" alt="Imagem ilustrativa">
-        </div>
-        <h3>Batata doce faz mal ?</h3>
-        <p><span>Equipe Principal</span> 17 Maio 2022</p>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img">
-          <img src="assets/images/landing/ovoBLOG.webp" alt="Imagem ilustrativa">
-        </div>
-        <h3>Dieta do ovo funciona ?</h3>
-        <p><span>Equipe Principal</span> 15 Maio 2022</p>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img">
-          <img src="assets/images/landing/barrigaBLOG.jpg" alt="Imagem ilustrativa">
-        </div>
-        <h3>Como perder barriga</h3>
-        <p><span>Equipe Principal</span> 15 Maio 2022</p>
-      </div>
-    </div>
-
-    <div class="blog-btn">
-      <button>CARREGAR MAIS</button>
+      <p>Mais Saúde é uma plataforma digital que facilita o acompanhamento personalizado da sua alimentação e hidratação diária, promovendo hábitos mais saudáveis e conscientes. Com uma interface simples e intuitiva, o Mais Saúde permite que você monitore seus horários de refeições, registre a ingestão de água e acompanhe as calorias consumidas ao longo do dia. Além disso, a plataforma oferece sugestões de refeições alinhadas aos seus objetivos pessoais, tornando o planejamento alimentar mais fácil e eficiente. Pensado para apoiar uma rotina equilibrada, o Mais Saúde combina praticidade e personalização para ajudar você a alcançar maior bem-estar e qualidade de vida.</p>
     </div>
   </section>
 
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/login.js"></script>
+
 </body>
 
 </html>

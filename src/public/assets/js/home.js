@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // --- Script 1: carregar refeições ---
-  fetch("http://localhost:3000/refeicoes")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/refeicoes")
     .then(response => response.json())
     .then(refeicoes => {
       refeicoes.forEach(refeicao => {
@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Script 2: calendário dinâmico ---
   let semanaAtual = 0;
-  const dataAtual = new Date();
+  const dataAtual = new Date(); // hoje
   let mesAtual = dataAtual.getMonth();
   let anoAtual = dataAtual.getFullYear();
 
   const diasMesElement = document.getElementById('dias-mes');
-  const tituloSemanaElement = document.getElementById('titulo-semana');
+  const tituloSemanaElement = document.getElementById('titulo-semana') || null;
   const btnSemanaAnterior = document.getElementById('semana-anterior');
   const btnProximaSemana = document.getElementById('proxima-semana');
 
@@ -36,107 +36,187 @@ document.addEventListener("DOMContentLoaded", () => {
     "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
   ];
 
-  function getTotalSemanasNoMes() {
-    const primeiroDiaMes = new Date(anoAtual, mesAtual, 1);
-    const ultimoDiaMes = new Date(anoAtual, mesAtual + 1, 0);
-    const totalDias = ultimoDiaMes.getDate() + primeiroDiaMes.getDay();
-    return Math.ceil(totalDias / 7);
+  function calcularSemanaDoAno(data) {
+    const primeiroDiaAno = new Date(data.getFullYear(), 0, 1);
+    const diffDias = Math.floor((data - primeiroDiaAno) / (1000 * 60 * 60 * 24));
+    return Math.floor((diffDias + primeiroDiaAno.getDay()) / 7);
   }
 
   function atualizarCalendario() {
-    const primeiroDiaMes = new Date(anoAtual, mesAtual, 1);
-    const ultimoDiaMes = new Date(anoAtual, mesAtual + 1, 0);
-    const totalSemanas = getTotalSemanasNoMes();
+    const dataInicioAno = new Date(anoAtual, 0, 1);
 
-    if (semanaAtual >= totalSemanas) {
-      semanaAtual = totalSemanas - 1;
+    const diaSemanaPrimeiro = dataInicioAno.getDay();
+    const ajuste = (diaSemanaPrimeiro === 0 ? -6 : 1) - diaSemanaPrimeiro;
+
+    const dataInicioSemana = new Date(dataInicioAno);
+    dataInicioSemana.setDate(dataInicioSemana.getDate() + ajuste + (semanaAtual * 7));
+
+    const dataFimSemana = new Date(dataInicioSemana);
+    dataFimSemana.setDate(dataFimSemana.getDate() + 6);
+
+    mesAtual = dataInicioSemana.getMonth();
+    anoAtual = dataInicioSemana.getFullYear();
+
+    if (tituloSemanaElement) {
+      tituloSemanaElement.textContent = `Semana de ${dataInicioSemana.getDate()} de ${meses[dataInicioSemana.getMonth()]} até ${dataFimSemana.getDate()} de ${meses[dataFimSemana.getMonth()]}`;
     }
 
-    let primeiroDiaSemana = new Date(anoAtual, mesAtual, 1);
-    primeiroDiaSemana.setDate(primeiroDiaSemana.getDate() + (semanaAtual * 7) - primeiroDiaSemana.getDay() + 1);
-
-    if (primeiroDiaSemana < primeiroDiaMes) {
-      primeiroDiaSemana = new Date(primeiroDiaMes);
-    }
-
-    tituloSemanaElement.textContent = `${meses[mesAtual]} ${anoAtual} - Semana ${semanaAtual + 1}`;
     diasMesElement.innerHTML = '';
-    let dataRender = new Date(primeiroDiaSemana);
+    let dataRender = new Date(dataInicioSemana);
 
     for (let i = 0; i < 7; i++) {
       const span = document.createElement('span');
-      if (dataRender.getMonth() === mesAtual && dataRender.getFullYear() === anoAtual) {
-        span.textContent = dataRender.getDate();
+      span.textContent = dataRender.getDate();
 
-        const hoje = new Date();
-        if (dataRender.getDate() === hoje.getDate() &&
-          dataRender.getMonth() === hoje.getMonth() &&
-          dataRender.getFullYear() === hoje.getFullYear()) {
-          span.classList.add('dia-atual');
-        }
-      } else {
-        span.textContent = '';
+      if (dataRender.getMonth() !== mesAtual) {
+        span.classList.add('fora-do-mes');
       }
+
+      if (
+        dataRender.getDate() === dataAtual.getDate() &&
+        dataRender.getMonth() === dataAtual.getMonth() &&
+        dataRender.getFullYear() === dataAtual.getFullYear()
+      ) {
+        span.classList.add('dia-atual');
+      }
+
       diasMesElement.appendChild(span);
       dataRender.setDate(dataRender.getDate() + 1);
     }
-
-    btnSemanaAnterior.disabled = semanaAtual === 0 && mesAtual === 0 && anoAtual === new Date().getFullYear();
-    btnProximaSemana.disabled = false;
-  }
-
-  function mudarMes(incremento) {
-    mesAtual += incremento;
-    if (mesAtual > 11) {
-      mesAtual = 0;
-      anoAtual++;
-    } else if (mesAtual < 0) {
-      mesAtual = 11;
-      anoAtual--;
-    }
-    semanaAtual = 0;
-    atualizarCalendario();
   }
 
   btnSemanaAnterior.addEventListener('click', () => {
     if (semanaAtual > 0) {
       semanaAtual--;
-    } else {
-      mudarMes(-1);
+      atualizarCalendario();
     }
-    atualizarCalendario();
   });
 
   btnProximaSemana.addEventListener('click', () => {
-    const totalSemanas = getTotalSemanasNoMes();
-    if (semanaAtual < totalSemanas - 1) {
-      semanaAtual++;
-    } else {
-      mudarMes(1);
-      semanaAtual = 0;
-    }
+    semanaAtual++;
     atualizarCalendario();
   });
 
+  semanaAtual = calcularSemanaDoAno(dataAtual);
   atualizarCalendario();
 
-  // --- Script 3: agenda de refeições carregada do JSON ---
-  fetch("http://localhost:3000/mealSchedule")
+  // --- Script 3: agenda de refeições com edição inline, exclusão e adição (sem ícones) ---
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule")
     .then(response => response.json())
     .then(mealData => {
       const container = document.getElementById("meal-schedule");
+      container.innerHTML = '';
+
       mealData.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "meal";
-        div.innerHTML = `
-          <span>${item.icone}</span>
-          <span class="time">${item.hora}</span>
-          <span>${item.refeicao}</span>
-        `;
+        const div = criarRefeicaoElemento(item);
         container.appendChild(div);
+      });
+
+      const form = document.createElement("div");
+      form.className = "adicionar-refeicao";
+      form.innerHTML = `
+      <input type="text" id="nova-hora" placeholder="08:00">
+      <input type="text" id="nova-refeicao" placeholder="Café da manhã">
+      <button id="btn-adicionar">Adicionar</button>
+    `;
+      container.appendChild(form);
+
+      document.getElementById("btn-adicionar").addEventListener("click", () => {
+        const hora = document.getElementById("nova-hora").value.trim();
+        const refeicao = document.getElementById("nova-refeicao").value.trim();
+
+        if (!hora || !refeicao) {
+          alert("Preencha o horário e o nome da refeição.");
+          return;
+        }
+
+        const novaRefeicao = { hora, refeicao };
+
+        fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(novaRefeicao)
+        })
+          .then(res => res.json())
+          .then(data => {
+            const novaDiv = criarRefeicaoElemento(data);
+            container.insertBefore(novaDiv, form);
+            document.getElementById("nova-hora").value = "";
+            document.getElementById("nova-refeicao").value = "";
+          })
+          .catch(err => console.error("Erro ao adicionar refeição:", err));
       });
     })
     .catch(error => console.error("Erro ao carregar agenda de refeições:", error));
+
+  function criarRefeicaoElemento(item) {
+    const div = document.createElement("div");
+    div.className = "meal";
+    div.innerHTML = `
+    <span class="hora-editavel" data-id="${item.id}">${item.hora}</span>
+    <span>${item.refeicao}</span>
+    <button class="delete-meal" data-id="${item.id}">🗑️</button>
+  `;
+    return div;
+  }
+
+  document.getElementById("meal-schedule").addEventListener("click", (e) => {
+
+    if (e.target.classList.contains("hora-editavel")) {
+      const span = e.target;
+      const id = span.dataset.id;
+      const horaAtual = span.textContent;
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.value = horaAtual;
+      input.className = "hora-input";
+      input.dataset.id = id;
+
+      span.replaceWith(input);
+      input.focus();
+
+      input.addEventListener("blur", salvarHora);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") input.blur();
+      });
+
+      function salvarHora() {
+        const novaHora = input.value;
+
+        fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule/${id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ hora: novaHora })
+        })
+          .then(res => {
+            if (!res.ok) throw new Error("Erro ao salvar horário.");
+            const novoSpan = document.createElement("span");
+            novoSpan.className = "hora-editavel";
+            novoSpan.dataset.id = id;
+            novoSpan.textContent = novaHora;
+            input.replaceWith(novoSpan);
+          })
+          .catch(err => {
+            alert("Erro ao atualizar hora.");
+            console.error(err);
+          });
+      }
+    }
+
+    if (e.target.classList.contains("delete-meal")) {
+      const id = e.target.dataset.id;
+      if (confirm("Deseja excluir esta refeição?")) {
+        fetch(`https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/mealSchedule/${id}`, {
+          method: "DELETE"
+        })
+          .then(res => {
+            if (res.ok) e.target.closest(".meal").remove();
+          })
+          .catch(err => console.error("Erro ao excluir refeição:", err));
+      }
+    }
+  });
 
   // --- Script 4: controle de líquidos via JSON ---
   const addButton = document.getElementById('add-agua');
@@ -147,9 +227,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let consumoAtual = 0;
 
-  // 🔹 Recupera o email do usuário logado para buscar a meta correta
   const usuarioLogado = localStorage.getItem('usuarioLogado');
-  let metaConsumo = 2240; // valor padrão caso não encontre meta personalizada
+  let metaConsumo = 2240; 
 
   if (usuarioLogado) {
     const metaSalva = localStorage.getItem(`${usuarioLogado}_metaAguaDiaria`);
@@ -160,13 +239,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   metaElemento.textContent = `${metaConsumo} ml`;
 
-  // Recalcula progresso com base na meta
   function atualizarProgresso() {
     const progresso = Math.min((consumoAtual / metaConsumo) * 100, 100);
     progressBar.style.width = progresso + '%';
   }
 
-  // Cria os botões com quantidades
   function criarBotoesAgua(options) {
     addOptions.innerHTML = '';
     options.forEach(option => {
@@ -179,7 +256,9 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener('click', () => {
         consumoAtual += option.amount;
         consumoTotal.textContent = consumoAtual + ' ml';
-        localStorage.setItem('consumoAgua', consumoAtual);
+        if (usuarioLogado) {
+          localStorage.setItem(`${usuarioLogado}_consumoAgua`, consumoAtual);
+        }
         atualizarProgresso();
         addOptions.classList.add('hidden');
       });
@@ -194,7 +273,9 @@ document.addEventListener("DOMContentLoaded", () => {
     zerarBtn.addEventListener('click', () => {
       consumoAtual = 0;
       consumoTotal.textContent = '0 ml';
-      localStorage.setItem('consumoAgua', 0);
+      if (usuarioLogado) {
+        localStorage.setItem(`${usuarioLogado}_consumoAgua`, 0);
+      }
       atualizarProgresso();
       addOptions.classList.add('hidden');
     });
@@ -214,21 +295,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Carrega opções de água
-  fetch("http://localhost:3000/waterOptions")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/waterOptions")
     .then(response => response.json())
     .then(options => criarBotoesAgua(options))
     .catch(error => console.error("Erro ao carregar opções de água:", error));
 
-  // Restaura consumo salvo
-  const savedConsumo = localStorage.getItem('consumoAgua');
+  let savedConsumo = 0;
+  if (usuarioLogado) {
+    savedConsumo = localStorage.getItem(`${usuarioLogado}_consumoAgua`);
+  }
   if (savedConsumo) {
     consumoAtual = parseInt(savedConsumo);
     consumoTotal.textContent = consumoAtual + ' ml';
     atualizarProgresso();
   }
 
-  // --- Script 5: controle de Calorias via JSON ---
   const addCaloriasBtn = document.getElementById('add-calorias');
   const addOptionsCalorias = document.getElementById('add-options-calorias');
   const consumoCalorias = document.getElementById('consumo-calorias');
@@ -237,8 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let caloriasAtuais = 0;
 
-  // Recupera email do usuário logado para buscar meta personalizada e consumo
-  let metaCaloriasValor = 2000; // valor padrão
+  let metaCaloriasValor = 2000;
 
   if (usuarioLogado) {
     const metaSalva = localStorage.getItem(`${usuarioLogado}_metaCaloriasDiaria`);
@@ -298,13 +378,11 @@ document.addEventListener("DOMContentLoaded", () => {
     addOptionsCalorias.classList.toggle('hidden');
   });
 
-  // Carrega opções de calorias
-  fetch("http://localhost:3000/kcalOptions")
+  fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/kcalOptions")
     .then(response => response.json())
     .then(options => criarBotoesCalorias(options))
     .catch(error => console.error("Erro ao carregar opções de calorias:", error));
 
-  // Restaura consumo salvo, personalizado por usuário
   let savedCalorias = 0;
   if (usuarioLogado) {
     savedCalorias = localStorage.getItem(`${usuarioLogado}_consumoCalorias`);

@@ -1,143 +1,414 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "adm",
       "email": "adm@gmail.com",
       "senha": "123456",
       "admin": true
     },
     {
-      "usuario": "guilherme",
-      "email": "guiftf2007@gmail.com",
+      "usuario": "Ricardo",
+      "email": "ricardo@gmail.com",
       "senha": "123456",
-      "id": 2
+      "id": "IWm54It",
+      "dataCadastro": "2025-06-20T19:04:33.123Z",
+      "nutricionista": true
     },
     {
-      "usuario": "amalia",
+      "usuario": "Angela",
+      "email": "Angela@gmail.com",
+      "senha": "123456",
+      "id": "IWW54It",
+      "dataCadastro": "2025-04-20T19:04:33.123Z",
+      "nutricionista": true
+    },
+    {
+      "usuario": "Guilherme",
+      "email": "guilherme@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-04-22T19:04:33.123Z",
+      "id": "BaavtvZ"
+    },
+    {
+      "usuario": "Amalia",
       "email": "amalia@gmail.com",
       "senha": "123456",
-      "id": 4
+      "dataCadastro": "2025-06-24T03:54:12.793Z",
+      "id": "G5M2FLm"
     },
     {
-      "usuario": "raquel",
-      "email": "raquel@gmail.com",
-      "senha": "123456",
-      "id": 5
+      "usuario": "Ronaldo",
+      "email": "ronaldo@gmail.com",
+      "senha": "123654",
+      "dataCadastro": "2025-06-26T04:08:05.879Z",
+      "id": "kLuuNhI"
     },
     {
-      "usuario": "gustavo",
-      "email": "gustavo@gmail.com",
+      "usuario": "Macaé",
+      "email": "macae@gmail.com",
+      "senha": "1937",
+      "dataCadastro": "2025-06-28T04:08:20.257Z",
+      "id": "PTc4F9D"
+    },
+    {
+      "usuario": "Raquel",
+      "email": "raque@gmail.com",
+      "senha": "1008",
+      "dataCadastro": "2025-06-30T04:08:34.767Z",
+      "id": "sF6Cgxd"
+    },
+    {
+      "usuario": "Robson",
+      "email": "robson@gmail.com",
+      "senha": "31415",
+      "dataCadastro": "2025-05-10T04:10:20.445Z",
+      "id": "I8vMaJ2"
+    },
+    {
+      "usuario": "Kyan",
+      "email": "kyan@gmail.com",
+      "senha": "777",
+      "dataCadastro": "2025-05-12T04:10:35.833Z",
+      "id": "UkcEaqV"
+    },
+    {
+      "usuario": "Bary Allen",
+      "email": "barry@gmail.com",
+      "senha": "flash",
+      "dataCadastro": "2025-03-18T05:30:35.485Z",
+      "id": "4BJgYFd"
+    },
+    {
+      "usuario": "Ana",
+      "email": "ana.souza@gmail.com",
+      "senha": "senhaAna01",
+      "dataCadastro": "2025-02-15T10:22:10.321Z",
+      "id": "Xy12zQw"
+    },
+    {
+      "usuario": "Lucas",
+      "email": "lucas.pereira@gmail.com",
+      "senha": "senhaLucas99",
+      "dataCadastro": "2025-03-05T14:50:45.000Z",
+      "id": "Mnop123"
+    },
+    {
+      "usuario": "Maria",
+      "email": "maria.lima@gmail.com",
+      "senha": "maria2025",
+      "dataCadastro": "2025-01-30T09:15:20.987Z",
+      "id": "Qwertyu"
+    },
+    {
+      "usuario": "Carlos",
+      "email": "carlos_santos@gmail.com",
+      "senha": "car12345",
+      "dataCadastro": "2025-04-10T21:33:55.432Z",
+      "id": "ZxCvbnm"
+    },
+    {
+      "usuario": "Juliana",
+      "email": "juliana.martins@gmail.com",
+      "senha": "ju2025",
+      "dataCadastro": "2025-03-20T08:00:00.000Z",
+      "id": "Ploi987"
+    },
+    {
+      "usuario": "Felipe",
+      "email": "felipe.oliveira@gmail.com",
+      "senha": "felipe!23",
+      "dataCadastro": "2025-02-28T18:45:12.654Z",
+      "id": "Asdf123"
+    },
+    {
+      "usuario": "Camila",
+      "email": "camila.rodrigues@gmail.com",
+      "senha": "camilaR99",
+      "dataCadastro": "2025-01-10T11:22:33.789Z",
+      "id": "Yuiop12"
+    },
+    {
+      "usuario": "macario",
+      "email": "macario@gmail.com",
       "senha": "123456",
-      "id": 6
+      "dataCadastro": "2025-06-29T17:13:02.477Z",
+      "id": "G7PAEuJ"
+    },
+    {
+      "usuario": "mariana",
+      "email": "mariana@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-06-30T01:38:05.726Z",
+      "id": "gVFuJ5A"
+    },
+    {
+      "usuario": "isadora",
+      "email": "isadora@gmail.com",
+      "senha": "123456",
+      "dataCadastro": "2025-06-30T01:46:23.648Z",
+      "id": "ju88V_3"
     }
   ],
   "metas": [
     {
-      "id": "b16a",
-      "texto": "Correr 100KM",
+      "texto": "Andar 4km",
       "categoria": "Exercício",
-      "prazo": "2025-06-30",
-      "concluida": false
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": null,
+      "id": 1
     },
     {
-      "texto": "Beber 3L de Água",
-      "categoria": "Alimentação",
-      "prazo": "2025-06-23",
+      "texto": "Correr 10km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
       "concluida": false,
-      "id": "QudA6o1"
+      "userId": "BaavtvZ",
+      "id": 2
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 3
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "NoRbm5F",
+      "id": 4
+    },
+    {
+      "texto": "correr 5km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 5
+    },
+    {
+      "texto": "comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "qoNuJ36",
+      "id": 6
+    },
+    {
+      "texto": "ganhar massa",
+      "categoria": "Saúde",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 7
+    },
+    {
+      "texto": "comer fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "cwIPRjB",
+      "id": 9
+    },
+    {
+      "texto": "correr 3km",
+      "categoria": "Exercício",
+      "prazo": "2025-06-26",
+      "concluida": false,
+      "userId": "E-WEAH7",
+      "id": 10
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-28",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 11
+    },
+    {
+      "texto": "Meditar",
+      "categoria": "Saúde",
+      "prazo": "2025-06-27",
+      "concluida": false,
+      "userId": "BaavtvZ",
+      "id": 12
+    },
+    {
+      "texto": "Fazer yoga",
+      "categoria": "Exercício",
+      "prazo": "2025-06-27",
+      "concluida": true,
+      "userId": "gVFuJ5A",
+      "id": 13
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-29",
+      "concluida": true,
+      "userId": "gVFuJ5A",
+      "id": 14
+    },
+    {
+      "texto": "Comer uma fruta",
+      "categoria": "Alimentação",
+      "prazo": "2025-06-29",
+      "concluida": true,
+      "userId": "ju88V_3",
+      "id": 15
+    },
+    {
+      "texto": "Correr 5KM",
+      "categoria": "Exercício",
+      "prazo": "2025-06-30",
+      "concluida": true,
+      "userId": "ju88V_3",
+      "id": 16
     }
   ],
   "mealSchedule": [
     {
-      "hora": "08:00",
-      "refeicao": "Café da manhã",
-      "icone": "☕"
-    },
-    {
-      "hora": "11:00",
-      "refeicao": "Lanche da manhã",
-      "icone": "🍞"
-    },
-    {
-      "hora": "13:00",
+      "hora": "12:00",
       "refeicao": "Almoço",
-      "icone": "🍗"
+      "id": "ab15"
     },
     {
       "hora": "16:00",
       "refeicao": "Lanche da tarde",
-      "icone": "🍞"
+      "id": "8b63"
     },
     {
       "hora": "19:00",
       "refeicao": "Jantar",
-      "icone": "🍽️"
+      "id": "fe9b"
     },
     {
       "hora": "21:00",
       "refeicao": "Lanche da noite",
-      "icone": "🥪"
+      "id": "b7a5"
+    },
+    {
+      "hora": "15:30",
+      "refeicao": "Café da tarde",
+      "id": "FCliJIe"
+    },
+    {
+      "hora": "18:30",
+      "refeicao": "Café",
+      "id": "wB3GWeJ"
+    },
+    {
+      "hora": "08:00",
+      "refeicao": "Café da manhã",
+      "id": "IxF7fra"
     }
   ],
   "waterOptions": [
     {
       "amount": 200,
-      "label": "200 ml"
+      "label": "200 ml",
+      "id": "a11a"
     },
     {
       "amount": 300,
-      "label": "300 ml"
+      "label": "300 ml",
+      "id": "0d19"
     },
     {
       "amount": 500,
-      "label": "500 ml"
+      "label": "500 ml",
+      "id": "2cc3"
     }
   ],
   "kcalOptions": [
     {
       "amount": 200,
-      "label": "200 kcal"
+      "label": "200 kcal",
+      "id": "b718"
     },
     {
       "amount": 500,
-      "label": "500 kcal"
+      "label": "500 kcal",
+      "id": "8b12"
     },
     {
       "amount": 700,
-      "label": "700 kcal"
+      "label": "700 kcal",
+      "id": "520a"
     }
   ],
-  "featureData": [
+  "features": [
+    [
+      {
+        "img": "assets/images/landing/nutricao1.png",
+        "title": "Seu bem-estar em tempo real",
+        "description": "Acompanhe seus dados de saúde com ferramentas práticas como a calculadora de água e o rastreador de calorias diárias."
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures4.webp",
+        "title": "Metabolismo sob controle",
+        "description": "Com a calculadora metabólica, descubra quantas calorias seu corpo precisa e otimize sua alimentação com base no seu perfil."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/nutricao2.jpg",
+        "title": "Metas claras, saúde na direção certa",
+        "description": "Defina seus objetivos nutricionais e acompanhe seu progresso com a página de metas personalizadas do Ma+s Saúde."
+      },
+      {
+        "img": "assets/images/landing/nutricao3.jpg",
+        "title": "Cardápios que entendem você",
+        "description": "Receba sugestões de refeições equilibradas com base nas suas preferências, metas e necessidades diárias."
+      }
+    ],
+    [
+      {
+        "img": "assets/images/landing/ImagemFeatures6.jpg",
+        "title": "Planeje sua rotina alimentar com inteligência.",
+        "description": "Crie uma rotina mais saudável com ferramentas interativas, gráficos visuais e lembretes de hidratação."
+      },
+      {
+        "img": "assets/images/landing/imagemFeatures5.jpg",
+        "title": "Nutrição real para pessoas reais",
+        "description": "Tudo que você precisa para cuidar da saúde: simples, intuitivo e 100% pensado no seu dia a dia."
+      }
+    ]
+  ],
+  "avaliacoes": [
     {
-      "img": "assets/images/landingpage/nutricao1.png",
-      "title": "Acompanhamento inteligente",
-      "description": "Acompanhe de forma simples e rápida sua saúde, nosso site nutricional"
+      "nome": "João Emanuel",
+      "imagem": "assets/images/landing/CLIENTEAVALIA.jpeg",
+      "comentario": "Agora consigo estabelecer minhas metas com facilidade e clareza. Super prático!",
+      "estrelas": 5
     },
     {
-      "img": "assets/img/imagemFeatures4.webp",
-      "title": "Monitore sua saúde facilmente",
-      "description": "Acompanhe indicadores como IMC, ingestão de nutrientes e hábitos alimentares em tempo real."
+      "nome": "Sabrina Costa",
+      "imagem": "assets/images/landing/CLIENTEAVALIA2.jpeg",
+      "comentario": "Depois que comecei a usar o Ma+s Saúde, minha alimentação ficou muito mais equilibrada e organizada!",
+      "estrelas": 5
     },
     {
-      "img": "assets/img/nutricao2.jpg",
-      "title": "Mais cores no prato,<br>mais saúde na vida.",
-      "description": "A alimentação saudável é a chave para uma vida mais proativa e equilibrada, além de prevenir diversas doenças e deficiências físicas, monitore a sua saúde agora mesmo com o Ma+s Saude."
+      "nome": "Marina Santos",
+      "imagem": "assets/images/landing/client.png",
+      "comentario": "O app é excelente para acompanhar e melhorar minha alimentação no dia a dia.",
+      "estrelas": 5
+    }
+  ],
+  "laning": [
+    {
+      "imagem": "assets/images/landing/bannerMelhor.png",
+      "alt": "Ilustração saudável"
     },
     {
-      "img": "assets/img/imagemFeatures5.jpg",
-      "title": "Descubra novos sabores naturais",
-      "description": "Combine vegetais, frutas e leguminosas para criar pratos deliciosos e nutritivos."
-    },
-    {
-      "img": "assets/img/nutricao3.jpg",
-      "title": "<span class='highlight'>Atenção</span> Perca de forma tradicional",
-      "description": "Cada prato feita de forma tradicional é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão."
-    },
-    {
-      "img": "assets/img/ImagemFeatures6.jpg",
-      "title": "<span class='highlight'>Dica</span> Herança e sabor na medida certa",
-      "description": "Adote receitas milenares adaptadas à nutrição moderna com o toque do Ma+s Saúde."
+      "imagem": "assets/images/landing/vista-frontal-medico-sorridente-com-maca.jpg",
+      "alt": "Outra imagem central"
     }
   ],
   "refeicoes": [
@@ -324,7 +595,7 @@
     {
       "id": "4",
       "nome": "Crepioca de Frango",
-      "imagem": "assets/images/refeicoes/crepiocafrango.jpeg",
+      "imagem": "assets/images/refeicoes/crepiocafrango1.jpg",
       "descricao": "Esta crepioca é uma ótima escolha para quem deseja aumentar a ingestão de proteínas ao longo do dia. Com 15g de proteína por porção, traz um recheio de frango temperado e suculento combinado ao queijo frescal, oferecendo uma refeição leve, nutritiva e saborosa. Versátil, pode ser consumida a qualquer momento — do pré-treino ao jantar.",
       "ingredientes": [
         "goma de tapioca",

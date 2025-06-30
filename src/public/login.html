@@ -4,43 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/siteconfig/cadastro.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/login.css">
-    <title>Página de Login</title>
+    <title>Cadastro e Login</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <a href="index.html">Voltar</a>
-    </header>
+    <div class="container">
 
-    <main class="container">
+        <div class="content first-content">
 
-        <div class="logo"><img src="assets/images/siteconfig/cadastrolado.png" alt="logo site"></div>
+            <div class="first-column">
+                <img src="assets/images/siteconfig/cadastrolado.png" alt="logo site" class="logo">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado conosco</p>
+                <p class="description description-primary">faça login com seu email e senha</p>
+                <button id="signin" class="btn btn-primary">Fazer login</button>
+            </div>
 
-        <div class="card">
+            <div class="second-column">
 
-            <form id="login">
-                <h3 class="textcad">LOGIN</h3>
-                <input type="text" placeholder="E-mail" id="email" required/>
-                <input type="text" placeholder="Senha" id="senha" required/>
-                <button type="submit">Login</button>
+                <h2 class="title title-second">Criar sua conta</h2>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" id="usuario" placeholder="Usuário" required />
+                    </label>
 
-                <p class="mensagem-login">
-                    Não possui conta?
-                    <a href="cadastro.html" class="link-cadastro">
-                        Cria uma agora!
-                    </a>
-                </p>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" id="email-cad" placeholder="E-mail" required />
+                    </label>
 
-            </form>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="senha-cad" placeholder="Senha" required />
+                    </label>
+
+
+                    <button class="btn btn-second">Cadastrar</button>
+                </form>
+
+            </div>
 
         </div>
 
-    </main>
+        <div class="content second-content">
 
-    <script src="assets/js/login.js"></script>
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, amigo!</h2>
+                <p class="description description-primary">Faça cadastro na nossa plataforma</p>
+                <p class="description description-primary">e comece uma jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Cadastrar-se</button>
+            </div>
+
+            <div class="second-column">
+
+                <h2 class="title title-second">Entrar na sua conta</h2>
+                <form class="form">
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" id="email-log" placeholder="Email" required />
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="senha-log" placeholder="Senha" required />
+                    </label>
+
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
+
+<script src="assets/js/login.js"></script>
 
 </html>

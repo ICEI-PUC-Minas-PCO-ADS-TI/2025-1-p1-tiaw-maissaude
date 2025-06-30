@@ -38,14 +38,10 @@
 
   <main>
 
-    <div class="semana-controle">
-      <button id="semana-anterior">&lt; Semana Anterior</button>
-      <h3 id="titulo-semana">Maio 2025 - Semana 1</h3>
-      <button id="proxima-semana">Próxima Semana &gt;</button>
-    </div>
-
     <div class="calendario-semanal">
+
       <div class="dias-semana">
+        <button id="semana-anterior">&lt;</button>
         <span>Segunda</span>
         <span>Terça</span>
         <span>Quarta</span>
@@ -53,6 +49,7 @@
         <span>Sexta</span>
         <span>Sábado</span>
         <span>Domingo</span>
+        <button id="proxima-semana">&gt;</button>
       </div>
 
       <div class="numeros-dias" id="dias-mes">
@@ -62,7 +59,7 @@
     <div class="dashboard-grid">
 
       <div class="liquid-box">
-        <h3>Água</h3>
+        <h3>Consumo de água</h3>
         <div class="liquid-info">
           <div class="liquid-item">
             <span class="liquid-label">Consumo total</span>
@@ -83,7 +80,7 @@
       </div>
 
       <div class="calorias-box">
-        <h3>Calorias</h3>
+        <h3>Consumo de calorias</h3>
         <div class="calorie-info">
           <div class="calorie-item">
             <span class="calorie-label">Consumo total</span>
@@ -96,7 +93,7 @@
           </div>
         </div>
         <div class="progress-container">
-          <div class="progress-bar" id="progress-bar-calorias"></div>
+          <div class="progress-bar-cal" id="progress-bar-calorias"></div>
         </div>
         <div class="add-options hidden" id="add-options-calorias"></div>
       </div>
@@ -105,9 +102,13 @@
         <div class="card" id="meal-schedule"></div>
       </div>
 
-      <div class="refeicoes-destaque" id="cafe-da-manha">
-        <h1>Café da Manhã</h1>
-        <div class="image-grid"></div>
+      <div class="refeicoes-destaque" id="carrossel-refeicoes">
+        <h1>Refeições em Destaque</h1>
+        <div class="carousel-container">
+          <button class="carousel-btn prev">&#10094;</button>
+          <div class="carousel-track" id="carousel-track-categorias"></div>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
       </div>
 
     </div>
@@ -124,6 +125,7 @@
 
   <script src="assets/js/home.js"></script>
   <script src="assets/js/login.js"></script>
+  <script src="assets/js/carrossel.js"></script>
 
 </body>
 

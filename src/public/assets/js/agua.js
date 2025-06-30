@@ -19,7 +19,6 @@ function calcularAgua() {
     const aguaBase = peso * 35;
     const aguaTotal = (aguaBase * atividade * clima) / 1000;
 
-    // 🔸 Recupera o e-mail do usuário logado
     const usuarioLogado = localStorage.getItem('usuarioLogado');
 
     if (!usuarioLogado) {
@@ -27,7 +26,6 @@ function calcularAgua() {
         return;
     }
 
-    // 🔹 Salva a meta personalizada no localStorage com base no e-mail
     const aguaEmMl = Math.round(aguaTotal * 1000);
     localStorage.setItem(`${usuarioLogado}_metaAguaDiaria`, aguaEmMl);
 

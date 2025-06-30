@@ -21,12 +21,15 @@ function normalizarCategoria(categoria) {
 
 async function gerarGraficoDeMetas(categoriaFiltro = "todas") {
   try {
-    const resposta = await fetch("http://localhost:3000/metas");
+    const resposta = await fetch("https://48b4388b-3de9-4339-876a-e146817af41e-00-u2urj6cxk22a.spock.replit.dev/metas");
     if (!resposta.ok) {
       throw new Error("Erro ao buscar metas do servidor.");
     }
 
     let metas = await resposta.json();
+
+    const userId = localStorage.getItem("userId");
+    metas = metas.filter(meta => meta.userId === userId); // 👈 filtro pelo usuário logado
 
     if (categoriaFiltro !== "todas") {
       metas = metas.filter(meta => meta.categoria === categoriaFiltro);
@@ -39,12 +42,10 @@ async function gerarGraficoDeMetas(categoriaFiltro = "todas") {
     }
     const ctx = canvas.getContext("2d");
 
-    // Destroi gráfico anterior se existir
     if (window.graficoMetasInstance) {
       window.graficoMetasInstance.destroy();
     }
 
-    // Se não há metas após o filtro, exibe gráfico vazio
     if (metas.length === 0) {
       window.graficoMetasInstance = new Chart(ctx, {
         type: "pie",
@@ -69,15 +70,11 @@ async function gerarGraficoDeMetas(categoriaFiltro = "todas") {
       return;
     }
 
-    // Dados normais
     const contagem = contarMetasPorCategoria(metas);
     const categorias = Object.keys(contagem);
     const quantidades = Object.values(contagem);
-
-    // Mapeia as cores conforme categoria, padrão cinza se não encontrar
     const cores = categorias.map(cat => coresPorCategoria[normalizarCategoria(cat)] || "#ccc");
 
-    // Cria novo gráfico de pizza com cores alinhadas às tags
     window.graficoMetasInstance = new Chart(ctx, {
       type: "pie",
       data: {
